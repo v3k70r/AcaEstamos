@@ -1,40 +1,45 @@
-
 h1 {
   font-family: "Heavitas", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: white;
 }
+
 h2 {
   font-family: "Heavitas", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: white;
 }
+
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-style: normal;
   color: white;
 }
+
 h4 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #424242;
 }
+
 h5 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #424242;
 }
+
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #424242;
 }
+
 p {
   font-family: "Poppins", sans-serif;
   font-weight: normal;
@@ -66,30 +71,35 @@ ul li a {
   font-style: italic;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "Heavitas";
   src: url("fonts/Heavitas.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("fonts/Poppins-Bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("fonts/Poppins-Italic.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
 }
+
 @font-face {
   font-family: "Poppins";
   src: url("fonts/Poppins-MediumItalic.ttf") format("truetype");
@@ -112,6 +122,7 @@ ul li a {
 .card-body a {
   color: blue;
 }
+
 /* ------????--------*/
 
 
@@ -150,14 +161,16 @@ ul li a {
   overflow: hidden;
 }
 
-
-
-
 /*PANCHO*/
+#borderCards {
+  border-radius: 20px;
+}
+
 #seleccionaAvatar {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 .avatar-option {
   margin-bottom: 50px;
   width: 100px;
@@ -165,44 +178,46 @@ ul li a {
   border-radius: 50%;
   cursor: pointer;
 }
+
 .selected-avatar {
   border: 3px solid #007bff;
 }
+
+#bannerTalent {
+  width: 100%;
+}
+
 #cardsPancho {
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 80px;
 }
+
 #formulario {
-  margin-left: 300px;
-  margin-right: 300px;
+  background-color: #0492d0;
+  margin-left: 290px;
+  margin-right: 290px;
   margin-bottom: 50px;
-  padding: 50px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 #infoPersonal {
-  background-color: #e5ecf6;
-  padding-top: 23px;
-  margin-left: 300px;
-  margin-right: 300px;
-  margin-top: 50px;
-  border-top-left-radius: 20px ;
-  border-top-right-radius: 20px;
+  color: white;
+  margin-bottom: 30px;
 }
-.textoInfo {
-  margin-bottom: 0px;
-}
+
 #textInteres {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   margin-top: 15px;
+  color: white;
 }
 /*PANCHO*/
 
 .gradient-custom {
-  background: #f3963b;  
+  background: #f3963b;
 }
+
 /*XI*/
 .BannerDeColor {
   width: 100%;
@@ -212,16 +227,19 @@ ul li a {
   background-size: cover;
   background-position: center;
 }
+
 #empresaName {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-style: normal;
   color: #424242;
 }
+
 .banner-container-acerca {
   position: relative;
   text-align: center;
 }
+
 .banner-image-acerca {
   width: 100%;
   height: auto;
@@ -250,16 +268,19 @@ ul li a {
   margin: 0;
   color: white;
 }
+
 #texto-mision {
-margin: 50px;
-padding: 30px;
-background-color: #E5ECF6;
-border-radius: 20px;
+  margin: 50px;
+  padding: 30px;
+  background-color: #E5ECF6;
+  border-radius: 20px;
 }
+
 #cartasInfo {
   margin: 0px;
   padding: 0px;
 }
+
 #cartainfo1 {
   margin: 5px;
   padding: 30px;
@@ -272,6 +293,7 @@ border-radius: 20px;
   position: relative;
   text-align: center;
 }
+
 .banner-image-empresa {
   width: 100%;
   height: auto;
@@ -287,6 +309,7 @@ border-radius: 20px;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .banner-title-main-empresa {
   font-size: 4vw;
   margin: 0;
@@ -299,100 +322,100 @@ border-radius: 20px;
 
 
 
-  /* ----------------------------kath -----VISTA EMPRESA----------------------------------*/
+/* ----------------------------kath -----VISTA EMPRESA----------------------------------*/
 
 
-  /*banner principal pagina VISTA EMPRESAS*/
-  .BannerDeColorEmpresa {
-    width: 100%;
-    top: 50px;
-    height: 400px; 
-    margin-bottom: 35px;
-    /*background-color: #0492d0;*/
-    background-size: cover;
-    background-position: center;
-    background-image: url('images/BannerEmpresa2.jpeg');
+/*banner principal pagina VISTA EMPRESAS*/
+.BannerDeColorEmpresa {
+  width: 100%;
+  top: 50px;
+  height: 400px;
+  margin-bottom: 35px;
+  /*background-color: #0492d0;*/
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/BannerEmpresa2.jpeg');
 
-  }
-
-
-  
-  /*texto "EMPRESAS ASOCIADAS*/
-  .textoEmpresa {
-    color: white;
-    font-size: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+}
 
 
-  /*texto "NUESTRAS EMPRESAS"*/
-  .textoEmpresa2 {
-    color: white;
-    font-size: 35px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-   
-  }
+
+/*texto "EMPRESAS ASOCIADAS*/
+.textoEmpresa {
+  color: white;
+  font-size: 60px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 
-  /*Boton "ver más" de tarjetas de empresas*/
-  .verMasBoton{
-    background-color: #f3963b;
-    margin-top: 10%;
-    
-  }
+/*texto "NUESTRAS EMPRESAS"*/
+.textoEmpresa2 {
+  color: white;
+  font-size: 35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-    /* Cambiar el color del botón al pasarle el mouse*/
-    .verMasBoton:hover {
-      background-color: #f3963b; 
-   
-    }
-    
+}
 
 
-  /*Responsivo VISTA EMPRESA */
-  @media screen and (max-width: 600px) {
-    .contenedorEmpresas {
-     background-color: #c8d300;
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      
-    }
+/*Boton "ver más" de tarjetas de empresas*/
+.verMasBoton {
+  background-color: #f3963b;
+  margin-top: 10%;
 
-     
-      
-    }
-    
-    /*Responsivo VISTA EMPRESA */
-    @media screen and (max-width: 600px) {
-      .card-body{
-        display: flex;
-        flex-direction: column;
-       
-        
-      }
-        
-      }
-      
-   
- /*Contenedor principal VISTA DE EMPRESAS*/
+}
+
+/* Cambiar el color del botón al pasarle el mouse*/
+.verMasBoton:hover {
+  background-color: #f3963b;
+
+}
+
+
+
+/*Responsivo VISTA EMPRESA */
+@media screen and (max-width: 600px) {
   .contenedorEmpresas {
+    background-color: #c8d300;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+  }
+
+
+
+}
+
+/*Responsivo VISTA EMPRESA */
+@media screen and (max-width: 600px) {
+  .card-body {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+}
+
+
+/*Contenedor principal VISTA DE EMPRESAS*/
+.contenedorEmpresas {
   margin-bottom: 5%;
-  
-  }
+
+}
 
 
-   /* Imagenes de empresas de la VISTA EMPRESAS*/
-  .card-imgEmpresa{
-    width: 80%;
-    height: 80%;
-    padding-left: 20%;
-    padding-top: 5%;
-  }
+/* Imagenes de empresas de la VISTA EMPRESAS*/
+.card-imgEmpresa {
+  width: 80%;
+  height: 80%;
+  padding-left: 20%;
+  padding-top: 5%;
+}
 
- 
 
- /* .columnaNavEmpresa{
+
+/* .columnaNavEmpresa{
     background-color:white;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border: 1px solid #ccc 
@@ -416,54 +439,60 @@ border-radius: 20px;
   background-position: center;
   margin-bottom: 75px;
 }
-body.PerfilTalentos{
-  
+
+body.PerfilTalentos {
+
 
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
-  .text-white{
-      font-size: 12px;
-      
-     }
+  .text-white {
+    font-size: 12px;
+
   }
+}
+
 @media screen and (max-width: 600px) {
-    .imagenperfil img {
-       width: 100%;
-       max-width: 130px;
-       margin-bottom: -75px;
-      }
+  .imagenperfil img {
+    width: 100%;
+    max-width: 130px;
+    margin-bottom: -75px;
   }
+}
+
 @media screen and (max-width: 600px) {
-      .BannerDeColorPerfil {
-          width: 100%;
-          height: 100px;
-          top: 0px;
-       }
+  .BannerDeColorPerfil {
+    width: 100%;
+    height: 100px;
+    top: 0px;
   }
+}
+
 @media screen and (max-width: 600px) {
-        .container.perfil{
-          display: flex;
-          flex-direction:row ;
-           
-          padding: 10px;
-        }
+  .container.perfil {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
   }
+}
+
 @media screen and (max-width: 600px) {
-    .busquedactiva{
-  
-          width: 50%;
-        padding: 1px;
-        font-size: 10px;
-               
-       }
+  .busquedactiva {
+
+    width: 50%;
+    padding: 1px;
+    font-size: 10px;
+
   }
+}
+
 /* CSS de Baner superior  END*/
 
 .cardbodyF2 {
-   
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -471,134 +500,144 @@ body.PerfilTalentos{
 }
 
 .mx-auto {
-   
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
- 
+
 .colmunaF1 {
-   
+
   margin-bottom: 10px;
 }
 
-.contenedorF1{
+.contenedorF1 {
   display: flex;
   flex-direction: column;
   height: 100%;
   border-radius: 10px;
-    
-  margin: 10px; /* Espaciado exterior para separar los contenedores */
-  padding: 10px; /* Espaciado interior dentro del contenedor */
+
+  margin: 10px;
+  /* Espaciado exterior para separar los contenedores */
+  padding: 10px;
+  /* Espaciado interior dentro del contenedor */
   background-color: #e5ecf6;
 }
 
- .cardF1 {
+.cardF1 {
   border-radius: 10px;
-     
-  margin: 10px; /* Espaciado exterior para separar los contenedores */
-  padding: 10px; /* Espaciado interior dentro del contenedor */
+
+  margin: 10px;
+  /* Espaciado exterior para separar los contenedores */
+  padding: 10px;
+  /* Espaciado interior dentro del contenedor */
 }
+
 .cardF2 {
   border-radius: 10px;
-     
-  margin: 10px; /* Espaciado exterior para separar los contenedores */
-  padding: 10px; /* Espaciado interior dentro del contenedor */
+
+  margin: 10px;
+  /* Espaciado exterior para separar los contenedores */
+  padding: 10px;
+  /* Espaciado interior dentro del contenedor */
 }
+
 .cardF3 {
   border-radius: 10px;
-     
-  margin: 10px; /* Espaciado exterior para separar los contenedores */
-  padding: 10px; /* Espaciado interior dentro del contenedor */
+
+  margin: 10px;
+  /* Espaciado exterior para separar los contenedores */
+  padding: 10px;
+  /* Espaciado interior dentro del contenedor */
 }
 
 
- 
+
 
 
 @media screen and (max-width: 600px) {
-  .columnas1{
-      display: flex;
-       justify-content: center;
-    align-items:center;
-    
-    }
-  }
+  .columnas1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  @media screen and (max-width: 600px) {
-     .filasPT{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      flex-direction: column-reverse;
-      
-      }
-    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filasPT {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+  }
+}
 
 /* CSS de Carrousel Kath*/
-  
-.ContenedorCarrusel{
-  display: flex;
- justify-content: center;
- width: 100%;
-    
- }
 
-      .imgcarrusel{
-        display: flex;
-       justify-content: center;
-          
-       }
-       .carruselcard {
-      
-      
-          align-items: center;
-     
-       }
-       .carruselcard h2 {
-         color:   #424242;
-         font-weight: inherit;
-       font-size: 15px;
-     
-       }
-     
-       .carruselcard h1 {
-         color:   #424242;
-         font-family: "Poppins", sans-serif;
-         font-weight: inherit;
-       font-size: 15px;
-     
-       }
-     
-       .kathcarrusel {
-      
-         justify-content: center;
-         align-items: center;
-         width: 67%; /* Ajusta el ancho del carrusel según tus necesidades */
-         margin-bottom: 50px;
-         
-       }
-     
-       .boton-tarjeta {
-       width: 70%;
-        
-       background-color: #769e33; /* Color de fondo del botón */
-       color: white; /* Color del texto del botón */
-       border-radius: 5px;
-       text-align: center;
-        
-        
-       font-size: 16px;
-       cursor: pointer;
-     } 
+.ContenedorCarrusel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.imgcarrusel {
+  display: flex;
+  justify-content: center;
+
+}
+
+.carruselcard {
+
+
+  align-items: center;
+
+}
+
+.carruselcard h2 {
+  color: #424242;
+  font-weight: inherit;
+  font-size: 15px;
+
+}
+
+.carruselcard h1 {
+  color: #424242;
+  font-family: "Poppins", sans-serif;
+  font-weight: inherit;
+  font-size: 15px;
+
+}
+
+.kathcarrusel {
+
+  justify-content: center;
+  align-items: center;
+  width: 67%;
+  /* Ajusta el ancho del carrusel según tus necesidades */
+  margin-bottom: 50px;
+
+}
+
+.boton-tarjeta {
+  width: 70%;
+
+  background-color: #769e33;
+  /* Color de fondo del botón */
+  color: white;
+  /* Color del texto del botón */
+  border-radius: 5px;
+  text-align: center;
+
+
+  font-size: 16px;
+  cursor: pointer;
+}
 
 /* CSS de Carrousel Kath END*/
 
 
 /* ----------------------------kath ------------------VISTA TALENTO FIN--------------------*/
-
-
-
-
-
