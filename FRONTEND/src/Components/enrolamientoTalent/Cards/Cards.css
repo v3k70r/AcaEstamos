@@ -3,3 +3,6 @@
     margin-right: 150px;
     margin-bottom: 80px;
 }
+#borderCards {
+    border-radius: 20px;
+}
