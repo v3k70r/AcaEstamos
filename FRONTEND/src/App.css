@@ -165,12 +165,10 @@ ul li a {
 #borderCards {
   border-radius: 20px;
 }
-
 #seleccionaAvatar {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-
 .avatar-option {
   margin-bottom: 50px;
   width: 100px;
@@ -178,21 +176,17 @@ ul li a {
   border-radius: 50%;
   cursor: pointer;
 }
-
 .selected-avatar {
   border: 3px solid #007bff;
 }
-
 #bannerTalent {
   width: 100%;
 }
-
 #cardsPancho {
   margin-left: 150px;
   margin-right: 150px;
   margin-bottom: 80px;
 }
-
 #formulario {
   background-color: #0492d0;
   margin-left: 290px;
@@ -201,12 +195,10 @@ ul li a {
   padding: 40px;
   border-radius: 20px;
 }
-
 #infoPersonal {
   color: white;
   margin-bottom: 30px;
 }
-
 #textInteres {
   margin-bottom: 30px;
   margin-top: 15px;
