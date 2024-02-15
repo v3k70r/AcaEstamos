@@ -1,12 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { useState } from 'react'
-import Footer from './Components/Footer.jsx'
+import { RouterProvider } from 'react-router-dom';
+import router from './Router/routes';
+
 
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Footer />
+    <RouterProvider router={router} />
   </React.StrictMode>,
-)
+);
+//NO SE TOCA//
