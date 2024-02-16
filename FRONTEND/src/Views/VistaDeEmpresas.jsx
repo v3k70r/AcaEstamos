@@ -1,5 +1,5 @@
-import Navbar from '../Components/Navbar';
-import Footer from '../Components/Footer';
+import Navbar from '../Components/Navbar/Navbar';
+import Footer from '../Components/Footer/Footer';
 import BannerEmpresa from '../Components/VistaDeEmpresas/BannerEmpresa/BannerEmpresa';
 import TituloH1 from '../Components/VistaDeEmpresas/TituloH1/TituloH1';
 import CardEmpresa from '../Components/VistaDeEmpresas/CardEmpresa/CardEmpresa';
