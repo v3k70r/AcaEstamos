@@ -52,7 +52,7 @@ function FormularioIngresoUsuario() {
                   {/* Submit button */}
                   <button data-mdb-ripple-init type="button" className="btn btn-primary btn-lg mb-1 mt-3"
                     style={{ backgroundColor: '#F6990E', width: '60%', marginLeft: 'auto', marginRight: 'auto' }}
-                    onClick={validarFormulario}>Registrar</button>
+                    onClick="">Registrar</button>
                 </div>
               </div>
             </div>
