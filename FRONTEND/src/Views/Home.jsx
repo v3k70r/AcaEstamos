@@ -1,13 +1,16 @@
-import Navbar from "../Components/Navbar/Navbar"
+import Navbar from "../Components/Navbar/Navbar";
 //import Footer from "../components/Footer/Footer"
 
 const Home = () => {
-  return (
-    <>
-    <Navbar />
-   
-    </>
-  )
-}
+    return (
+        <>
+            <Navbar />
 
-export default  Home
+
+
+            
+        </>
+    );
+};
+
+export default Home;
