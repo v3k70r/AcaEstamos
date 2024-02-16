@@ -1,0 +1,21 @@
+/*banner principal pagina VISTA EMPRESAS*/
+.BannerDeColorEmpresa {
+    width: 100%;
+    top: 50px;
+    height: 400px; 
+    margin-bottom: 35px;
+    /*background-color: #0492d0;*/
+    background-size: cover;
+    background-position: center;
+    background-image: url('images/BannerEmpresa2.jpeg');
+
+  }
+
+
+  
+  /*texto "EMPRESAS ASOCIADAS*/
+  .textoEmpresa {
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }

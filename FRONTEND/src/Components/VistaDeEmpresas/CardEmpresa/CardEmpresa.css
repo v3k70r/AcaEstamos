@@ -1,0 +1,52 @@
+/*Boton "ver más" de tarjetas de empresas*/
+.verMasBoton{
+    background-color: #f3963b;
+    margin-top: 10%;
+    
+  }
+
+    /* Cambiar el color del botón al pasarle el mouse*/
+    .verMasBoton:hover {
+      background-color: #f3963b; 
+   
+    }
+    
+
+
+  /*Responsivo VISTA EMPRESA */
+  @media screen and (max-width: 600px) {
+    .contenedorEmpresas {
+     background-color: #c8d300;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+    }  
+    }
+    
+    /*Responsivo VISTA EMPRESA */
+    @media screen and (max-width: 600px) {
+      .card-body{
+        display: flex;
+        flex-direction: column;
+       
+        
+      }
+        
+      }
+      
+   
+ /*Contenedor principal VISTA DE EMPRESAS*/
+  .contenedorEmpresas {
+  margin-bottom: 5%;
+  
+  }
+
+
+   /* Imagenes de empresas de la VISTA EMPRESAS*/
+  .card-imgEmpresa{
+    width: 80%;
+    height: 80%;
+    padding-left: 20%;
+    padding-top: 5%;
+  }
