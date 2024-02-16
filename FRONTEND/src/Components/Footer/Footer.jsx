@@ -1,52 +1,31 @@
-
-
+import React from 'react';
 
 function Footer() {
   return (
-    //Footer
-    function Navbar() {
-      return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-          {/* Container wrapper */}
-          <div className="container">
-            {/* Navbar brand */}
-            <a className="navbar-brand me-2" href="#"><img src="images/logo-normal.png" height="48" alt="MDB Logo" loading="lazy"
-              style={{ marginTop: '-1px' }} /></a>
-    
-            {/* Toggle button */}
-            <button data-mdb-collapse-init className="navbar-toggler" type="button" data-mdb-target="#navbarButtonsExample"
-              aria-controls="navbarButtonsExample" aria-expanded="false" aria-label="Toggle navigation">
-              <i className="fas fa-bars"></i>
-            </button>
-    
-            {/* Collapsible wrapper */}
-            <div className="collapse navbar-collapse" id="navbarButtonsExample">
-              {/* Left links */}
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Empresas</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Talentos</a>
-                </li>
-              </ul>
-              {/* Left links */}
-    
-              <div className="d-flex align-items-center">
-                <button type="button" className="btn btn-link px-3 me-2">Iniciar sesión <i
-                  className="fa-solid fa-right-to-bracket"></i></button>
-                <button type="button" className="btn btn-success me-3">Unirse <i className="fa-solid fa-pen-to-square"></i></button>
-                <a className="navbar-brand me-2" href="https://www.renca.cl"><img src="images/logo-renca.png" height="48"
-                  alt="MDB Logo" loading="lazy" style={{ marginTop: '-1px' }} /></a>
-              </div>
-            </div>
-            {/* Collapsible wrapper */}
+    <footer>
+      <div className="container-fluid" style={{ backgroundColor: "#E5ECF6", margin: 0, paddingTop: 50, paddingLeft: 50, paddingRight: 50 }}>
+        <div className="row">
+          <div className="col-lg-4 mt-4" style={{ alignItems: "center" }}>
+            <a className="footer-brand" href="https://renca.cl/"><img src="images/logonegro.png" height="70" alt="MDB Logo" loading="lazy" style={{ marginTop: 30 }} /></a>
           </div>
-          {/* Container wrapper */}
-        </nav>
-      );
-    }
+          {/*logo aca estamos*/}
+          <div className="col-lg-4 mt-4" style={{ alignItems: "center" }}>
+            <a className="logoacaestamos" href="index.html"><img src="images/logo-normal.png" height="70" loading="lazy" style={{ marginTop: 30 }} /></a>
+          </div>
+          {/*Links de contacto*/}
+          <div className="col-lg-4 mt-4" style={{ textAlign: "right" }}>
+            <h5>Contacto</h5>
+            <p>RR.SS. <a href="https://www.instagram.com/muni_renca/" style={{ color: "inherit" }}><i className="fa-brands fa-instagram"></i></a></p>
+            <p>contacto@renca.cl <i className="fa-solid fa-envelope"></i></p>
+            <p>+56 9 5383 4639 (chatbot) <i className="fa-solid fa-phone"></i></p>
+          </div>
+        </div>
+        <div className="row">
+          <p className="text-center mt-3">Derechos de autor (c) 2024 Acá Estamos. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
   );
-};  
+}
 
-export default Footer
+export default Footer;
