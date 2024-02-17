@@ -1,0 +1,13 @@
+#formulario {
+    background-color: #0492d0;
+    margin-left: 290px;
+    margin-right: 290px;
+    margin-bottom: 50px;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+#infoEmpresa {
+    color: white;
+    margin-bottom: 30px;
+}
