@@ -1,6 +1,6 @@
-import './Form.css'
+import './FormEnrolEmpresa.css'
 
-function Form() {
+function FormEnrolEmpresa() {
     return (
         <>
 <div className="container-fluid">
@@ -130,4 +130,4 @@ function Form() {
     );
 };
 
-export default Form;
+export default FormEnrolEmpresa;

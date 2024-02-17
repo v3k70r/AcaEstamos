@@ -1,6 +1,6 @@
-import './Banner.css'
+import './BannerEnrolEmpresa.css'
 
-function Banner({ imageUrl, headingText }) {
+function BannerEnrolEmpresa({ imageUrl, headingText }) {
     return (
     <div className='container-fluid'>
             <div className="banner-container" style={{ backgroundImage: `url(${imageUrl})` }}>
@@ -12,4 +12,4 @@ function Banner({ imageUrl, headingText }) {
     );
 };
 
-export default Banner;
+export default BannerEnrolEmpresa;
