@@ -1,0 +1,12 @@
+h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #424242;
+}
+#texto-mision {
+    margin: 50px;
+    padding: 30px;
+    background-color: #E5ECF6;
+    border-radius: 20px;
+    }
