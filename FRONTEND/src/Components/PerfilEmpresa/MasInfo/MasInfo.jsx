@@ -2,7 +2,7 @@ import './MasInfo.css'
 const MasInfo = () => {
     return (
         <div className="row">
-            <div className="col-md-9 shadow mb-3" style={{ padding: '0', margin: '0', borderRadius: '20px' }}>
+            <div className="col-lg-9 shadow mb-3" style={{ padding: '0', margin: '0', borderRadius: '20px' }}>
                 <h5 className="" style={{
                     backgroundColor: '#E5ECF6', margin: '0', padding: '20px',
                     borderTopLeftRadius: '20px', borderTopRightRadius: '20px'

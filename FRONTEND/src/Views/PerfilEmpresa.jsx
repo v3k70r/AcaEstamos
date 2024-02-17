@@ -4,24 +4,30 @@ import NombreEmpresa from '../Components/PerfilEmpresa/NombreEmpresa/NombreEmpre
 import LogoEmpresa from '../Components/PerfilEmpresa/LogoEmpresa/LogoEmpresa'
 import MasInfo from '../Components/PerfilEmpresa/MasInfo/MasInfo'
 import Direccion from '../Components/PerfilEmpresa/Direccion/Direccion'
+import TarjetaInfoEmpresa from '../Components/PerfilEmpresa/TarjetaInfoEmpresa/TarjetaInfoEmpresa'
+import EmpresasRelacionadas from '../Components/PerfilEmpresa/EmpresasRelacionadas/EmpresasRelacionadas'
 import Footer from '../Components/Footer/Footer';
 
-const AcercaDe = () => {
+const PerfilEmpresa = () => {
     return (
         <div>
             <Navbar />
             <BannerEmpresa />
             <div className="container-fluid mt-5">
                 <div className="row flex-sm-row">
-            <NombreEmpresa />
-            <LogoEmpresa />
-            <MasInfo />
-            <Direccion />
-            </div>
+                    <NombreEmpresa />
+                    <LogoEmpresa />
+                </div>
+                <div className="row flex-sm-row">
+                    <MasInfo />
+                    <Direccion />
+                </div>
+            <TarjetaInfoEmpresa />
+            <EmpresasRelacionadas />
             </div>
             <Footer />
         </div>
     )
 }
 
-export default AcercaDe
+export default PerfilEmpresa
