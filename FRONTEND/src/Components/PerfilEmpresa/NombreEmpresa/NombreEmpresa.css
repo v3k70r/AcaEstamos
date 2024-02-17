@@ -10,3 +10,10 @@ p {
     font-style: italic;
     color: #424242;
 }
+#empresaName {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #424242;
+
+}

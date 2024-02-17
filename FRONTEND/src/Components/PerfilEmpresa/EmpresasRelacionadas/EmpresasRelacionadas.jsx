@@ -20,7 +20,7 @@ RelatedCompanyCard.propTypes = {
 const RelatedCompaniesSection = () => {
     return (
         <div className="row">
-            <div className="col-lg-12 shadow-sm mb-3" style={{ padding: '0', margin: '0', borderRadius: '20px' }}>
+            <div className="col-lg-11 shadow-sm mb-3 mx-auto" style={{ padding: '0', margin: '10px', borderRadius: '20px' }}>
                 <h5 className="" style={{
                     backgroundColor: '#E5ECF6', margin: '0', padding: '20px',
                     borderTopLeftRadius: '20px', borderTopRightRadius: '20px'

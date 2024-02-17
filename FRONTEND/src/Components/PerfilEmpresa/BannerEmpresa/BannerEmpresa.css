@@ -4,6 +4,14 @@ h1 {
     font-style: normal;
     color: white;
 }
+.banner-container-empresa {
+    position: relative;
+    text-align: center;
+}
+.banner-image-empresa {
+    width: 100%;
+    height: auto;
+}
 .banner-text-container-empresa {
     padding: 20px;
     border-radius: 10px;

@@ -2,6 +2,7 @@ import './InfoRenca.css'
 
 const InfoRenca = () => {
     return (
+        <>
         <div id="cartasInfo" className="container-fluid" style={{ marginTop: '45px', marginBottom: '45px' }}>
             <div className="row justify-content-center">
                 <div className="col-lg-5 text-center" style={{ backgroundColor: '#0492d0', borderRadius: '20px' }}>
@@ -29,6 +30,7 @@ const InfoRenca = () => {
             </div>
             <hr className="hr hr-blurry" />
         </div>
+        </>
         
     );
 };
