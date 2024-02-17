@@ -86,7 +86,7 @@ function FormEnrolEmpresa() {
                 <div className="form-floating">
                     <input className="form-control" type="email" id="email" placeholder="a" name="email"/>
                     <label className="form-label" htmlFor="email">
-                        <P>Correo electrónico</P>
+                        <p>Correo electrónico</p>
                     </label>
                 </div>
             </div>
