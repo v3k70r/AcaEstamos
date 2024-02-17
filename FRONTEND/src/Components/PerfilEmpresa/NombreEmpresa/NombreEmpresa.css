@@ -1,0 +1,12 @@
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+}
+p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #424242;
+}

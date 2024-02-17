@@ -1,0 +1,20 @@
+h1 {
+    font-family: "Heavitas", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+}
+.banner-text-container-empresa {
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner-title-main-empresa {
+    font-size: 5vw;
+    margin: 0;
+    color: white;
+}
