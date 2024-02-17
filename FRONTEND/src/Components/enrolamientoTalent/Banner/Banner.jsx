@@ -5,7 +5,7 @@ function Banner() {
         <>
             <div className="container-fluid">
                 <div id="bannerTalent">
-                    <img src="images/bannerTalent.png" className="img-fluid" alt="banner"/>
+                    <img src="images/bannerTalent111.png" className="img-fluid" alt="banner"/>
                 </div>
             </div>
         </>
