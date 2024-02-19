@@ -2,6 +2,7 @@ import React from 'react'
 
 function BannerUnBuenCurriculum() {
   return (
+    <>
     <div className="container-fluid">
       <div id="bannerTalent">
         <img src="images/bannercurriculum.png" className="img-fluid" alt="banner" />
@@ -10,6 +11,7 @@ function BannerUnBuenCurriculum() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 

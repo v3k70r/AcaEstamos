@@ -2,6 +2,7 @@ import React from 'react'
 
 function BannerIngresoUsuario() {
   return (
+    <>
     <div className="BannerDeColor d-flex justify-content-center align-items-center">
       <div className="container">
         <div className="row justify-content-center">
@@ -9,6 +10,7 @@ function BannerIngresoUsuario() {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
