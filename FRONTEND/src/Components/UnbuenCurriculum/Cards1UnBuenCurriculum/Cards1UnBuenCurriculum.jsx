@@ -33,7 +33,7 @@ function Cards1UnBuenCurriculum() {
       </div>
       <div className="col-lg-3 mb-4">
         <div className="card">
-          <img id="img-curriculum" src="images/ordenCronologico-unBuenCurriculumm.jpg" className="card-img-top" alt="..." />
+          <img id="img-curriculum" src="images/OrdenCronologicoInvertido-unBuenCurriculum.jpg" className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Usa el de orden cronológico inverso</h5>
             <p className="card-text">¿Qué significa esto?: Que tu información en tu CV sea a partir de tus trabajos más recientes o lo más actual al más antiguo.</p>
