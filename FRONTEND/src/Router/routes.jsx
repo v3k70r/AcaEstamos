@@ -8,6 +8,7 @@ import IngresoUsuario from "../Views/IngresoUsuario";
 import AcercaDe from "../Views/AcercaDe";
 import PerfilEmpresa from "../Views/PerfilEmpresa"
 import EnrolamientoEmpresa from "../Views/EnrolamientoEmpresa";
+import UnbuenCurriculum from "../Views/UnbuenCurriculum";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home/>},
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
   {path: "/AcercaDe", element: <AcercaDe />},
   { path: "/PerfilEmpresa", element: <PerfilEmpresa />},
   { path: "/EnrolamientoEmpresa", element: <EnrolamientoEmpresa />},
+  {path: "/UnBuenCurriculum", element: <UnbuenCurriculum />},
   ]);
 
 export default router;
