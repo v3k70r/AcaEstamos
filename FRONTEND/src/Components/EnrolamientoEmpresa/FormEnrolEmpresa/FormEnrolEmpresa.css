@@ -3,17 +3,12 @@
     margin-left: 290px;
     margin-right: 290px;
     margin-bottom: 50px;
+    margin-top: 50px;
     padding: 40px;
     border-radius: 20px;
 }
 
-#infoPersonal {
+#infoEmpresa {
     color: #424242;
     margin-bottom: 30px;
-}
-
-#textInteres {
-    margin-bottom: 30px;
-    margin-top: 15px;
-    color: #424242;
 }
