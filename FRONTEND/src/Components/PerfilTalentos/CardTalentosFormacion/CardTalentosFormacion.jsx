@@ -1,4 +1,4 @@
-import './CardTalentoFormacion.css';
+import './CardTalentosFormacion.css';
 
 function CardTalentoFormacion(props) {
     // eslint-disable-next-line react/prop-types
