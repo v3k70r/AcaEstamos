@@ -10,7 +10,8 @@ const EnrolamientoTalent = () => {
     return (
         <>
             <Navbar />
-            <Banner imageUrl="images/bannerTalent111.png" headingText="¡Enrólate como talento!" />
+            <Banner imageUrl="images/bannerTalent111.png" 
+            headingText="¡Enrólate como talento!" />
             <Avatar />
             <Form />
             <Cards />
