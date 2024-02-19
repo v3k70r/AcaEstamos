@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Navbar from '../Components/Navbar/Navbar';
 //import Footer from '../Components/Footer/Footer';
 import BannerTalentos from '../Components/PerfilTalentos/BannerTalentos/BannerTalentos';
@@ -51,7 +51,7 @@ function PerfilTalentos() {
       <div className="col-md-4 colmunaF1">
       <div className="contenedorF1 text-center"></div>
       <h4 className="titulosFilasTalentos">Información personal</h4>
-      
+
 
       
       </div>
