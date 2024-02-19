@@ -1,0 +1,30 @@
+.contenedorF1{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 10px;
+      
+    margin: 10px; /* Espaciado exterior para separar los contenedores */
+    padding: 10px; /* Espaciado interior dentro del contenedor */
+    background-color: #e5ecf6;
+  }
+
+  .colmunaF1 {
+   
+    margin-bottom: 10px;
+  }
+
+
+  .titulosFilasTalentos {
+    padding-top: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .filasPT{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     flex-direction: column-reverse;
+     
+     }
+   }

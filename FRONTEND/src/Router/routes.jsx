@@ -5,6 +5,7 @@ import EnrolamientoTalent from "../Views/enrolamientoTalent";
 import InicioDeSesion from "../Views/InicioDeSesion";
 import VistaDeEmpresas from "../Views/VistaDeEmpresas";
 import IngresoUsuario from "../Views/IngresoUsuario";
+import PerfilTalentos from "../Views/PerfilTalentos";
 
 
 const router = createBrowserRouter([
@@ -12,7 +13,8 @@ const router = createBrowserRouter([
   { path: "/enrolamientoTalent", element: <EnrolamientoTalent />},
   { path: "/inicioDeSesion", element: <InicioDeSesion />},
   {path: "/ingresoUsuario", element: <IngresoUsuario />},
-  {path: "/VistaDeEmpresas", element: <VistaDeEmpresas/>}
+  {path: "/VistaDeEmpresas", element: <VistaDeEmpresas/>},
+  {path: "/PerfilTalentos", element: <PerfilTalentos />}
     
 ]);
 
