@@ -1,4 +1,3 @@
-import React from 'react';
 import './CardTalentosCertificados.css';
 
 function CardTalentosCertificados(props) {
