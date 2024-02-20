@@ -1,16 +1,25 @@
 #seleccionaAvatar {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .avatar-option {
-    margin-bottom: 50px;
-    width: 100px;
-    height: 100px;
+    margin: 5px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .selected-avatar {
-    border: 3px solid #007bff;
+    border: 1px solid #f3963b;
+
+}
+@media screen and (max-width: 600px) {
+    .contenedor-avatar {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+    }
 }
