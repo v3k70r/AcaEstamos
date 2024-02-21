@@ -18,11 +18,12 @@ function Avatar() {
     return (
         <>
             <div className="container-fluid contenedor-avatar">
-
                 <div id="avatar-preview" className="row">
-                <div className="selected-avatar-container">
-                        {selectedAvatar && (
+                    <div className="selected-avatar-container">
+                        {selectedAvatar ? (
                             <img src={selectedAvatar.src} alt="Avatar Preview" className="avatar-option selected-avatar" />
+                        ) : (
+                            <div className="empty-avatar"></div>
                         )}
                     </div>
                 </div>

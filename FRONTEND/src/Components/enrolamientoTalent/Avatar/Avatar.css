@@ -16,7 +16,15 @@
     align-items: center;
     height: 20vh; 
     margin-top: 30px;
+    
 }
+.empty-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px dashed #0492D0; 
+    margin-top: 30px;
+  }
 .selected-avatar {
     border: 2px solid #0492D0;
     margin-top: 30px;
@@ -39,6 +47,7 @@
     transform: translate(0, 15%);
 
     margin-top: 40px;
+
 }
 @media screen and (max-width: 600px) {
     .contenedor-avatar {
