@@ -39,7 +39,7 @@ function PerfilTalentos() {
       <CardTalentoInteres 
       interes1='Salud'
       interes2='Construcción'
-      interes3='Informatica'
+      interes3='Informática'
       />
       <h4 className="titulosFilasTalentos">Formación académica</h4>   
       <CardTalentoFormacion 
@@ -102,34 +102,34 @@ function PerfilTalentos() {
   <h1 className="w3-center" ></h1>
   <div className="carousel kathcarrusel" data-flickity={{ wrapAround: true, autoPlay: true, imagesLoaded: true }}>
 <CarruselCardTalentos 
-imagenCarrusel='Daniel Cansino'
-nombreCarrusel='Informática'
-interesCarrusel='public/images/Hombre_avatar1.png'
+nombreCarruse='Daniel Cansino'
+interesCarrusel='Informática'
+imagenCarrusel='public/images/Hombre_avatar1.png'
 />
 <CarruselCardTalentos 
-imagenCarrusel='Daniel Cansino'
-nombreCarrusel='Informática'
-interesCarrusel='public/images/Hombre_avatar1.png'
+nombreCarruse='Daniel Cansino'
+interesCarrusel='Informática'
+imagenCarrusel='public/images/Hombre_avatar1.png'
 />
 <CarruselCardTalentos 
-imagenCarrusel='Daniel Cansino'
-nombreCarrusel='Informática'
-interesCarrusel='public/images/Hombre_avatar1.png'
+nombreCarruse='Daniel Cansino'
+interesCarrusel='Informática'
+imagenCarrusel='public/images/Hombre_avatar1.png'
 />
 <CarruselCardTalentos 
-imagenCarrusel='Daniel Cansino'
-nombreCarrusel='Informática'
-interesCarrusel='public/images/Hombre_avatar1.png'
+nombreCarruse='Daniel Cansino'
+interesCarrusel='Informática'
+imagenCarrusel='public/images/Hombre_avatar1.png'
 />
 <CarruselCardTalentos 
-imagenCarrusel='Daniel Cansino'
-nombreCarrusel='Informática'
-interesCarrusel='public/images/Hombre_avatar1.png'
+nombreCarruse='Daniel Cansino'
+interesCarrusel='Informática'
+imagenCarrusel='public/images/Hombre_avatar1.png'
 />
 <CarruselCardTalentos 
-imagenCarrusel='Daniel Cansino'
-nombreCarrusel='Informática'
-interesCarrusel='public/images/Hombre_avatar1.png'
+nombreCarruse='Daniel Cansino'
+interesCarrusel='Informática'
+imagenCarrusel='public/images/Hombre_avatar1.png'
 />
   </div>
   </div>

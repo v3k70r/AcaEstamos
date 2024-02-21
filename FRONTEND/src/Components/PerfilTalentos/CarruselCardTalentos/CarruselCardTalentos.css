@@ -1,2 +1,54 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+.ContenedorCarrusel{
+    display: flex;
+   justify-content: center;
+   width: 100%;
+      
+   }
+  
+        .imgcarrusel{
+          display: flex;
+         justify-content: center;
+            
+         }
+         .carruselcard {
+        
+        
+            align-items: center;
+       
+         }
+         .carruselcard h2 {
+           color:   #424242;
+           font-weight: inherit;
+         font-size: 15px;
+       
+         }
+       
+         .carruselcard h1 {
+           color:   #424242;
+           font-family: "Poppins", sans-serif;
+           font-weight: inherit;
+         font-size: 15px;
+       
+         }
+       
+         .kathcarrusel {
+        
+           justify-content: center;
+           align-items: center;
+           width: 67%; /* Ajusta el ancho del carrusel según tus necesidades */
+           margin-bottom: 50px;
+           
+         }
+       
+         .boton-tarjeta {
+         width: 70%;
+          
+         background-color: black; /* Color de fondo del botón */
+         color: white; /* Color del texto del botón */
+         border-radius: 5px;
+         text-align: center;
+          
+          
+         font-size: 16px;
+         cursor: pointer;
+       } 
