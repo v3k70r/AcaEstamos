@@ -14,12 +14,41 @@ function VistaDeEmpresas() {
       <div className="col-md-12">
         <div className="container contenedorEmpresas"  style={{ backgroundColor: '#E5ECF6' }}>
         <TituloH1 />   
-        <CardEmpresa />
-        <CardEmpresa />
-        <CardEmpresa />
-        <CardEmpresa />
-        <CardEmpresa />
-        <CardEmpresa />
+        <CardEmpresa 
+        imagenEmpresa='public/images/empresasActivas/empresa1.png'
+        nombreEmpresa='Coca cola'
+        descripcionEmpresa='Coca cola es una compañia, blah, blah, blah....'
+        />
+        <CardEmpresa 
+        imagenEmpresa='public/images/empresasActivas/empresa1.png'
+        nombreEmpresa='Coca cola'
+        descripcionEmpresa='Coca cola es una compañia, blah, blah, blah....'
+        />
+        <CardEmpresa 
+        imagenEmpresa='public/images/empresasActivas/empresa1.png'
+        nombreEmpresa='Coca cola'
+        descripcionEmpresa='Coca cola es una compañia, blah, blah, blah....'
+        />
+         <CardEmpresa 
+        imagenEmpresa='public/images/empresasActivas/empresa1.png'
+        nombreEmpresa='Coca cola'
+        descripcionEmpresa='Coca cola es una compañia, blah, blah, blah....'
+        />
+         <CardEmpresa 
+        imagenEmpresa='public/images/empresasActivas/empresa1.png'
+        nombreEmpresa='Coca cola'
+        descripcionEmpresa='Coca cola es una compañia, blah, blah, blah....'
+        />
+        <CardEmpresa 
+        imagenEmpresa='public/images/empresasActivas/empresa1.png'
+        nombreEmpresa='Coca cola'
+        descripcionEmpresa='Coca cola es una compañia, blah, blah, blah....'
+        />
+        <CardEmpresa 
+        imagenEmpresa='public/images/empresasActivas/empresa1.png'
+        nombreEmpresa='Coca cola'
+        descripcionEmpresa='Coca cola es una compañia, blah, blah, blah....'
+        />
       </div>
       </div>
       </div>
