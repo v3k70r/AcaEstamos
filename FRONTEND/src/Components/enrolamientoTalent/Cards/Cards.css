@@ -6,3 +6,11 @@
 #borderCards {
     border-radius: 20px;
 }
+@media screen and (max-width: 600px) {
+    .contenedor-cartas {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+    }  
+    }

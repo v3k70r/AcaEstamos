@@ -37,7 +37,6 @@
 .contenedor-avatar {
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center;
 }
@@ -53,7 +52,7 @@
     .contenedor-avatar {
       display: flex;
       flex-direction: column;
-      justify-content: left;
+      justify-content: flex-start;
       
+    }  
     }
-}
