@@ -105,32 +105,32 @@ function PerfilTalentos() {
   <h1 className="w3-center" ></h1>
   <div className="carousel kathcarrusel"  data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
 imagenCarrusel='public/images/Hombre_avatar1.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
 imagenCarrusel='public/images/Hombre_avatar2.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
 imagenCarrusel='public/images/Hombre_avatar3.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
 imagenCarrusel='public/images/Hombre_avatar4.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
 imagenCarrusel='public/images/Hombre_avatar5.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
 imagenCarrusel='public/images/Hombre_avatar6.png'
 />

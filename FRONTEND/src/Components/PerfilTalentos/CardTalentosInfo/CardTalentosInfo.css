@@ -1,18 +1,15 @@
 .cardF3 {
     border-radius: 10px;
-       
-    margin: 10px; /* Espaciado exterior para separar los contenedores */
-    padding: 10px; /* Espaciado interior dentro del contenedor */
-  }
+    margin: 10px; 
+    padding: 10px;
   
-  .mx-auto {
-   
+.mx-auto2 {
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }  
-
 
 
   h1 {
@@ -21,36 +18,42 @@
     font-style: normal;
     color: white;
   }
+
   h2 {
     font-family: "Heavitas", sans-serif;
     font-weight: normal;
     font-style: normal;
     color: white;
   }
+
   h3 {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-style: normal;
     color: white;
   }
+
   h4 {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-style: normal;
     color: #424242;
   }
+
   h5 {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-style: normal;
     color: #424242;
   }
+
   h6 {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     font-style: normal;
     color: #424242;
   }
+
   p {
     font-family: "Poppins", sans-serif;
     font-weight: normal;
