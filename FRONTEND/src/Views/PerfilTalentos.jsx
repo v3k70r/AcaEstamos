@@ -8,6 +8,8 @@ import CardTalentoInteres from '../Components/PerfilTalentos/CardTalentoInteres/
 import CardTalentoFormacion from '../Components/PerfilTalentos/CardTalentosFormacion/CardTalentosFormacion';
 import CardTalentosInfo from '../Components/PerfilTalentos/CardTalentosInfo/CardTalentosInfo';
 import CarruselCardTalentos from '../Components/PerfilTalentos/CarruselCardTalentos/CarruselCardTalentos';
+ 
+
 
 function PerfilTalentos() {
   return (
@@ -34,7 +36,7 @@ function PerfilTalentos() {
       </div>
       </div>
       <div className="col-md-4 colmunaF1">
-      <div className="contenedorF1 text-center">
+      <div className="contenedorF1 text-center ">
       <h4 className="titulosFilasTalentos">Me interesa: </h4>
       <CardTalentoInteres 
       interes1='Salud'
@@ -54,7 +56,7 @@ function PerfilTalentos() {
       />
       </div>
       </div>
-      <div className="col-md-4 colmunaF1">
+      <div className="col-md-4 colmunaF1" >
       <div className="contenedorF1 text-center">
       <h4 className="titulosFilasTalentos">Información personal</h4>
       <CardTalentosInfo 
@@ -97,39 +99,40 @@ function PerfilTalentos() {
 {/*DIV FINAL CONTAINER PT Y FILAS PT */}
   </div>
   </div>
+  
   <h3 className="h3-carrusel text-center" style={{ color: '#424242' }}>perfiles relacionados</h3>
   <div className="ContenedorCarrusel">
   <h1 className="w3-center" ></h1>
-  <div className="carousel kathcarrusel" data-flickity={{ wrapAround: true, autoPlay: true, imagesLoaded: true }}>
+  <div className="carousel kathcarrusel"  data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
 imagenCarrusel='public/images/Hombre_avatar1.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
-imagenCarrusel='public/images/Hombre_avatar1.png'
+imagenCarrusel='public/images/Hombre_avatar2.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
-imagenCarrusel='public/images/Hombre_avatar1.png'
+imagenCarrusel='public/images/Hombre_avatar3.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
-imagenCarrusel='public/images/Hombre_avatar1.png'
+imagenCarrusel='public/images/Hombre_avatar4.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
-imagenCarrusel='public/images/Hombre_avatar1.png'
+imagenCarrusel='public/images/Hombre_avatar5.png'
 />
 <CarruselCardTalentos 
-nombreCarruse='Daniel Cansino'
+nombreCarrusel='Daniel Cansino'
 interesCarrusel='Informática'
-imagenCarrusel='public/images/Hombre_avatar1.png'
+imagenCarrusel='public/images/Hombre_avatar6.png'
 />
   </div>
   </div>
