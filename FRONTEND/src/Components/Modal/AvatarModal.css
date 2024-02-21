@@ -1,0 +1,15 @@
+.modal-header {
+    text-align: center;
+}
+.custom-modal-content {
+    width: 90%;
+    height: 55%;
+    margin: auto;
+    padding: 10px;
+    background-color: #E5ECF6;
+    text-align: center;
+    top: 50px;
+    transform: translate(0, 50%);
+    border-radius: 20px;
+
+}
