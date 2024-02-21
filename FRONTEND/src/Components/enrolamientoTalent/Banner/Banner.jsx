@@ -1,14 +1,14 @@
 import './Banner.css'
 
-function Banner() {
+function Banner({ imageUrl, headingText }) {
     return (
-        <>
-            <div className="container-fluid">
-                <div id="bannerTalent">
-                    <img src="images/bannerTalent.png" className="img-fluid" alt="banner"/>
+    <div className='container-fluid'>
+            <div className="banner-container" style={{ backgroundImage: `url(${imageUrl})` }}>
+                <div className="banner-content">
+                    <h1>{headingText}</h1>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

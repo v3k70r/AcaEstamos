@@ -1,5 +1,5 @@
 #formulario {
-    background-color: #0492d0;
+    background-color: #e5ecf6;
     margin-left: 290px;
     margin-right: 290px;
     margin-bottom: 50px;
@@ -8,12 +8,12 @@
 }
 
 #infoPersonal {
-    color: white;
+    color: #424242;
     margin-bottom: 30px;
 }
 
 #textInteres {
     margin-bottom: 30px;
     margin-top: 15px;
-    color: white;
+    color: #424242;
 }

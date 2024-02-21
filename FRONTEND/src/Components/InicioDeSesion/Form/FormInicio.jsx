@@ -30,6 +30,9 @@ function FormInicio() {
             <form id="LoginForm">
                 <div className="container col-8 shadow" style={{ borderRadius: '20px' }}>
                     <div className="row justify-content-center">
+                        <h4 className="text-center mb-4" style={{ backgroundColor: '#E5ECF6', margin: '0', padding: '20px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px' }}>
+                            Ingresa tus datos para iniciar sesión
+                        </h4>
                         <div className="col-9">
                             {/* Email input */}
                             <div className="form-outline mb-4 mt-4">

@@ -6,3 +6,39 @@
     background-size: cover;
     background-position: center;
 }
+h1 {
+    font-family: "Heavitas", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+}
+@font-face {
+    font-family: "Heavitas";
+    src: url("fonts/Heavitas.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-MediumItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}

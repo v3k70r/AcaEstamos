@@ -1,4 +1,88 @@
-import './Avatar.css'
+import { useState } from 'react';
+import './Avatar.css';
+
+function Avatar() {
+    const [selectedAvatar, setSelectedAvatar] = useState(null);
+
+    const selectAvatar = (avatar) => {
+        setSelectedAvatar(avatar);
+    };
+
+    const handleAvatarClick = (avatar) => {
+        selectAvatar(avatar);
+    };
+
+    return (
+        <>
+            <div className="container-fluid contenedor-avatar">
+                <h4 id="seleccionaAvatar">Selecciona tu Avatar:</h4>
+                <div className="row">
+                    {avatarData.map((avatar, index) => (
+                        <div className="col-md-2 col-sm-4 col-6" key={index}>
+                            <img
+                                src={avatar.src}
+                                alt={`Avatar ${index + 1}`}
+                                className={`avatar-option img-fluid text-center ${selectedAvatar === avatar ? 'selected' : ''}`}
+                                onClick={() => handleAvatarClick(avatar)}
+                            />
+                        </div>
+                        
+                    ))}
+                </div>
+                <h5>Avatar Seleccionado:</h5>
+                <div id="avatar-preview" className="row">
+                    <div className="col-md-12">
+                        {selectedAvatar && (
+                            <img src={selectedAvatar.src} alt="Avatar Preview" className="avatar-option selected-avatar" />
+                        )}
+                    </div>
+                </div>
+            </div>
+        </>
+    );
+}
+
+// Define la información de los avatares (puedes modificarla según tus necesidades)
+const avatarData = [
+    { src: 'images/Hombre_avatar1.png' },
+    { src: 'images/Mujer_avatar1.png' },
+    { src: 'images/Hombre_avatar2.png' },
+    { src: 'images/Mujer_avatar2.png' },
+    { src: 'images/Hombre_avatar3.png' },
+    { src: 'images/Mujer_avatar3.png' },
+    { src: 'images/Hombre_avatar4.png' },
+    { src: 'images/Mujer_avatar4.png' },
+    { src: 'images/Hombre_avatar5.png' },
+    { src: 'images/Mujer_avatar5.png' },
+    { src: 'images/Hombre_avatar6.png' },
+    { src: 'images/Mujer_avatar6.png' },
+];
+
+export default Avatar;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/*import './Avatar.css'
 
 function Avatar() {
     return (
@@ -56,7 +140,7 @@ function Avatar() {
                     </div>
                 </div>
                 <h5>Avatar Seleccionado:</h5>
-                <div id="avatar-preview" class="row">
+                <div id="avatar-preview" className="row">
                     <div className="col-md-12">
                         <img src="placeholder.jpg" alt="Avatar Preview" className="avatar-option selected-avatar"/>
                     </div>
@@ -64,6 +148,6 @@ function Avatar() {
             </div>
         </>
     );
-};
+}
 
-export default Avatar;
+export default Avatar;*/}
