@@ -6,7 +6,7 @@
     background-size: 90px;
     background-position: center;
     margin-bottom: 80px;
-    background-image: url('images/BannerPrincipalTalento1.png');
+    background-image: url('../public/images/BannerPrincipalTalento1.png');
     background-size: cover;
     
   }
