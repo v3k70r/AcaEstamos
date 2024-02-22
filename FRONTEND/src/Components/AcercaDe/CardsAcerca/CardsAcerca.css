@@ -1,0 +1,8 @@
+@media screen and (max-width: 600px) {
+    .container-cardsacerca {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+    }  
+    }

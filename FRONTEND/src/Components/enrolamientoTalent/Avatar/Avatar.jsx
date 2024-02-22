@@ -1,48 +1,45 @@
 import { useState } from 'react';
 import './Avatar.css';
+import AvatarModal from '../../Modal/AvatarModal';
 
 function Avatar() {
     const [selectedAvatar, setSelectedAvatar] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
     const selectAvatar = (avatar) => {
         setSelectedAvatar(avatar);
-    };
-
-    const handleAvatarClick = (avatar) => {
-        selectAvatar(avatar);
+        closeModal();
     };
 
     return (
         <>
             <div className="container-fluid contenedor-avatar">
-                <h4 id="seleccionaAvatar">Selecciona tu Avatar:</h4>
-                <div className="row">
-                    {avatarData.map((avatar, index) => (
-                        <div className="col-md-2 col-sm-4 col-6" key={index}>
-                            <img
-                                src={avatar.src}
-                                alt={`Avatar ${index + 1}`}
-                                className={`avatar-option img-fluid text-center ${selectedAvatar === avatar ? 'selected' : ''}`}
-                                onClick={() => handleAvatarClick(avatar)}
-                            />
-                        </div>
-                        
-                    ))}
-                </div>
-                <h5>Avatar Seleccionado:</h5>
                 <div id="avatar-preview" className="row">
-                    <div className="col-md-12">
-                        {selectedAvatar && (
+                    <div className="selected-avatar-container">
+                        {selectedAvatar ? (
                             <img src={selectedAvatar.src} alt="Avatar Preview" className="avatar-option selected-avatar" />
+                        ) : (
+                            <div className="empty-avatar"></div>
                         )}
                     </div>
                 </div>
+                {/*<h4 id="seleccionaAvatar">Selecciona tu Avatar:</h4>*/}
+                <button className='boton-avatar btn btn-primary' onClick={() => setIsModalOpen(true)}>Selecciona tu avatar</button>
+
+                <AvatarModal
+                    isOpen={isModalOpen}
+                    onRequestClose={closeModal}
+                    avatarData={avatarData}
+                    onSelectAvatar={selectAvatar}
+                />
             </div>
         </>
     );
 }
-
-// Define la información de los avatares (puedes modificarla según tus necesidades)
 const avatarData = [
     { src: 'images/Hombre_avatar1.png' },
     { src: 'images/Mujer_avatar1.png' },
