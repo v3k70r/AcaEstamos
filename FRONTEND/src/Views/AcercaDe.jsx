@@ -1,16 +1,17 @@
 import Navbar from '../Components/Navbar/Navbar'
-import BannerAcerca from '../Components/AcercaDe/BannerAcerca/BannerAcerca'
 import Mision from '../Components/AcercaDe/Mision/Mision'
 import InfoRenca from '../Components/AcercaDe/InfoRenca/InfoRenca'
 import CardsAcerca from '../Components/AcercaDe/CardsAcerca/CardsAcerca'
 import Footer from '../Components/Footer/Footer';
+import ProtoBanner from "../Components/ProtoBanner/ProtoBanner";
 
 
 const AcercaDe = () => {
     return (
         <div>
             <Navbar />
-            <BannerAcerca />
+            <ProtoBanner imageUrl="images/bannerAcerca.png" 
+            headingText="Acerca de" />
             <Mision />
             <InfoRenca />
             <CardsAcerca />
