@@ -35,15 +35,17 @@ function FormInicio() {
                         </h4>
                         <div className="col-9">
                             {/* Email input */}
-                            <div className="form-outline mb-4 mt-4">
-                                <input type="email" id="form2Example1" className="form-control" style={{ backgroundColor: 'white', border: '1px solid grey' }} value={email} onChange={(e) => setEmail(e.target.value)} />
-                                <label className="form-label" htmlFor="form2Example1">Correo electrónico</label>
+                            <div className="form-floating">
+                                <input className="form-control" type="email" id="email" placeholder="a" style={{ backgroundColor: 'white', border: '1px solid grey' }} 
+                                value={email} onChange={(e) => setEmail(e.target.value)}/>
+                                <label className="form-label" htmlFor="email"><p>Correo electrónico</p></label>
                             </div>
 
                             {/* Password input */}
-                            <div className="form-outline mb-4">
-                                <input type="password" id="form2Example2" className="form-control" style={{ backgroundColor: 'white', border: '1px solid grey' }} value={password} onChange={(e) => setPassword(e.target.value)} />
-                                <label className="form-label" htmlFor="form2Example2">Contraseña</label>
+                            <div className="form-floating">                                
+                                <input className="form-control" type="password" id="contraseña" placeholder="a" style={{ backgroundColor: 'white', border: '1px solid grey' }} 
+                                value={password} onChange={(e) => setPassword(e.target.value)}/>
+                                <label className="form-label" htmlFor="contraseña"><p>Contraseña</p></label>
                             </div>
 
                             {/* Resto del formulario (checkbox, link, etc.) */}

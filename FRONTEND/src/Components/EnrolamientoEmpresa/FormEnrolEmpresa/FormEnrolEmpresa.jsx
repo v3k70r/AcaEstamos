@@ -102,7 +102,7 @@ function FormEnrolEmpresa() {
                 <div className="form-floating">
                     <input className="form-control" type="file" id="logo" placeholder="a" name="logo"/>
                     <label className="form-label" htmlFor="logo">
-                        <p>INSERTAR LOGO</p>
+                        <p>Insertar logo</p>
                     </label>
                 </div>
             </div>
