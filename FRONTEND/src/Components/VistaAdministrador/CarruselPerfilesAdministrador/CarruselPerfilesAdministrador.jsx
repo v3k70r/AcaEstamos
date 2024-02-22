@@ -16,7 +16,7 @@ function CarruselPerfilesAdministrador() {
     };
   }, []);
 
-  return (
+  return ( 
     <>
       <h4 className="h3-carrusel text-center m-4" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Perfiles</h4>
       <div className="ContenedorCarrusel">
@@ -32,8 +32,53 @@ function CarruselPerfilesAdministrador() {
             </li>
           </div>
           {/* Los otros elementos del carrusel */}
+          <div className="carousel-cell">
+            <li className="card carruselcard">
+              <div className="img imgcarrusel"><img src="images/Mujer_avatar2.png" alt="img" draggable="false" width="60%" /></div>
+              <h2>Nombre Talento</h2>
+              <span>Información</span>
+              <button className="boton-tarjeta" style={{ backgroundColor: '#769E33' }}>Aprobar</button>
+              <button className="boton-tarjeta m-3" style={{ backgroundColor: '#e33131' }}>Denegar</button>
+            </li>
+          </div>
+          <div className="carousel-cell">
+           <li className="card carruselcard">
+            <div className="img imgcarrusel"><img src="images/Hombre_avatar3.png" alt="img" draggable="false" width="60%" /></div>
+            <h2>Nombre Talento</h2>
+            <span>Información</span>
+            <button className="boton-tarjeta" style={{ backgroundColor: '#769E33' }}>Aprobar</button>
+            <button className="boton-tarjeta m-3" style={{ backgroundColor: '#e33131' }}>Denegar</button>
+          </li>
         </div>
-      </div>
+        <div className="carousel-cell">
+     <li className="card carruselcard">
+       <div className="img imgcarrusel"><img src="images/Mujer_avatar4.png" alt="img" draggable="false" width="60%" /></div>
+       <h2>Nombre Talento</h2>
+       <span>Información</span>
+       <button className="boton-tarjeta" style={{ backgroundColor: '#769E33'}}>Aprobar</button>
+       <button className="boton-tarjeta m-3" style={{ backgroundColor: '#e33131'}}>Denegar</button>
+     </li>
+    </div>
+    <div className="carousel-cell">
+     <li className="card carruselcard">
+       <div className="img imgcarrusel"><img src="images/Hombre_avatar5.png" alt="img" draggable="false" width="60%" /></div>
+       <h2>Nombre Talento</h2>
+       <span>Información</span>
+       <button className="boton-tarjeta" style={{ backgroundColor: '#769E33'}}>Aprobar</button>
+       <button className="boton-tarjeta m-3" style={{backgroundColor: '#e33131'}}>Denegar</button>
+     </li>
+   </div>
+   <div className="carousel-cell">
+     <li className="card carruselcard">
+       <div className="img imgcarrusel"><img src="images/Mujer_avatar6.png" alt="img" draggable="false" width="60%" /></div>
+       <h2>Nombre Talento</h2>
+       <span>Información</span>
+       <button className="boton-tarjeta" style={{backgroundColor: '#769E33'}}>Aprobar</button>
+       <button className="boton-tarjeta m-3" style={{backgroundColor: '#e33131'}}>Denegar</button>
+     </li>
+   </div>
+    </div>
+    </div>
     </>
   );
 }
