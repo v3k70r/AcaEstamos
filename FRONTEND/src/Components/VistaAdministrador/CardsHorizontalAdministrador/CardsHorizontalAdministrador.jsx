@@ -1,6 +1,6 @@
+import './CardsHorizontalAdministrador.css';
 
-
-function CardsHorizontal() {
+function CardsHorizontalAdministrador() {
   return (
     <>
        <div className="col-md-12">
@@ -66,4 +66,4 @@ function CardsHorizontal() {
   )
 }
 
-export default CardsHorizontal
+export default CardsHorizontalAdministrador

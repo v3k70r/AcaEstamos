@@ -1,6 +1,6 @@
 
 
-function TextoIntroAdmin() {
+function TextoIntroAdministrador() {
   return (
     <>
        <div className="container-sm m-4 text-center" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>
@@ -12,4 +12,4 @@ function TextoIntroAdmin() {
   )
 }
 
-export default TextoIntroAdmin
+export default TextoIntroAdministrador

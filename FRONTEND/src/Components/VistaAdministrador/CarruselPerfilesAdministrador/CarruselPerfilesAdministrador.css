@@ -1,0 +1,61 @@
+.ContenedorCarrusel{
+    display: flex;
+   justify-content: center;
+   width: 100%;
+      
+   }
+  
+        .imgcarrusel{
+          display: flex;
+         justify-content: center;
+            
+         }
+         .carruselcard {
+  
+            align-items: center;
+       
+         }
+         .carruselcard h2 {
+           color:   #424242;
+           font-weight: inherit;
+           font-family: "Poppins", sans-serif;
+           font-size: 20px;
+       
+         }
+  
+         .carruselcard span {
+          font-size: 19px;
+          color:   #424242;
+          font-family: "Poppins", sans-serif;
+  
+         }
+       
+         .carruselcard h1 {
+           color:   #1b0e0e;
+           font-family: "Poppins", sans-serif;
+           font-weight: inherit;
+         font-size: 20px;
+       
+         }
+       
+         .kathcarrusel {
+  
+           justify-content: center;
+           align-items: center;
+           width: 67%; /* Ajusta el ancho del carrusel según tus necesidades */
+           margin-bottom: 100px;
+           
+         }
+       
+         .boton-tarjeta {
+         width: 70%;
+          
+         background-color: #769e33; /* Color de fondo del botón */
+         color: white; /* Color del texto del botón */
+         border-radius: 5px;
+         text-align: center;
+          
+          
+         font-size: 16px;
+         cursor: pointer;
+       }

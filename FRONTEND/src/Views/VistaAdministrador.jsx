@@ -1,20 +1,23 @@
 import Navbar from '../Components/Navbar/Navbar'
 import BannerAdministrador from '../Components/VistaAdministrador/BannerAdministrador/BannerAdministrador'
+import '../Components/VistaAdministradorEstilos/VistaAdministrador.css';
+import TextoIntroAdministrador from '../Components/VistaAdministrador/TextoIntroAdministrador/TextoIntroAdministrador'
+import CardsHorizontalAdministrador from '../Components/VistaAdministrador/CardsHorizontalAdministrador/CardsHorizontalAdministrador'
+import CarruselPerfilesAdministrador from '../Components/VistaAdministrador/CarruselPerfilesAdministrador/CarruselPerfilesAdministrador';
+import CarruselCVAdministrador from '../Components/VistaAdministrador/CarruselCVAdministrador/CarruselCVAdministrador';
 import Footer from '../Components/Footer/Footer';
-import TextoIntroAdmin from '../Components/VistaAdministrador/TextoIntroAdmin/TextoIntroAdmin'
-import CardsHorizontal from '../Components/VistaAdministrador/CardsHorizontal/CardsHorizontal'
-import CarruselPerfiles from '../Components/VistaAdministrador/CarruselPerfiles/CarruselPerfiles';
-import CarruselCVAdmin from '../Components/VistaAdministrador/CarruselCVAdmin/CarruselCVAdmin';
 
 function VistaAdministrador() {
   return (
     <div>
     <Navbar />
     <BannerAdministrador />
-    <TextoIntroAdmin />
-    <CardsHorizontal />
-    <CarruselPerfiles />
-    <CarruselCVAdmin />
+    <TextoIntroAdministrador />
+    <CardsHorizontalAdministrador />
+    <div className="carousel kathcarrusel"  data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+    <CarruselPerfilesAdministrador />
+    <CarruselCVAdministrador />
+    </div>
     <Footer />
     </div>
   )
