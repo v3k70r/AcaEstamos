@@ -3,7 +3,7 @@ import './Form.css'
 function Form() {
     return (
         <>
-            <div className="col-9 container-fluid">
+            <div className="container-fluid">
                 <div className="row shadow  contenedor-formulario-talento">
                     <div className="col-12">
                         <h3 className="text-center" id="infoPersonal">Información personal</h3>
