@@ -1,8 +1,16 @@
 #cardsPancho {
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 60px;
+    margin-right: 50px;
     margin-bottom: 80px;
 }
 #borderCards {
     border-radius: 20px;
 }
+@media screen and (max-width: 600px) {
+    .contenedor-cartas {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+    }  
+    }
