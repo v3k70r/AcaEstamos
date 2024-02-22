@@ -1,0 +1,95 @@
+.BannerDeColorPerfil {
+    width: 100%;
+    height: 400px;
+    top: 0px;
+    background-color: #0492d0;
+    background-size: 90px;
+    background-position: center;
+    margin-bottom: 80px;
+    background-image: url('../public/images/BannerPrincipalTalento1.png');
+    background-size: cover;
+    
+  }
+
+  @media screen and (max-width: 600px) {
+    .text-white{
+        font-size: 12px;
+        
+       }
+    }
+  @media screen and (max-width: 600px) {
+      .imagenperfil img {
+         width: 100%;
+         max-width: 130px;
+         margin-bottom: -75px;
+        }
+    }
+  @media screen and (max-width: 600px) {
+        .BannerDeColorPerfil {
+            width: 100%;
+            height: 100px;
+            top: 0px;
+         }
+    }
+  @media screen and (max-width: 600px) {
+          .container.perfil{
+            display: flex;
+            flex-direction:row ;
+             
+            padding: 10px;
+          }
+    }
+  @media screen and (max-width: 600px) {
+      .busquedactiva{
+    
+            width: 50%;
+          padding: 1px;
+          font-size: 10px;
+                 
+         }
+    }
+
+    
+
+  h1 {
+    font-family: "Heavitas", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+  }
+  h2 {
+    font-family: "Heavitas", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+  }
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+  }
+  h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #424242;
+  }
+  h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #424242;
+  }
+  h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #424242;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #424242;
+  }

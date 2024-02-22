@@ -11,25 +11,29 @@ function FormularioIngresoUsuario() {
               Ingresa tus datos para registrar usuario
             </h4>
             <div className="col-9">
+              
               {/* Email input */}
-              <div data-mdb-input-init className="form-outline mb-4 mt-4">
-                <input type="email" id="form2Example1" className="form-control"
-                  style={{ backgroundColor: 'white', border: '1px solid grey' }} />
-                <label className="form-label" htmlFor="form2Example1">Correo electrónico</label>
+              <div className="form-floating">
+                <input className="form-control" type="email" id="email" placeholder="a" name="email"/>
+                <label className="form-label" htmlFor="email">
+                  <p>Correo electrónico</p>
+                </label>
               </div>
-
               {/* Password input */}
-              <div data-mdb-input-init className="form-outline mb-4">
-                <input type="password" id="form2Example2" className="form-control"
-                  style={{ backgroundColor: 'white', border: '1px solid grey' }} />
-                <label className="form-label" htmlFor="form2Example2">Contraseña</label>
+              <div className="form-floating">
+                <input className="form-control" type="password" id="contraseña" 
+                placeholder="a" name="contraseña"/>
+                <label className="form-label" htmlFor="contraseña">
+                  <p>Contraseña</p>
+                </label>
               </div>
-
               {/* Repeat Password input */}
-              <div data-mdb-input-init className="form-outline mb-4">
-                <input type="password" id="form2Example3" className="form-control"
-                  style={{ backgroundColor: 'white', border: '1px solid grey' }} />
-                <label className="form-label" htmlFor="form2Example3">Confirmar contraseña</label>
+              <div className="form-floating">
+                <input className="form-control" type="password" id="confirmarContraseña" 
+                placeholder="a" name="confirmarContraseña"/>
+                <label className="form-label" htmlFor="confirmarContraseña">
+                  <p>Confirmar contraseña</p>
+                </label>
               </div>
 
               <div className="form-group">

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import './Banner.css'
 
 function Banner({ imageUrl, headingText }) {
@@ -10,6 +11,10 @@ function Banner({ imageUrl, headingText }) {
             </div>
         </div>
     );
+}
+Banner.propTypes = {
+    imageUrl: PropTypes.string.isRequired,
+    headingText: PropTypes.string.isRequired,
 };
 
 export default Banner;
