@@ -10,6 +10,7 @@ import AcercaDe from "../Views/AcercaDe";
 import PerfilEmpresa from "../Views/PerfilEmpresa"
 import EnrolamientoEmpresa from "../Views/EnrolamientoEmpresa";
 import UnbuenCurriculum from "../Views/UnbuenCurriculum";
+import TableroTalentos from "../Views/TableroTalentos";
 
 
 const router = createBrowserRouter([
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
   { path: "/PerfilEmpresa", element: <PerfilEmpresa />},
   { path: "/EnrolamientoEmpresa", element: <EnrolamientoEmpresa />},
   {path: "/UnBuenCurriculum", element: <UnbuenCurriculum />},
+  {path: "/TableroTalentos", element: <TableroTalentos />}
   ]);
 
 

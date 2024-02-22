@@ -1,0 +1,26 @@
+/*container filtro*/
+.filtroTalento {
+    margin-bottom: 3%;
+    margin-top: 0%;
+    }
+
+ @media screen and (max-width: 600px) {
+        .contenedorEmpresas {
+         background-color: #c8d300;
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+          
+        }
+    
+    
+        /*Texto responsivo BUSQUEDA TALENTO */
+        @media screen and (max-width: 600px) {
+            .textoTalento2 {
+        
+              font-size: 20px;
+              margin-top: 10px;
+            }        
+            }
+            
+    
