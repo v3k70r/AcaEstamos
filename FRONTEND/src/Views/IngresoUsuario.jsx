@@ -8,7 +8,7 @@ function IngresoUsuario() {
   return (
     <>
       <Navbar />
-      <ProtoBanner imageUrl="images/bannerAcerca.png" 
+      <ProtoBanner imageUrl="images/registroUsuario.png" 
             headingText="Registro de usuarios" />
       <FormularioIngresoUsuario />
       <Footer />
