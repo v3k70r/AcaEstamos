@@ -1,0 +1,21 @@
+.banner-container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+}
+
+.banner-content img {
+    max-width: 100%;
+    height: auto;
+}
