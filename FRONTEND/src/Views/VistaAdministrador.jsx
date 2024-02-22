@@ -1,6 +1,5 @@
 import Navbar from '../Components/Navbar/Navbar'
 import BannerAdministrador from '../Components/VistaAdministrador/BannerAdministrador/BannerAdministrador'
-import '../Components/VistaAdministradorEstilos/VistaAdministrador.css';
 import TextoIntroAdministrador from '../Components/VistaAdministrador/TextoIntroAdministrador/TextoIntroAdministrador'
 import CardsHorizontalAdministrador from '../Components/VistaAdministrador/CardsHorizontalAdministrador/CardsHorizontalAdministrador'
 import CarruselPerfilesAdministrador from '../Components/VistaAdministrador/CarruselPerfilesAdministrador/CarruselPerfilesAdministrador';
