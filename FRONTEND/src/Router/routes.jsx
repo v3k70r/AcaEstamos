@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import Home from "../Views/Home";
-import EnrolamientoTalent from "../Views/EnrolamientoTalent";
+import enrolamientoTalent from "../Views/enrolamientoTalent";
 import InicioDeSesion from "../Views/InicioDeSesion";
 import VistaDeEmpresas from "../Views/VistaDeEmpresas";
 import IngresoUsuario from "../Views/IngresoUsuario";
@@ -14,7 +14,7 @@ import VistaAdministrador from "../Views/VistaAdministrador";
 
 const router = createBrowserRouter([
   { path: "/", element: <Home/>},
-  { path: "/enrolamientoTalent", element: <EnrolamientoTalent />},
+  { path: "/enrolamientoTalent", element: <enrolamientoTalent />},
   { path: "/inicioDeSesion", element: <InicioDeSesion />},
   {path: "/ingresoUsuario", element: <IngresoUsuario />},
   {path: "/VistaDeEmpresas", element: <VistaDeEmpresas/>},
