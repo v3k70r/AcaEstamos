@@ -1,13 +1,16 @@
 import './BannerStyle.css'
 function BannerInicio() {
     return (
-        <div className="BannerDeColor d-flex justify-content-center align-items-center">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <h1 className="text-center">Inicio de sesión</h1>
-                </div>
-            </div>
+        <>
+        <div className="container-fluid">
+        <div id="bannerTalent">
+          <img src="images/inicioSesion.png" className="img-fluid" alt="banner" />
+          <div className="carousel-caption d-none d-md-block">
+            <h1>Inicio de Sesion</h1>
+          </div>
         </div>
+      </div>
+        </>
     )
 }
 

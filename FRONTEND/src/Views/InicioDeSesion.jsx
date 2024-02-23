@@ -1,13 +1,14 @@
 import Navbar from '../Components/Navbar/Navbar'
-import BannerInicio from '../Components/InicioDeSesion/BannerInicio/BannerInicio';
 import FormInicio from '../Components/InicioDeSesion/Form/FormInicio';
 import Footer from '../Components/Footer/Footer';
+import ProtoBanner from "../Components/ProtoBanner/ProtoBanner";
 
 const InicioDeSesion = () => {
     return (
         <>
             <Navbar />
-            <BannerInicio />
+            <ProtoBanner imageUrl="images/inicioSesion.png" 
+            headingText="Inicio de sesión" />
             <FormInicio />
             <Footer />
         </>

@@ -1,7 +1,7 @@
 import './NombreEmpresa.css'
 const NombreEmpresa = () => {
     return (
-            <div className="container mt-3 mx-auto">
+            <div className="container mt-3">
                 <div className="row flex-sm-row">
                     <div className="col-lg-9 shadow mt-3" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
                         <h3 className="text-center mt-5" id="empresaName">Nombre de la empresa</h3>

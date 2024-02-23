@@ -3,15 +3,15 @@ import './FormEnrolEmpresa.css'
 function FormEnrolEmpresa() {
     return (
         <>
-<div className="container-fluid">
+<div className="container-fluid formularioEnrol">
         <div className="row shadow" id="formulario">
             <div className="col-12">
                 <h3 className="text-center" id="infoEmpresa">Información de la empresa</h3>
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="text" id="nombres" placeholder="a" name="nombres"/>
-                    <label className="form-label" htmlFor="nombres">
+                    <input className="form-control" type="text" id="nombre" placeholder="a" name="nombre"/>
+                    <label className="form-label" htmlFor="nombre">
                         <p>Nombre de la empresa</p>
                     </label>
                 </div>
@@ -27,49 +27,49 @@ function FormEnrolEmpresa() {
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="text" id="nombres" placeholder="a" name="nombres"/>
-                    <label className="form-label" htmlFor="nombres">
+                    <input className="form-control" type="text" id="rubro" placeholder="a" name="rubro"/>
+                    <label className="form-label" htmlFor="rubro">
                         <p>Giro o rubro</p>
                     </label>
                 </div>
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="number" id="edad" placeholder="4" name="edad" min="1"
+                    <input className="form-control" type="number" id="cantidadEmpleados" placeholder="4" name="cantidadEmpleados" min="1"
                         max="900.000"/>
-                    <label className="form-label" htmlFor="edad">
+                    <label className="form-label" htmlFor="cantidadEmpleados">
                         <p>Cantidad de empleados</p>
                     </label>
                 </div>
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="text" id="nombres" placeholder="a" name="nombres"/>
-                    <label className="form-label" htmlFor="nombres">
+                    <input className="form-control" type="text" id="nombreCalle" placeholder="a" name="nombreCalle"/>
+                    <label className="form-label" htmlFor="nombreCalle">
                         <p>Nombre de calle</p>
                     </label>
                 </div>
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="number" id="edad" placeholder="4" name="edad" min="1" max="9.999"/>
-                    <label className="form-label" htmlFor="edad">
+                    <input className="form-control" type="number" id="numeroCalle" placeholder="4" name="numeroCalle" min="1" max="9.999"/>
+                    <label className="form-label" htmlFor="numeroCalle">
                         <p>Número de calle</p>
                     </label>
                 </div>
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="text" id="nombres" placeholder="a" name="nombres"/>
-                    <label className="form-label" htmlFor="nombres">
+                    <input className="form-control" type="text" id="comuna" placeholder="a" name="comuna"/>
+                    <label className="form-label" htmlFor="comuna">
                         <p>Comuna</p>
                     </label>
                 </div>
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="text" id="nombres" placeholder="a" name="nombres"/>
-                    <label className="form-label" htmlFor="nombres">
+                    <input className="form-control" type="text" id="region" placeholder="a" name="region"/>
+                    <label className="form-label" htmlFor="region">
                         <p>Región</p>
                     </label>
                 </div>
@@ -92,24 +92,24 @@ function FormEnrolEmpresa() {
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="url" id="nombres" placeholder="a" name="nombres"/>
-                    <label className="form-label" htmlFor="nombres">
+                    <input className="form-control" type="url" id="URLweb" placeholder="a" name="URLweb"/>
+                    <label className="form-label" htmlFor="URLweb">
                         <p>URL de página web</p>
                     </label>
                 </div>
             </div>
             <div className="col-6 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="file" id="nombres" placeholder="a" name="nombres"/>
-                    <label className="form-label" htmlFor="nombres">
-                        <p>INSERTAR LOGO</p>
+                    <input className="form-control" type="file" id="logo" placeholder="a" name="logo"/>
+                    <label className="form-label" htmlFor="logo">
+                        <p>Insertar logo</p>
                     </label>
                 </div>
             </div>
             <div className="col-12 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="text" id="profesion" placeholder="o" name="profesion"/>
-                    <label className="form-label" htmlFor="profesion">
+                    <input className="form-control" type="text" id="mensaje" placeholder="o" name="mensaje"/>
+                    <label className="form-label" htmlFor="mensaje">
                         <p>Mensaje para los talentos</p>
                     </label>
                 </div>
@@ -117,8 +117,8 @@ function FormEnrolEmpresa() {
             <div className="col-12 mb-3">
                 <div className="mb-3">
                     <div className="form-floating">
-                        <textarea className="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-                        <label className="form-label" htmlFor="exampleFormControlTextarea1">
+                        <textarea className="form-control" id="acercaDe" rows="6" name='acercaDe'></textarea>
+                        <label className="form-label" htmlFor="acercaDe">
                             <p>Acerca de</p>
                         </label>
                     </div>
@@ -128,6 +128,6 @@ function FormEnrolEmpresa() {
     </div>
     </>
     );
-};
+}
 
 export default FormEnrolEmpresa;

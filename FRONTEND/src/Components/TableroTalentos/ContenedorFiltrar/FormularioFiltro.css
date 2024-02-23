@@ -1,0 +1,89 @@
+/*Boton container FILTRO*/
+.botonFiltro{
+    margin-top: 3%;
+    margin-bottom: 2%;
+    }
+    
+    
+    .EstiloBotonFiltro {
+      background-color: #f3963b;
+      color: white;
+      font-family: Poppins;
+    }
+    
+    
+      /* Cambiar el color del botón al pasarle el mouse*/
+      .EstiloBotonFiltro:hover {
+        background-color: #f3963b; 
+        color: white;
+     
+      }
+      
+    
+    
+       /* Estilo texto Interés Form selecction*/
+      .filtroInteres{
+        color: #424242;
+        font-family: Poppins;
+        justify-content: end;
+        margin-top: 5%;
+        
+      }
+    
+
+      /*responsivo boton FILTRAR BUSQUEDA */
+      @media screen and (max-width: 600px) {
+        .botonFiltro {
+    
+          display: flex;
+          flex-direction: column;
+          padding-left: 20px;
+          padding-right: 20px;
+          
+        }        
+        }
+
+
+        
+h1 {
+    font-family: "Heavitas", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+  }
+  h2 {
+    font-family: "Heavitas", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+  }
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: white;
+  }
+  h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #424242;
+  }
+  h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #424242;
+  }
+  h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #424242;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    color: #424242;
+  }

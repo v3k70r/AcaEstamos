@@ -1,10 +1,11 @@
-#formulario {
+.contenedor-formulario-talento {
     background-color: #e5ecf6;
-    margin-left: 290px;
-    margin-right: 290px;
     margin-bottom: 50px;
-    padding: 40px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 20px;
+    padding: 40px;
 }
 
 #infoPersonal {
@@ -17,3 +18,12 @@
     margin-top: 15px;
     color: #424242;
 }
+
+@media screen and (max-width: 600px) {
+    .contenedor-formulario-talento {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      
+    }  
+    }
