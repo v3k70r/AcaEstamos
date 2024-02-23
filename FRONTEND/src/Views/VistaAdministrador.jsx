@@ -6,12 +6,14 @@ import CardsHorizontalAdministrador from '../Components/VistaAdministrador/Cards
 import CarruselPerfilesAdministrador from '../Components/VistaAdministrador/CarruselPerfilesAdministrador/CarruselPerfilesAdministrador';
 import CarruselCvAdministrador from '../Components/VistaAdministrador/CarruselCVAdministrador/CarruselCVAdministrador';
 import Footer from '../Components/Footer/Footer';
+import ProtoBanner from "../Components/ProtoBanner/ProtoBanner";
 
 function VistaAdministrador() {
   return (
     <div>
     <Navbar />
-    <BannerAdministrador />
+    <ProtoBanner imageUrl="images/BannerAdministrador.png" 
+            headingText="Vista de Administrador" />
     <TextoIntroAdministrador />
     <MenuAdministrador />
     <CardsHorizontalAdministrador />
