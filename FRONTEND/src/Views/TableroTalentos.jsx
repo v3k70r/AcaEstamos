@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
-import BannerTableroTalentos from '../Components/TableroTalentos/BannerTableroTalentos/BannerTableroTalentos';
 import CardTableroTalentos from '../Components/TableroTalentos/CardTableroTalentos/CardTableroTalentos';
 import FormularioFiltro from '../Components/TableroTalentos/ContenedorFiltrar/FormularioFiltro';
 import '../Components/TableroTalentosEstilos/TableroTalentosEstilos.css';
+import ProtoBanner from "../Components/ProtoBanner/ProtoBanner";
 
 
 
@@ -12,7 +12,8 @@ function TableroTalentos() {
   return (
     <div>
       <Navbar />
-      <BannerTableroTalentos />
+      <ProtoBanner imageUrl="images/BannerTablero.png" 
+            headingText="Búsqueda de talentos" />
       <div className="container-fluid filtroTalento shadow" style={{ backgroundColor: '#E5ECF6' }}>
       <div className="row">
         <FormularioFiltro 
