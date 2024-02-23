@@ -1,4 +1,5 @@
 import React from 'react'
+import './FormularioIngreso.css'
 
 function FormularioIngresoUsuario() {
   return (

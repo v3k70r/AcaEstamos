@@ -35,14 +35,14 @@ function FormInicio() {
                         </h4>
                         <div className="col-9">
                             {/* Email input */}
-                            <div className="form-floating">
+                            <div id="ContenedorEmail" className="form-floating">
                                 <input className="form-control" type="email" id="email" placeholder="a" style={{ backgroundColor: 'white', border: '1px solid grey' }} 
                                 value={email} onChange={(e) => setEmail(e.target.value)}/>
                                 <label className="form-label" htmlFor="email"><p>Correo electrónico</p></label>
                             </div>
 
                             {/* Password input */}
-                            <div className="form-floating">                                
+                            <div id="ContenedorContraseña" className="form-floating">                                
                                 <input className="form-control" type="password" id="contraseña" placeholder="a" style={{ backgroundColor: 'white', border: '1px solid grey' }} 
                                 value={password} onChange={(e) => setPassword(e.target.value)}/>
                                 <label className="form-label" htmlFor="contraseña"><p>Contraseña</p></label>
