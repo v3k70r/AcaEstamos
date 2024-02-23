@@ -1,3 +1,4 @@
+
 .ContenedorCarrusel{
   display: flex;
  justify-content: center;
@@ -47,7 +48,7 @@
          
        }
      
-       .boton-tarjeta {
+       .boton-tarjeta-carrusel {
        width: 70%;
         
        background-color: #769e33; /* Color de fondo del botón */
