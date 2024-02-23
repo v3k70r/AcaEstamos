@@ -1,14 +1,23 @@
 #formulario {
     background-color: #e5ecf6;
-    margin-left: 260px;
-    margin-right: 260px;
     margin-bottom: 50px;
     margin-top: 50px;
-    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
     border-radius: 20px;
+    padding: 40px;
 }
 
 #infoEmpresa {
     color: #424242;
     margin-bottom: 30px;
 }
+@media screen and (max-width: 600px) {
+    .formularioEnrol {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      padding: 10px;
+      
+    }  
+    }

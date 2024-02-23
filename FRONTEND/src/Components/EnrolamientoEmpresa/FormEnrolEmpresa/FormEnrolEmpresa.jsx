@@ -3,7 +3,7 @@ import './FormEnrolEmpresa.css'
 function FormEnrolEmpresa() {
     return (
         <>
-<div className="container-fluid">
+<div className="container-fluid formularioEnrol">
         <div className="row shadow" id="formulario">
             <div className="col-12">
                 <h3 className="text-center" id="infoEmpresa">Información de la empresa</h3>
@@ -128,6 +128,6 @@ function FormEnrolEmpresa() {
     </div>
     </>
     );
-};
+}
 
 export default FormEnrolEmpresa;
