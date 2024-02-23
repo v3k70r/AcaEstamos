@@ -3,19 +3,41 @@
     height: 100vh;
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .banner-content {
-    text-align: center;
-}
-
-.banner-content h1 {
-    font-size: 3rem;
+    text-align: left;
+    padding-left: 90px;
 }
 
 .banner-content img {
     max-width: 100%;
     height: auto;
 }
+
+.banner-content .large-heading {
+    font-size: 6rem;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    max-width: 50%;
+    word-wrap: break-word;
+}
+
+.subheading-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.subheading-container h3 {
+    margin: 0;
+    max-width: 50%;
+    word-wrap: break-word;
+    color: #f69906;
+}
+
+

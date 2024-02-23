@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <>
     <Navbar />
-    <ProtoBanner imageUrl="images/cerro-renca1.png" 
-            headingText="Conectando a talentos con empresas comprometidas por Renca" />
+    <ProtoBanner imageUrl="images/cerro-renca1.png" headingText="ACÁ ESTAMOS" 
+    subheadingText="Conectando a talentos con empresas comprometidas por Renca" />
     <BuscarEmpresas />
     <Servicios />
     <Testimonios />
