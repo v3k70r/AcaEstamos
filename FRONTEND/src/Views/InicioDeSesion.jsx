@@ -7,7 +7,7 @@ const InicioDeSesion = () => {
     return (
         <>
             <Navbar />
-            <ProtoBanner imageUrl="images/bannerPEmpresas.png" 
+            <ProtoBanner imageUrl="images/inicioSesion.png" 
             headingText="Inicio de sesión" />
             <FormInicio />
             <Footer />

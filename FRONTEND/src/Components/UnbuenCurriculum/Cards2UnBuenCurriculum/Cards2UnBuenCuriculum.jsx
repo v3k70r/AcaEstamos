@@ -9,7 +9,7 @@ function Cards2UnBuenCurriculum() {
           <img src="images/escogerpfd-unBuenCurriculum.jpg" className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title" style={{ backgroundColor: '#F6990E', borderRadius: '5px' }}>Guárdalo en formato PDF</h5>
-            <p className="card-text">En la mayoría de empresas, al momento de ver CVs, lo mejor que puedes hacer es tenerlo en formato PDF. Si lo tienes en otro formato como Word, lo recomendable es que lo conviertas a PDF.</p>
+            <p className="card-text">En la mayoría de las empresas, al revisar currículos, lo óptimo es tenerlo en formato PDF. En caso de que lo tengas en otro formato, como Word, se recomienda convertirlo a PDF.</p>
           </div>
         </div>
       </div>
@@ -17,8 +17,8 @@ function Cards2UnBuenCurriculum() {
         <div className="card">
           <img src="images/enfoca-unBuenCurriculum.jpg" className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Enfoca tu curriculum</h5>
-            <p className="card-text">Recuerda enfocar tu CV al área en la que estás postulando. No agregues información innecesaria. Por ejemplo, si postulas a un puesto de informático pero también tienes experiencia en pastelería, no es necesario agregarla.</p>
+            <h5 className="card-title" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Enfoca tu currículum</h5>
+            <p className="card-text">Recuerda adaptar tu CV al área a la que estás postulando. Evita agregar información innecesaria; por ejemplo, si estás aplicando para un puesto de informático y también tienes experiencia en pastelería, no es necesario incluirla.</p>
           </div>
         </div>
       </div>
@@ -27,7 +27,7 @@ function Cards2UnBuenCurriculum() {
           <img src="images/ortografia-unBuenCurriculum.jpg" className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title" style={{ backgroundColor: '#F6990E', borderRadius: '5px' }}>Cuida la ortografía</h5>
-            <p className="card-text">Es súper importante estar siempre al pendiente de la ortografía de tu CV. Tener mala ortografía podría causar una mala primera impresión al reclutador.</p>
+            <p className="card-text">Es crucial estar siempre atento a la ortografía de tu currículum. Un mal uso del lenguaje podría generar una impresión negativa en el reclutador desde el principio.</p>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ function Cards2UnBuenCurriculum() {
           <img src="images/destacar-unBuenCurriculum.jpg" className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Destaca tus puntos fuertes</h5>
-            <p className="card-text">Si no tienes experiencia, no dudes en incluir secciones en las que puedas demostrar que dominas aspectos como algún idioma, cursos formativos o similares que tengan relación con el puesto.</p>
+            <p className="card-text">Si careces de experiencia laboral, no dudes en incluir secciones donde puedas demostrar tu dominio en aspectos como algún idioma, cursos formativos u otros elementos relacionados con el puesto.</p>
           </div>
         </div>
       </div>
