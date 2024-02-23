@@ -8,9 +8,8 @@ function CardTalentosInfo(props) {
     <>
       <div className="card cardF3">
       <div className="card-body-columna3">
-        {/* Icono como elemento i, asegúrate de que los estilos de FontAwesome estén incluidos en tu proyecto */}
-        <i className="fas {icono} fa-2x me-3" style={{ paddingRight: '15px' }}></i>
-      <div className="mx-auto2 text-center">
+      <i className={`fas ${icono} fa-2x me-3`} style={{ paddingRight: 'auto' }}></i>
+      <div className="mx-auto2">
         <h6 className="card-title-columna3">{datoInfo}</h6>
         <p className="card-text-columna3">{datoTalento}</p>
             

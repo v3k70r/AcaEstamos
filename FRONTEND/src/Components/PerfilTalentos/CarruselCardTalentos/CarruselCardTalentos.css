@@ -1,6 +1,7 @@
 
 .ContenedorCarrusel{
   display: flex;
+  flex-direction: row;
  justify-content: center;
  width: 100%;
     
@@ -8,7 +9,7 @@
 
       .imgcarrusel{
         display: flex;
-       justify-content: center;
+       justify-content:  center;
           
        }
        .carruselcard {
