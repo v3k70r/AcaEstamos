@@ -4,7 +4,7 @@ import TextoIntroAdministrador from '../Components/VistaAdministrador/TextoIntro
 import MenuAdministrador from '../Components/VistaAdministrador/MenuAdministrador/MenuAdministrador'
 import CardsHorizontalAdministrador from '../Components/VistaAdministrador/CardsHorizontalAdministrador/CardsHorizontalAdministrador'
 import CarruselPerfilesAdministrador from '../Components/VistaAdministrador/CarruselPerfilesAdministrador/CarruselPerfilesAdministrador';
-import CarruselCvAdministrador from '../Components/VistaAdministrador/CarruselCvAdministrador/CarruselCvAdministrador';
+import CarruselCvAdministrador from '../Components/VistaAdministrador/CarruselCVAdministrador/CarruselCVAdministrador';
 import Footer from '../Components/Footer/Footer';
 
 function VistaAdministrador() {
