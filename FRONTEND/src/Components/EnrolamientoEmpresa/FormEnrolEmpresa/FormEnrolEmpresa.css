@@ -12,7 +12,7 @@
     color: #424242;
     margin-bottom: 30px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     .formularioEnrol {
       display: flex;
       flex-direction: column;

@@ -8,8 +8,8 @@ function Cards1UnBuenCurriculum() {
         <div className="card">
           <img src="images/nofoto-unBuenCurriculum.jpg" id="img-curriculum" className="card-img-top img-fluid" style={{ maxWidth: '100%', height: 'auto' }} alt="..." />
           <div className="card-body">
-            <h5 className="card-title" style={{ backgroundColor: '#F6990E', borderRadius: '5px' }}>No usar una foto</h5>
-            <p className="card-text">No es necesario ni recomendable que coloques una foto de ti mismo en tu curriculum, debido a que poner una imagen puede llevar a situaciones de discriminación.</p>
+            <h5 className="card-title" style={{ backgroundColor: '#F6990E', borderRadius: '5px' }}>No uses foto</h5>
+            <p className="card-text">No es necesario ni recomendable que incluyas una foto tuya en tu currículum, ya que agregar una imagen podría dar lugar a situaciones de discriminación.</p>
           </div>
         </div>
       </div>
@@ -17,8 +17,8 @@ function Cards1UnBuenCurriculum() {
         <div className="card">
           <img src="images/actualizar-buenCurriculum.jpg" className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Mantenlo actualizado</h5>
-            <p className="card-text">Procura actualizarlo cada que tengas cambios nuevos, como una nuevo direccion de e-mail, estudios finalizados, experiencia laboral. Es recomendable manterlo actualizado.</p>
+            <h5 className="card-title" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Manténlo actualizado</h5>
+            <p className="card-text">Procura actualizarlo cada vez que tengas cambios nuevos, como una nueva dirección de correo electrónico, estudios finalizados o experiencia laboral. Es recomendable mantenerlo actualizado.</p>
           </div>
         </div>
       </div>
@@ -35,8 +35,8 @@ function Cards1UnBuenCurriculum() {
         <div className="card">
           <img id="img-curriculum" src="images/OrdenCronologicoInvertido-unBuenCurriculum.jpg" className="card-img-top" alt="..." />
           <div className="card-body">
-            <h5 className="card-title" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Usa el de orden cronológico inverso</h5>
-            <p className="card-text">¿Qué significa esto?: Que tu información en tu CV sea a partir de tus trabajos más recientes o lo más actual al más antiguo.</p>
+            <h5 className="card-title" style={{ backgroundColor: '#E5ECF6', borderRadius: '5px' }}>Emplea el orden cronológico inverso</h5>
+            <p className="card-text">¿Qué significa esto? Que la información en tu currículum debe organizarse comenzando por tus trabajos más recientes o lo más actual, y luego seguir hacia los más antiguos.</p>
           </div>
         </div>
       </div>
