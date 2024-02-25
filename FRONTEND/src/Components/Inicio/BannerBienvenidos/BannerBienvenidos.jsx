@@ -15,7 +15,7 @@ function BannerBienvenidos() {
           <img src="images/cerro-renca1.png" className="d-block w-100" alt="banner 1"></img>
           <div className="carousel-caption d-none d-md-block">
             <h1>¡Bienvenidos!</h1>
-            <p className="text-light">Conectando a talentos con empresas comprometidas por Renca.</p>
+            <p className="text-light">Conectando talentos con empresas comprometidas por Renca.</p>
           </div>
         </div>
       </div>

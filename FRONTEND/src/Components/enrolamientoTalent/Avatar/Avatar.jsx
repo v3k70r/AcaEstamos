@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './Avatar.css';
-import AvatarModal from '../../Modal/AvatarModal';
+import AvatarModal from '../Modal/AvatarModal';
 
 function Avatar() {
     const [selectedAvatar, setSelectedAvatar] = useState(null);
