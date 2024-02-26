@@ -28,7 +28,7 @@ function Avatar() {
                     </div>
                 </div>
                 {/*<h4 id="seleccionaAvatar">Selecciona tu Avatar:</h4>*/}
-                <button className='boton-avatar btn btn-primary' onClick={() => setIsModalOpen(true)}>Selecciona tu avatar</button>
+                <button className='boton-avatar btn text-white' onClick={() => setIsModalOpen(true)}>Selecciona tu avatar</button>
 
                 <AvatarModal
                     isOpen={isModalOpen}
