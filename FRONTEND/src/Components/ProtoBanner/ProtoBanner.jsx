@@ -2,7 +2,7 @@ import './ProtoBanner.css';
 
 function ProtoBanner({ imageUrl, headingText, subheadingText }) {
     return (
-        <div className='container-fluid'>
+        <div className="container-fluid">
             <div className="banner-container" style={{ backgroundImage: `url(${imageUrl})` }}>
                 <div className="banner-content">
                     <h1 className="large-heading">{headingText}</h1>

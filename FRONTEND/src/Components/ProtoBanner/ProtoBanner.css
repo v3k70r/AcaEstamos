@@ -1,30 +1,29 @@
+body {
+    padding: 0;
+}
+
 .banner-container {
     width: 100%;
-    height: 100vh;
     background-size: cover;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.banner-content {
-    text-align: left;
-    padding-left: 90px;
-}
-
-.banner-content img {
-    max-width: 100%;
-    height: auto;
-}
-
-.banner-content .large-heading {
-    font-size: 6rem;
-    line-height: 100px;
     display: flex;
     align-items: center;
     margin: 0;
-    max-width: 50%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.banner-content img {
+    height: auto;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner-content .large-heading {
+    display: flex;
+    align-items: center;
+    margin: 0;
     word-wrap: break-word;
+    text-align: left;
 }
 
 .subheading-container {
@@ -35,7 +34,68 @@
 
 .subheading-container h3 {
     margin: 0;
-    max-width: 45%;
     word-wrap: break-word;
     color: #e5e8f6;
+    text-align: left;
+}
+
+@media screen and (max-width: 1920px) {
+    .banner-container {
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .banner-content {
+        padding-left: 90px;
+    }
+
+    .banner-content img {
+        max-width: 100%;
+    }
+
+    .banner-content .large-heading {
+        font-size: 5.8rem;
+        line-height: 100px;
+        max-width: 50%;
+    }
+
+    .subheading-container {
+        margin-top: 14px;
+    }
+
+    .subheading-container h3 {
+        max-width: 45%;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner-container {
+        height: 45vh;
+        justify-content: center;
+    }
+
+    .banner-content {
+        padding-left: 7px;
+    }
+
+    .banner-content img {
+        max-width: 100%;
+    }
+
+    .banner-content .large-heading {
+        font-size: 3.8rem;
+        line-height: 55px;
+        max-width: 100%;
+    }
+
+    .subheading-container {
+        margin-top: 3px;
+    }
+
+    .subheading-container h3 {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+
 }
