@@ -11,7 +11,8 @@ const AcercaDe = () => {
         <div>
             <Navbar />
             <ProtoBanner imageUrl="images/bannerAcerca.png" 
-            headingText="Acerca de" />
+            headingText="Acerca de" 
+            subheadingText="Acá estamos" />
             <Mision />
             <InfoRenca />
             <CardsAcerca />
