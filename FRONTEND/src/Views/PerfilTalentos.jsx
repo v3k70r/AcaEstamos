@@ -1,4 +1,3 @@
-
 import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import BannerTalentos from '../Components/PerfilTalentos/BannerTalentos/BannerTalentos';
@@ -8,6 +7,7 @@ import CardTalentoInteres from '../Components/PerfilTalentos/CardTalentoInteres/
 import CardTalentoFormacion from '../Components/PerfilTalentos/CardTalentosFormacion/CardTalentosFormacion';
 import CardTalentosInfo from '../Components/PerfilTalentos/CardTalentosInfo/CardTalentosInfo';
 import CarruselCardTalentos from '../Components/PerfilTalentos/CarruselCardTalentos/CarruselCardTalentos';
+import ModalCV from '../Components/PerfilTalentos/ModalCV/ModalCV';
  
 
 
@@ -21,9 +21,11 @@ function PerfilTalentos() {
       <div className="col-md-4 colmunaF1">
       <div className="contenedorF1 text-center">
       <h4 className="titulosFilasTalentos text-center">Acceso a certificados</h4>
+
       <CardTalentosCertificados 
       h6='Certificado de Antecedentes'
       parrafo='Certificados de Antecedentes al Instante: Una fuente confiable para evaluar la calidad de nuestros miembros de manera rápida.'
+      link={ModalCV}
       />
       <CardTalentosCertificados 
       h6='Curriculum Vitae'
@@ -143,3 +145,4 @@ imagenCarrusel='public/images/Hombre_avatar6.png'
 }
 
 export default PerfilTalentos
+

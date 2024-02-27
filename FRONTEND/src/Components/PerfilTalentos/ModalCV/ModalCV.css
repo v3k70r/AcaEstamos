@@ -1,0 +1,30 @@
+.VentanaModal {
+
+    background-color: white;
+    width: 250%;
+    color: #424242;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 15px;
+    min-height: 250%;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    z-index: 1000;
+    /border: 1px solid #000;/ 
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#cerrar {
+position: absolute;
+right: 25px;
+top: 8px;
+
+}
+
+.botonCerrar {
+background-color: white;
+border: none;
+}
