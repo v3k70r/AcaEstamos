@@ -1,10 +1,11 @@
 import React from 'react'
+import './FormularioIngreso.css'
 
 function FormularioIngresoUsuario() {
   return (
 
     <main className="container m-5" style={{ borderRadius: '20px' }}>
-      <form id="LoginForm" style={{ borderRadius: '20px' }}>
+      <form id="LoginFormIngreso" style={{ borderRadius: '20px' }}>
         <div className="container col-9 shadow" style={{ borderRadius: '20px' }}>
           <div className="row justify-content-center">
             <h4 className="text-center mb-4" style={{ backgroundColor: '#E5ECF6', margin: '0', padding: '20px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px' }}>
@@ -13,14 +14,14 @@ function FormularioIngresoUsuario() {
             <div className="col-9">
               
               {/* Email input */}
-              <div className="form-floating">
+              <div id="containerEmail" className="form-floating">
                 <input className="form-control" type="email" id="email" placeholder="a" name="email"/>
                 <label className="form-label" htmlFor="email">
                   <p>Correo electrónico</p>
                 </label>
               </div>
               {/* Password input */}
-              <div className="form-floating">
+              <div id="containerContraseña" className="form-floating">
                 <input className="form-control" type="password" id="contraseña" 
                 placeholder="a" name="contraseña"/>
                 <label className="form-label" htmlFor="contraseña">
@@ -28,7 +29,7 @@ function FormularioIngresoUsuario() {
                 </label>
               </div>
               {/* Repeat Password input */}
-              <div className="form-floating">
+              <div id="containerRepetir" className="form-floating">
                 <input className="form-control" type="password" id="confirmarContraseña" 
                 placeholder="a" name="confirmarContraseña"/>
                 <label className="form-label" htmlFor="confirmarContraseña">
