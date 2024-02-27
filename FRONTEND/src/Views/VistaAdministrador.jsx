@@ -3,6 +3,7 @@ import BannerAdministrador from '../Components/VistaAdministrador/BannerAdminist
 import TextoIntroAdministrador from '../Components/VistaAdministrador/TextoIntroAdministrador/TextoIntroAdministrador'
 import MenuAdministrador from '../Components/VistaAdministrador/MenuAdministrador/MenuAdministrador'
 import CardsHorizontalAdministrador from '../Components/VistaAdministrador/CardsHorizontalAdministrador/CardsHorizontalAdministrador'
+import CarruselDatos from '../Components/VistaAdministrador/CarruselDatos/CarruselDatos'
 import Footer from '../Components/Footer/Footer';
 import ProtoBanner from "../Components/ProtoBanner/ProtoBanner";
 
@@ -15,6 +16,7 @@ function VistaAdministrador() {
     <TextoIntroAdministrador />
     <MenuAdministrador />
     <CardsHorizontalAdministrador />
+    <CarruselDatos />
     <Footer />
     </div>
   )
