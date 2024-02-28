@@ -39,7 +39,7 @@ function TableroTalentos() {
       <div className="row">
       <div className="col-md-12">
       <div className="container contenedorEmpresas shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
-      <div style={{ backgroundColor: '#0492D0', marginBottom: '5%', borderRadius: '15px' }}>
+      <div style={{ marginBottom: '5%', borderRadius: '20px' }}>
       <h3 className="textoTalento2 text-center">Nuestros Talentos</h3>
       </div>
       <CardTableroTalentos 

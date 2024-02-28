@@ -1,26 +1,31 @@
 /*container filtro*/
 .filtroTalento {
-    margin-bottom: 3%;
-    margin-top: 0%;
-    }
+  margin-bottom: 3%;
+  margin-top: 0%;
+}
 
- @media screen and (max-width: 600px) {
-        .contenedorEmpresas {
-         background-color: #c8d300;
-          display: flex;
-          flex-direction: column;
-          justify-content: left;
-          
-        }
-    
-    
-        /*Texto responsivo BUSQUEDA TALENTO */
-        @media screen and (max-width: 600px) {
-            .textoTalento2 {
-        
-              font-size: 20px;
-              margin-top: 10px;
-            }        
-            }
-            
-    
+.textoTalento2 {
+  color: #424242;
+  padding: 20px;
+  font-size: 35px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+  .contenedorEmpresas {
+    background-color: #c8d300;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  }
+
+
+  /*Texto responsivo BUSQUEDA TALENTO */
+  @media screen and (max-width: 600px) {
+    .textoTalento2 {
+
+      font-size: 20px;
+      margin-top: 10px;
+    }
+  }
