@@ -15,13 +15,16 @@ function CardTalentosCertificados(props) {
     setModalVisible(false);
   };
 
+  // eslint-disable-next-line react/prop-types
+  const {parrafo, h6, documento} = props
+
   return (
     <div className="card cardF1">
       <div className="card-body">
         <p className="card-text" style={{ maxHeight: '150px', overflow: 'hidden' }}>
-          <h6>{props.h6}</h6>
+          <h6>{h6}</h6>
           <hr />
-          {props.parrafo}
+          {parrafo}
         </p>
         <button 
           type="button" 
@@ -33,7 +36,7 @@ function CardTalentosCertificados(props) {
         </button>
       </div>
       {/* Renderiza el ModalCV solo si modalVisible es true y pasa la función para cerrarlo */}
-      {modalVisible && <ModalCV onClose={closeModal} pdfUrl={props.documento} />}
+      {modalVisible && <ModalCV onClose={closeModal} pdfUrl={documento} />}
     </div>
   );
 }

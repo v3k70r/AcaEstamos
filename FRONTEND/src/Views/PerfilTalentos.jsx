@@ -7,7 +7,7 @@ import CardTalentoInteres from '../Components/PerfilTalentos/CardTalentoInteres/
 import CardTalentoFormacion from '../Components/PerfilTalentos/CardTalentosFormacion/CardTalentosFormacion';
 import CardTalentosInfo from '../Components/PerfilTalentos/CardTalentosInfo/CardTalentosInfo';
 import CarruselCardTalentos from '../Components/PerfilTalentos/CarruselCardTalentos/CarruselCardTalentos';
-import ModalCV from '../Components/PerfilTalentos/ModalCV/ModalCV';
+
  
 
 
