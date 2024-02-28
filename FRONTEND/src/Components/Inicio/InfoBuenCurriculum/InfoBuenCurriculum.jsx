@@ -9,7 +9,7 @@ function InfoBuenCurriculum() {
         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
       <div className="d-flex justify-content-center">
-      <img style={{ width: '800px', height: '200px' }} src="images/inicioinfobuencv.jpg" className="card-img-bottom" alt="..." />
+      <a href="http://localhost:5173/unbuencurriculum"><img src="images/iniciobuencv.jpg" style={{ width: '700px', height: '500px' }} className="card-img-bottom" alt="..."></img></a>
       </div>
       </div>
     </div>
