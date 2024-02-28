@@ -1,11 +1,11 @@
-
+import './Empresas.css';
 
 const Empresas = () => {
   return (
     <>
       {/* Empresas */}
-      <div className="text-center m-5" >
-        <h2 style={{ backgroundColor: "#E5ECF6", borderRadius: "20px", padding:"5px" }}>Empresas activas</h2>
+      <div className="text-center m-5 card-tamañoletra">
+        <h4 style={{ backgroundColor: "#E5ECF6", borderRadius: "20px", padding:"5px", fontSize: "30px" }}>Empresas activas</h4>
       </div>
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
         <div className="carousel-inner">

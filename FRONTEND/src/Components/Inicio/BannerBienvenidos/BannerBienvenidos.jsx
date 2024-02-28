@@ -15,22 +15,22 @@ function BannerBienvenidos() {
         <div className="carousel-item active" data-bs-interval="3000">
           <img src="images/cerro-renca1.png" className="d-block w-100 mx-0" alt="banner 1" />
           <div className="carousel-caption d-none d-md-block">
-            <h1>¡Bienvenidos!</h1>
-            <p className="text-light">Conectando a talentos con empresas comprometidas por Renca.</p>
+            <h1 style={{fontSize: "100px"}}>¡Bienvenidos!</h1>
+            <p className="text-light" style={{fontSize: "25px"}}>Conectando a talentos con empresas comprometidas por Renca.</p>
           </div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
             <img src="images/cerro-renca2.png" className="d-block w-100 mx-0" alt="banner 2" />
             <div className="carousel-caption d-none d-md-block">
-            <h1>¡Bienvenidos!</h1>
-              <p className="text-light">Conectando a talentos con empresas comprometidas por Renca.</p>
+            <h1 style={{fontSize: "100px"}}>¡Bienvenidos!</h1>
+              <p className="text-light" style={{fontSize: "25px"}}>Conectando a talentos con empresas comprometidas por Renca.</p>
             </div>
           </div>
           <div className="carousel-item">
             <img src="images/cerroRenca1.png" className="d-block w-100 mx-0" alt="banner 3" />
             <div className="carousel-caption d-none d-md-block">
-            <h1>¡Bienvenidos!</h1>
-              <p className="text-light">Conectando a talentos con empresas comprometidas por Renca.</p>
+            <h1 style={{fontSize: "100px"}}>¡Bienvenidos!</h1>
+              <p className="text-light" style={{fontSize: "25px"}}>Conectando a talentos con empresas comprometidas por Renca.</p>
             </div>
           </div>
         </div>
