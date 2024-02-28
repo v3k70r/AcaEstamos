@@ -4,9 +4,8 @@ import BuscarEmpresas from "../Components/Inicio/BuscarEmpresas/BuscarEmpresas"
 import Empresas from "../Components/Inicio/Empresas/Empresas"
 import Servicios from "../Components/Inicio/Servicios/Servicios"
 import Testimonios from "../Components/Inicio/Testimonios/Testimonios"
-import ProtoBanner from "../Components/ProtoBanner/ProtoBanner";
 import { Carousel, Collapse, initMDB } from "https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.es.min.js";
-  
+import BannerBienvenidos from "../Components/Inicio/BannerBienvenidos/BannerBienvenidos"
       
 
 const Home = () => {
@@ -15,9 +14,7 @@ const Home = () => {
   return (
     <>
     <Navbar />
-
-    <ProtoBanner imageUrl="images/cerro-renca1.png" headingText="ACÁ ESTAMOS" 
-    subheadingText="Conectando a talentos con empresas comprometidas por Renca" />
+    <BannerBienvenidos />
     <BuscarEmpresas />
     <Servicios />
     <Testimonios />
