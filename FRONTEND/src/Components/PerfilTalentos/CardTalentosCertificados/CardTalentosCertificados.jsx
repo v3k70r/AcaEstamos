@@ -33,7 +33,7 @@ function CardTalentosCertificados(props) {
         </button>
       </div>
       {/* Renderiza el ModalCV solo si modalVisible es true y pasa la función para cerrarlo */}
-      {modalVisible && <ModalCV onClose={closeModal} pdfUrl="public/images/PlantillaCV.pdf" />}
+      {modalVisible && <ModalCV onClose={closeModal} pdfUrl={props.documento} />}
     </div>
   );
 }

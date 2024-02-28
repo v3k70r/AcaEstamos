@@ -25,15 +25,17 @@ function PerfilTalentos() {
       <CardTalentosCertificados 
       h6='Certificado de Antecedentes'
       parrafo='Certificados de Antecedentes al Instante: Una fuente confiable para evaluar la calidad de nuestros miembros de manera rápida.'
-      link={ModalCV}
+      documento='public/images/EjemploAntecedentes.pdf'
       />
       <CardTalentosCertificados 
       h6='Curriculum Vitae'
       parrafo='Bienvenido a "Ver CV": Detalles sobre habilidades y experiencia de nuestros talentosos miembros para empresas.'
+      documento='public/images/PlantillaCV.pdf'
       />
       <CardTalentosCertificados 
       h6='Certificados'
       parrafo='Certificados de Antecedentes al Instante: Una fuente confiable para evaluar la calidad de nuestros miembros de manera rápida.'
+      documento='public/images/certificadoCurso.pdf'
       />
       </div>
       </div>
