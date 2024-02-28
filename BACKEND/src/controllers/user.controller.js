@@ -7,7 +7,7 @@ const { generarJWT } = require("../services/generar-jwt");
 const crearUser = async (req, res) => {
   const { name, lastName, email, password } = req.body;
 
-  if (!name || !lastName || !email || !password) {
+  if (!email || !password) {
     return res.status(404).json({
       msg: "Todos los campos son requeridos",
       status: 404,
