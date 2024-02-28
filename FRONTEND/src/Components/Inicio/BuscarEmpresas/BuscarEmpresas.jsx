@@ -5,7 +5,7 @@ function BuscarEmpresas() {
     <>
       {/* barra de busqueda */}
      
-      <div className="text-center m-5" style={{ backgroundColor: "#E5ECF6", borderRadius: "20px" }}>
+      <div className="text-center m-5" style={{ backgroundColor: "#E5ECF6", borderRadius: "20px", padding:"8px" }}>
         <h4>Búsqueda de empresas asociadas</h4>
         {/* barra de busqueda */}
         <nav className="navbar bg-body-tertiary">

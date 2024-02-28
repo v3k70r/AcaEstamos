@@ -1,11 +1,11 @@
-import React from 'react';
+
 
 const Empresas = () => {
   return (
     <>
       {/* Empresas */}
-      <div className="text-center m-5" style={{ backgroundColor: 'white' }}>
-        <h4>Empresas activas</h4>
+      <div className="text-center m-5" >
+        <h2 style={{ backgroundColor: "#E5ECF6", borderRadius: "20px", padding:"5px" }}>Empresas activas</h2>
       </div>
       <div id="carouselExampleSlidesOnly" className="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
         <div className="carousel-inner">
