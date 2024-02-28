@@ -9,8 +9,10 @@ function ModalCV({ onClose, pdfUrl }) {
       </div>
       <div>
         <object data={pdfUrl} type="application/pdf" width="600" height="800">
-          Alternativamente, puedes <a href={pdfUrl}>descargar el archivo PDF</a>.
         </object>
+        <div>
+    <a href={pdfUrl} className="btn descargarCV" download>Descargar archivo</a>
+  </div>
       </div>
     </div>
   );
