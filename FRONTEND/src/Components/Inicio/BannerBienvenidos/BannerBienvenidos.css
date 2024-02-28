@@ -1,0 +1,29 @@
+/*dani css*/
+#carouselExampleAutoplaying {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.izquierda {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.contenedor h3 {
+    margin: 0;
+    word-wrap: break-word;
+    color: #e5e8f6;
+    text-align: left;
+}
