@@ -4,8 +4,8 @@ function InfoBuenCurriculum() {
   return (
     <div className="container justify-content-center">
       <div className="card">
-        <div className="card-body text-center text-white">
-          <h2 className="card-title" style={{ backgroundColor: "#769E33", borderRadius: "20px", padding:"8px" }}>Tips para un buen curriculum</h2>
+        <div className="card-body text-center ">
+          <h4 className="card-title" style={{ backgroundColor: "#E5ECF6", borderRadius: "20px", padding:"8px" }}>Tips para un buen curriculum</h4>
           <p className="card-text">¡Pincha aqui para ir la sección de tips de cómo escribir un buen curriculum!</p>
         </div>
         <div className="d-flex justify-content-center text-center">
