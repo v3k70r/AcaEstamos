@@ -16,7 +16,7 @@ function CarruselDatos() {
               <h1>15</h1>
               <h5>Postulaciones por autorizar</h5>
               <p>Aqui puedes ver la cantidad de usuarios nuevos por autorizar.</p>
-              <button className="boton-tarjeta" style={{ backgroundColor: '#e7892c' }}>Ver más</button>
+              <button className="boton-tarjeta" style={{ backgroundColor: '#e7892c', color: "white", borderRadius: "8px", border: "none", padding: "1%"  }}>Ver más</button>
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
@@ -25,7 +25,7 @@ function CarruselDatos() {
               <h1>158490</h1>
               <h5>Usuarios Activos</h5>
               <p>Aqui puedes ver la cantidad de usuarios activos.</p>
-              <button className="boton-tarjeta" style={{ backgroundColor: '#e7892c' }}>Ver más</button>
+              <button className="boton-tarjeta" style={{ backgroundColor: '#e7892c', color: "white", borderRadius: "8px", border: "none", padding: "1%"  }}>Ver más</button>
             </div>
           </div>
           <div className="carousel-item">
@@ -34,7 +34,7 @@ function CarruselDatos() {
               <h1>123</h1>
               <h5>Usuarios Inactivos</h5>
               <p>Aqui puedes ver la cantidad de usuarios inactivos.</p>
-              <button className="boton-tarjeta" style={{ backgroundColor: '#e7892c' }}>Ver más</button>
+              <button className="boton-tarjeta" style={{ backgroundColor: '#e7892c', color: "white", borderRadius: "8px", border: "none", padding: "1%" }}>Ver más</button>
             </div>
           </div>
         </div>
