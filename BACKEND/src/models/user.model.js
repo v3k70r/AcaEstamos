@@ -6,8 +6,6 @@ const { Schema } = mongoose;
 
 //creacion del schema
 const userSchema = new Schema({
-    name: String,
-    lastName: String,
     email: String,
     password: String,
     status: {
@@ -18,12 +16,42 @@ const userSchema = new Schema({
     },
     rol: {
         type: String,
-        enum: ['admin', 'user'],
+        enum: ['admin', 'user', 'talento', 'empresa'],
         require: true,
         default: 'user'
     }
 })
 
+const talentoSchema = new Schema({
+    nombre: String,
+    apellidos: String,
+    run: String,
+    estado_civil: String,
+    fecha_nacimiento: String,
+    edad: String,
+    numero_contacto: String,
+    profesion_oficio: String,
+    area1: String,
+    area2: String,
+    area3: String
+
+})
+const empresaSchema = new Schema({
+    nombre_empresa: String,
+    rut: String,
+    giro: String,
+    cantidad_empleados: String,
+    calle: String,
+    numeracion: Number,
+    comuna: String,
+    region: String,
+    numero_contacto: String,
+    correo: String,
+    pagina_web: String,
+    mensaje_talentos: String,
+    acerca_de: String
+
+})
 //creacion del modelo
 const User = mongoose.model('User', userSchema);
 
