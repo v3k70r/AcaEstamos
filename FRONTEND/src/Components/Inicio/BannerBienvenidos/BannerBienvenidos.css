@@ -1,0 +1,71 @@
+
+.izquierda {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    word-wrap: break-word;
+    text-align: left;
+    font-size: 650%;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 250%;
+}
+/*dani css.contenedor h3 {
+    margin: 0;
+    word-wrap: break-word;
+    color: #e5e8f6;
+    text-align: left;
+}
+@media screen and (max-width: 1920px) {
+    #carouselExampleAutoplaying { height: 100vh;
+    justify-content: flex-start;
+}
+.izquierda {
+    font-size: 5.8rem;
+    line-height: 100px;
+    max-width: 50%;
+}
+.contenedor {
+    margin-top: 14px;
+}
+.contenedor h3 {
+    max-width: 45%;
+    font-size: 2rem;
+}
+}
+
+@media screen and (max-width: 767px) {
+    #carouselExampleAutoplaying {
+        height: 45vh;
+        justify-content: center;
+    }
+    .izquierda {
+        font-size: 3.8rem;
+        line-height: 55px;
+        max-width: 100%;
+    }  
+    .contenedor {
+        margin-top: 3px;
+    }
+    .contenedor h3 {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+
+}
+
+#carouselExampleAutoplaying {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*/
