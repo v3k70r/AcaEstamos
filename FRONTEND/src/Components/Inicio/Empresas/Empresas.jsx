@@ -4,8 +4,8 @@ const Empresas = () => {
   return (
     <>
       {/* Empresas */}
-      <div className="text-center m-5 card-tamañoletra text-white">
-  <h3 style={{ backgroundColor: "#769E33", borderRadius: "20px", padding: "5px", fontSize: "30px" }}>Empresas activas</h3>
+      <div className="text-center m-5 card-tamañoletra">
+  <h4 style={{ backgroundColor: "#E5ECF6", borderRadius: "20px", padding: "5px", fontSize: "30px" }}>Empresas activas</h4>
 
   <div className="row">
     <div className="col">

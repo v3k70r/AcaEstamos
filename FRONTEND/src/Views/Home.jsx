@@ -16,8 +16,8 @@ const Home = () => {
     <BannerBienvenidos />
     <BuscarEmpresas />
     <Servicios />
-    <Empresas />
     <InfoBuenCurriculum />
+    <Empresas />
     <Footer />
     </>
   )
