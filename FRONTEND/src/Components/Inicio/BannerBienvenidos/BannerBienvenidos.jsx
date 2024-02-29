@@ -30,6 +30,8 @@ function BannerBienvenidos() {
           <div className="carousel-caption d-none d-md-block">
             <h1 className="izquierda">¡Bienvenidos!</h1>
             <h3 className="text-light contenedor">Conectando a talentos con empresas comprometidas por Renca.</h3>
+            <h1>¡Bienvenidos!</h1>
+            <p className="text-light">Conectando talentos con empresas comprometidas por Renca.</p>
           </div>
         </div>
       </div>
@@ -43,8 +45,6 @@ function BannerBienvenidos() {
       </button>
     </div>
   </div>
-
-
     //carrusel
   )
 }

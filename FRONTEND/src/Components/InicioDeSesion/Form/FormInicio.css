@@ -10,34 +10,15 @@ h4 {
     font-style: normal;
     color: #424242;
 }
-@font-face {
-    font-family: "Heavitas";
-    src: url("fonts/Heavitas.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("fonts/Poppins-Bold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
-    font-style: italic;
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("fonts/Poppins-Italic.ttf") format("truetype");
-    font-style: italic;
-    font-weight: normal;
-  }
-  @font-face {
-    font-family: "Poppins";
-    src: url("fonts/Poppins-MediumItalic.ttf") format("truetype");
-    font-style: italic;
-    font-weight: normal;
+#LoginForm {
+  margin: 20px;
 }
-  
+#ContenedorEmail {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+#ContenedorContraseña {
+  margin-bottom: 20px;
+
+}

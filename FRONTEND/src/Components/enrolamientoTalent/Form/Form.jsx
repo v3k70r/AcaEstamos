@@ -3,8 +3,9 @@ import './Form.css'
 function Form() {
     return (
         <>
-            <div className="container-fluid">
-                <div className="row shadow  contenedor-formulario-talento">
+            <div id="ContenedorForma" className="container-fluid row">
+                <div className="col-10">
+                <div className="row shadow contenedor-formulario-talento">
                     <div className="col-12">
                         <h3 className="text-center" id="infoPersonal">Información personal</h3>
                     </div>
@@ -130,6 +131,7 @@ function Form() {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </>
