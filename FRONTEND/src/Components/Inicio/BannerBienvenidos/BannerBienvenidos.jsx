@@ -22,14 +22,14 @@ function BannerBienvenidos() {
           <img src="images/cerro-renca2.png" className="img-fluid mx-auto d-block" alt="banner 2" />
           <div className="carousel-caption d-none d-md-block">
             <h1 className="izquierda">¡Bienvenidos!</h1>
-            <p className="text-light contenedor">Conectando a talentos con empresas comprometidas por Renca.</p>
+            <h3 className="text-light contenedor">Conectando a talentos con empresas comprometidas por Renca.</h3>
           </div>
         </div>
         <div className="carousel-item">
           <img src="images/cerroRenca1.png" className="img-fluid mx-auto d-block" alt="banner 3" />
           <div className="carousel-caption d-none d-md-block">
             <h1 className="izquierda">¡Bienvenidos!</h1>
-            <p className="text-light contenedor">Conectando a talentos con empresas comprometidas por Renca.</p>
+            <h3 className="text-light contenedor">Conectando a talentos con empresas comprometidas por Renca.</h3>
           </div>
         </div>
       </div>
