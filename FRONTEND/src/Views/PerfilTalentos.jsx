@@ -15,7 +15,10 @@ function PerfilTalentos() {
   return (
     <div>
       <Navbar /> 
-      <BannerTalentos />
+      <BannerTalentos 
+      nombreTalento='Daniel Martinez'
+      profesionTalento='Electricista'
+      />
       <div className="container columnasPT" style={{ marginBottom: '25px' }}>
       <div className="row filasPT">
       <div className="col-md-4 colmunaF1">

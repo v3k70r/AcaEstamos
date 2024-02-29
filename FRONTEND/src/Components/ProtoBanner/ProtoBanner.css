@@ -40,7 +40,7 @@ body {
     text-align: left;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2600px) {
     .banner-container {
         height: 100vh;
         justify-content: flex-start;
