@@ -1,27 +1,21 @@
-/*dani css*/
-#carouselExampleAutoplaying {
-    width: 100%;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
+
 .izquierda {
     display: flex;
     align-items: center;
     margin: 0;
     word-wrap: break-word;
     text-align: left;
+    font-size: 650%;
 }
 
 .contenedor {
     display: flex;
     align-items: center;
     margin-top: 15px;
+    text-align: left;
+    font-size: 250%;
 }
-.contenedor h3 {
+/*dani css.contenedor h3 {
     margin: 0;
     word-wrap: break-word;
     color: #e5e8f6;
@@ -64,3 +58,14 @@
     }
 
 }
+
+#carouselExampleAutoplaying {
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*/
