@@ -2,18 +2,6 @@ const User = require("../models/user.model");
 const bcrypt = require("bcrypt");
 const { generarJWT } = require("../services/generar-jwt");
 
-const listarUsuarios = async (req, res) => {
-
-  const usuarios = await User.find({});
-
-  res.status(200).json({
-        code: 200,
-        msg: "Lista de usuarios",
-        data: usuarios
-  })
-   
-}
-
 // gestionar la creacion de un usuario
 
 const crearUser = async (req, res) => {
@@ -238,6 +226,5 @@ module.exports = {
   loginUser,
   getUserById,
   updateStatusUserById,
-  updateUserById,
-  listarUsuarios
+  updateUserById
 };
