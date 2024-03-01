@@ -1,20 +1,31 @@
 
 .izquierda {
     display: flex;
-    align-items: center;
     margin: 0;
     word-wrap: break-word;
     text-align: left;
-    font-size: 650%;
+    font-size: 8rem;
 }
 
-.contenedor {
+
+.izquierda1 {
+    margin-bottom: 30%;
+    font-size: 8rem;
     display: flex;
-    align-items: center;
-    margin-top: 15px;
     text-align: left;
-    font-size: 250%;
 }
+
+
+
+.text-light.contenedor{
+display: flex;
+text-align: left;
+margin-bottom: 30%;
+font-size: 3rem;
+width: 60%;
+}
+
+
 /*dani css.contenedor h3 {
     margin: 0;
     word-wrap: break-word;

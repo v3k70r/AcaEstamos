@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
+<>
     <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
       {/* Container wrapper */}
       <div className="container">
@@ -72,6 +73,7 @@ function Navbar() {
       </div>
       {/* Container wrapper */}
     </nav>
+</>
   );
 }
 
