@@ -10,12 +10,13 @@ import AcercaDe from "../Views/AcercaDe";
 import PerfilEmpresa from "../Views/PerfilEmpresa"
 import EnrolamientoEmpresa from "../Views/EnrolamientoEmpresa";
 import UnbuenCurriculum from "../Views/UnbuenCurriculum";
+import VistaAdministrador from "../Views/VistaAdministrador";
 import TableroTalentos from "../Views/TableroTalentos";
 
 
 const router = createBrowserRouter([
   { path: "/", element: <Home/>},
-  { path: "/enrolamientoTalent", element: <EnrolamientoTalent />},
+  { path: "/EnrolamientoTalent", element: <EnrolamientoTalent />},
   { path: "/inicioDeSesion", element: <InicioDeSesion />},
   {path: "/ingresoUsuario", element: <IngresoUsuario />},
   {path: "/VistaDeEmpresas", element: <VistaDeEmpresas/>},
@@ -24,7 +25,9 @@ const router = createBrowserRouter([
   { path: "/PerfilEmpresa", element: <PerfilEmpresa />},
   { path: "/EnrolamientoEmpresa", element: <EnrolamientoEmpresa />},
   {path: "/UnBuenCurriculum", element: <UnbuenCurriculum />},
+  {path: "/VistaAdministrador", element: <VistaAdministrador />},
   {path: "/TableroTalentos", element: <TableroTalentos />}
+
   ]);
 
 

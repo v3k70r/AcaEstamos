@@ -10,6 +10,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    
 }
 
 .banner-content img {
@@ -39,7 +40,7 @@ body {
     text-align: left;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2600px) {
     .banner-container {
         height: 100vh;
         justify-content: flex-start;

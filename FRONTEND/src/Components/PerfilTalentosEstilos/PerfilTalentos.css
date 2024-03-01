@@ -13,12 +13,19 @@
    
     margin-bottom: 10px;
   }
-
+  container columnasPT
 
   .titulosFilasTalentos {
     padding-top: 20px;
   }
   
+  @media screen and (max-width: 600px) {
+    .container.columnasPT{
+      margin-top: 150px;
+         
+     }
+   }
+
   @media screen and (max-width: 600px) {
     .filasPT{
      display: flex;

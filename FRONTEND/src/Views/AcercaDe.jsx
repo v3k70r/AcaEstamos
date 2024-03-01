@@ -12,7 +12,7 @@ const AcercaDe = () => {
             <Navbar />
             <ProtoBanner imageUrl="images/bannerAcerca.png" 
             headingText="Acerca de" 
-            subheadingText="Acá estamos" />
+            subheadingText="Acá Estamos!" />
             <Mision />
             <InfoRenca />
             <CardsAcerca />

@@ -1,14 +1,40 @@
+.card-body-columna3{
+  display: flex;
+  flex-direction: row;
+  
+  align-items:center ;
+  
+}
+
 .cardF3 {
     border-radius: 10px;
     margin: 10px; 
     padding: 10px;
+
+}
+.card-title {
   
+  
+  margin-left: -15px;
+   
+
+}
+.card-text {
+  
+  
+  margin-left: 5px;
+   
+
+}
+
 .mx-auto2 {
     
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
   }  
 
 
