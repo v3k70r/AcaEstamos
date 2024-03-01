@@ -2,7 +2,7 @@
 .card-busquedahome{
     width: 80%;
     height: 60%;
-    padding-left: 10%;
-    padding-top: 2%;
     border-radius: 20px;
+    padding: 10px;
+    justify-content: flex-start;
           }  
