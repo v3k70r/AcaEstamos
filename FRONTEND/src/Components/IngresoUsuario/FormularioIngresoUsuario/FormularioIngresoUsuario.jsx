@@ -89,7 +89,7 @@ function FormularioIngresoUsuario() {
     },[navigate, userCreate])
   
   return (
-
+    <>
     <main className="container m-5" style={{ borderRadius: '20px' }}>
       <form id="LoginFormIngreso" style={{ borderRadius: '20px' }}>
         <div className="container col-9 shadow" style={{ borderRadius: '20px' }}>
@@ -174,6 +174,7 @@ function FormularioIngresoUsuario() {
                 </div>
               </div>
             </div>
+          </div>
           </div>
         </form>
       </main>
