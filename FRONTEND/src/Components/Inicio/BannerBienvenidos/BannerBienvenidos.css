@@ -4,7 +4,15 @@
     margin: 0;
     word-wrap: break-word;
     text-align: left;
-    font-size: 650%;
+    font-size: 8rem;
+}
+
+
+.izquierda1 {
+    margin-bottom: 30%;
+    font-size: 8rem;
+    display: flex;
+    text-align: left;
 }
 
 
@@ -13,7 +21,8 @@
 display: flex;
 text-align: left;
 margin-bottom: 30%;
-font-size: 250%;
+font-size: 3rem;
+width: 60%;
 }
 
 

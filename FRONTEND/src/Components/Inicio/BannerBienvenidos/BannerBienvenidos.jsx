@@ -20,22 +20,22 @@ function BannerBienvenidos() {
         <div className="carousel-item active" data-bs-interval="3000">
           <img src="public/images/cerro-renca1.jpeg" className="img-fluid mx-auto d-block" alt="banner 1" />
           <div className="carousel-caption d-none d-md-block">
-            <h1 className="izquierda">¡Bienvenidos!</h1>
-            <h3 className="text-light contenedor">Conectando a talentos con empresas comprometidas por Renca.</h3>
+          <h1 className="izquierda">¡BIENVENIDOS </h1>
+            <h1 className="izquierda1">"Acá estamos"! </h1>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="3000">
           <img src="public/images/cerro-renca2.jpg" className="img-fluid mx-auto d-block" alt="banner 2" />
           <div className="carousel-caption d-none d-md-block">
-            <h1 className="izquierda">¡Bienvenidos!</h1>
-            <h3 className="text-light contenedor">Conectando a talentos con empresas comprometidas por Renca.</h3>
+          <h1 className="izquierda">¡BIENVENIDOS! </h1>
+            <h3 className="text-light contenedor">Conectando  talentos con empresas comprometidas por Renca</h3>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="3000">
           <img src="public/images/cerroRenca1.jpg" className="img-fluid mx-auto d-block" alt="banner 3" />
           <div className="carousel-caption d-none d-md-block">
-            <h1 className="izquierda">¡Bienvenidos!</h1>
-            <h3 className="text-light contenedor">Conectando a talentos con empresas comprometidas por Renca.</h3>
+            <h1 className="izquierda">¡BIENVENIDOS! </h1>
+            <h3 className="text-light contenedor">Conectando  talentos con empresas comprometidas por Renca</h3>
           </div>
         </div>
       </div>
