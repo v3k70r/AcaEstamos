@@ -1,5 +1,8 @@
 import React from 'react'
 const url = 'http://localhost:8080/api/v1/listar'
+import './MenuAdministrador.css';
+
+
 function MenuAdministrador() {
   return (
     <div>
@@ -28,19 +31,19 @@ function MenuAdministrador() {
                     <th scope="row">1</th>
                     <td>Mark</td>
                     <td>Otto</td>
-                    <td><button className="boton-tarjeta" style={{ backgroundColor: '#769E33' }}>Activo</button></td>
+                    <td><button className="boton-tarjeta boton-admin" style={{ backgroundColor: '#769E33' }}>Activo</button></td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
                     <td>Jacob</td>
                     <td>Thor</td>
-                    <td><button className="boton-tarjeta" style={{ backgroundColor: '#769E33' }}>Activo</button></td>
+                    <td><button className="boton-tarjeta boton-admin" style={{ backgroundColor: '#769E33' }}>Activo</button></td>
                   </tr>
                   <tr>
                     <th scope="row">3</th>
                     <td>Jacob</td>
                     <td>Thornton</td>
-                    <td><button className="boton-tarjeta" style={{ backgroundColor: '#e33131' }}>Inactivo</button></td>
+                    <td><button className="boton-tarjeta boton-admin" style={{ backgroundColor: '#e33131' }}>Inactivo</button></td>
                   </tr>
                 </tbody>
               </table>

@@ -8,9 +8,11 @@ const EnrolamientoEmpresa = () => {
     return (
         <>
             <Navbar />
-            <ProtoBanner imageUrl="images/bannerEmpresa111.png" 
-            headingText="¡Enrólate como empresa!" />
-            <FormEnrolEmpresa />
+            <ProtoBanner imageUrl="images/bannerEmpresa111.png"
+                headingText="¡Enrólate como empresa!" />
+            <div className="container-fluid">
+                <FormEnrolEmpresa />
+            </div>
             <Footer />
         </>
     );

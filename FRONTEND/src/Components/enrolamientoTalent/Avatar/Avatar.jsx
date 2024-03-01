@@ -17,7 +17,7 @@ function Avatar() {
 
     return (
         <>
-            <div className="container-fluid contenedor-avatar">
+            <div className="container contenedor-avatar">
                 <div id="avatar-preview" className="row">
                     <div className="selected-avatar-container">
                         {selectedAvatar ? (

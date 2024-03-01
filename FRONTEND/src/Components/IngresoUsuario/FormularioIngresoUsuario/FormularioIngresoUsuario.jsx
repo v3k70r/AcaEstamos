@@ -133,26 +133,51 @@ function FormularioIngresoUsuario() {
                 <div className="col-xs-2 m-2">
                   <label className="radio-inline">
                     <input type="radio" name="typeUsuario" value="Talento" id = "talento"/> Talento
+
                   </label>
                 </div>
-              </div>
 
-              {/* 2 column grid layout for inline styling */}
+                <div className="form-group">
+                  <label className="control-label col-xs-3 m-1">Te registras como:</label>
+                  <div className="col-xs-2 m-2">
+                    <label className="radio-inline">
+                      <input
+                        type="radio"
+                        name="typeUsuario"
+                        value="Empresa"
+                        onChange={() => setTipoUsuario('Empresa')}
+                      />
+                      Empresa
+                    </label>
+                  </div>
+                  <div className="col-xs-2 m-2">
+                    <label className="radio-inline">
+                      <input
+                        type="radio"
+                        name="typeUsuario"
+                        value="Talento"
+                        onChange={() => setTipoUsuario('Talento')}
+                      />
+                      Talento
+                    </label>
+                  </div>
+                </div>
+              </div>
+              {/* Submit button */}
               <div className="row mb-6">
                 <div className="col d-flex justify-content-center">
-                  {/* Submit button */}
-                  <button data-mdb-ripple-init type="button" className="btn btn-primary btn-lg mb-1 mt-3"
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-lg mb-1 mt-3"
                     style={{ backgroundColor: '#F6990E', width: '60%', marginLeft: 'auto', marginRight: 'auto' }}
                     onClick={handleSubmit}>Registrar</button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </form>
-    </main>
+        </form>
+      </main>
+    </>
   );
 }
-
-
-export default FormularioIngresoUsuario
+export default FormularioIngresoUsuario;

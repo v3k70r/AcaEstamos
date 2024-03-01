@@ -40,7 +40,7 @@ body {
     text-align: left;
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2600px) {
     .banner-container {
         height: 100vh;
         justify-content: flex-start;
@@ -55,13 +55,13 @@ body {
     }
 
     .banner-content .large-heading {
-        font-size: 5.8rem;
+        font-size: 6rem;
         line-height: 100px;
         max-width: 50%;
     }
 
     .subheading-container {
-        margin-top: 14px;
+        margin-top: 10px;
     }
 
     .subheading-container h3 {

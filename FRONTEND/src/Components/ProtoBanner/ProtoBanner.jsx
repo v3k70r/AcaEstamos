@@ -11,6 +11,6 @@ function ProtoBanner({ imageUrl, headingText, subheadingText }) {
                 </div>
             </div>
     );
-};
+}
 
 export default ProtoBanner;

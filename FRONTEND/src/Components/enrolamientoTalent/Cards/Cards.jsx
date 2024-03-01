@@ -1,9 +1,17 @@
 import './Cards.css'
+import { useState } from 'react';
 
 function Cards() {
+    const [redireccionarA, setRedireccionarA] = useState('');
+    const handleEnrolButtonClick = () => {
+        setRedireccionarA('/PerfilTalentos');
+  };
+  if (redireccionarA) {
+    window.location.href = redireccionarA;
+}
     return (
         <>
-            <div className="container-fluid contenedor-cartas">
+            <div className="container contenedor-cartas">
                 <div className="row row-cols-1 row-cols-md-3 g-4" id="cardsPancho">
                     <div className="col">
                         <div className="card h-100 shadow" id="borderCards">
@@ -54,7 +62,7 @@ function Cards() {
                 </div>
             </div>
             <div className="row col-6 text-center">
-                <button className="button">
+                <button className="button" onClick={handleEnrolButtonClick}>
                     Enrólate
                     <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
                         <path
