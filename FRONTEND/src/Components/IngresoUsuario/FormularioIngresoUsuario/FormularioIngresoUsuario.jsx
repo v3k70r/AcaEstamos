@@ -61,13 +61,16 @@ function FormularioIngresoUsuario() {
         }).then(response => response.json())
         .then(data => {
             console.log(data);
+            localStorage.user = JSON.stringify(user);
             setName("");
             setLastName("");
             setEmail("");
             setPassword("");
           // Si la creación del usuario fue exitosa, establecer userCreate en true 
-          if (data.status === 201)
-          setUserCreate(true);
+          if (data.status === 201){
+            setUserCreate(true);
+          }
+          
         })
         .catch((error) => {
             console.error('Error:', error);
@@ -77,7 +80,11 @@ function FormularioIngresoUsuario() {
     // Efecto secundario que se ejecuta cuando userCreate cambia
     useEffect(() => {
         if(userCreate){
-            navigate('/login')
+
+          if(document.getElementById("empresa").checked)
+            navigate('/enrolamientoEmpresa')
+          else if(document.getElementById("talento").checked)
+            navigate('/enrolamientoTalent')
         }
     },[navigate, userCreate])
   
@@ -120,12 +127,12 @@ function FormularioIngresoUsuario() {
                 <label className="control-label col-xs-3 m-1">Te registras como:</label>
                 <div className="col-xs-2 m-2">
                   <label className="radio-inline">
-                    <input type="radio" name="typeUsuario" value="Empresa" /> Empresa
+                    <input type="radio" name="typeUsuario" value="Empresa" id="empresa"/> Empresa
                   </label>
                 </div>
                 <div className="col-xs-2 m-2">
                   <label className="radio-inline">
-                    <input type="radio" name="typeUsuario" value="Talento" /> Talento
+                    <input type="radio" name="typeUsuario" value="Talento" id = "talento"/> Talento
                   </label>
                 </div>
               </div>

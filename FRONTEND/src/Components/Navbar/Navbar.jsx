@@ -10,6 +10,10 @@ function Navbar() {
     email: email,
     password: password,
   };
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    window.location.reload();
+    }
   fetch({  // Misma ruta definida en backend 
       method: "POST",
       headers: {
@@ -78,27 +82,38 @@ function Navbar() {
           {/* Left links */}
 
           <div className="d-flex align-items-center">
-          {localStorage.getItem("user") !== null && (
-              <div>
-                <p>Bienvenido {userLocal.name} {userLocal.lastName}</p>
+          {localStorage.getItem("user") !== null ? 
+              <><div>
+                <p>Bienvenidx {userLocal.name} {userLocal.lastName}</p>
               </div>
-            )}
+              <ul className="navbar-nav me-auto mb-lg-0">
+                  <li className="nav-item">
+                    <Link to="/logout" className="nav-link">
+                      <button type="button" className="btn custom-btn" style={{ backgroundColor: '#F6990E', color: 'white' }}  onClick={handleLogout}>
+                        Cerrar Sesión
+                      </button>
+                    </Link>
+                  </li>
+                </ul></>
+            
+          :<>
             <ul className="navbar-nav me-auto mb-lg-0">
-              <li className="nav-item">
-                <Link to="/inicioDeSesion" className="nav-link">
-                  <button type="button" className="btn custom-btn" style={{ backgroundColor: '#F6990E', color: 'white' }}>
-                    Iniciar Sesión
-                  </button>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/ingresoUsuario" className="nav-link">
-                  <button type="button" className="btn custom-btn" style={{ backgroundColor: '#769E33', color: 'white' }}>
-                    Unirse
-                  </button>
-                </Link>
-              </li>
-            </ul>
+            <li className="nav-item">
+              <Link to="/inicioDeSesion" className="nav-link">
+                <button type="button" className="btn custom-btn" style={{ backgroundColor: '#F6990E', color: 'white' }}>
+                  Iniciar Sesión
+                </button>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/ingresoUsuario" className="nav-link">
+                <button type="button" className="btn custom-btn" style={{ backgroundColor: '#769E33', color: 'white' }}>
+                  Unirse
+                </button>
+              </Link>
+            </li>
+          </ul> 
+            </>}
             <Link to="https://www.renca.cl" className="navbar-brand me-2">
               <img src="images/logo-renca.png" height="48" alt="MDB Logo" loading="lazy" style={{ marginTop: '-1px' }} />
             </Link>

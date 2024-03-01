@@ -1,5 +1,5 @@
-
-
+import React from 'react'
+const url = 'http://localhost:8080/api/v1/listar'
 function MenuAdministrador() {
   return (
     <div>

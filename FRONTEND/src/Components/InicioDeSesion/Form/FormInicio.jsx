@@ -57,6 +57,7 @@ function FormInicio() {
             const token = jwtDecode(JSON.stringify(data.token)); // Decodifica el token recibido del servidor
             console.log(token);
             localStorage.setItem("token", JSON.stringify(data.token)); // Almacena el token JWT en el almacenamiento local del navegador. Esto es común en la autenticación para mantener el estado de sesión del usuario incluso después de recargar la página.
+            window.location.reload();
         });
     };
 
