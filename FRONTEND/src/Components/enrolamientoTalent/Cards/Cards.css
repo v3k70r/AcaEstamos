@@ -1,89 +1,152 @@
 #cardsPancho {
-    margin-left: 60px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+  margin-left: 60px;
+  margin-right: 50px;
+  margin-bottom: 50px;
 }
+
 #borderCards {
-    border-radius: 20px;
+  border-radius: 20px;
 }
+
 @media screen and (max-width: 600px) {
-    .contenedor-cartas {
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      
-    }  
-    }
-    .button {
-        position: relative;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-        padding-block: 0.5rem;
-        padding-inline: 1.25rem;
-        background-color: #F6990E;
-        border-radius: 20px;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        color: #ffff;
-        gap: 10px;
-        font-weight: bold;
-        border: 3px solid #ffffff4d;
-        outline: none;
-        overflow: hidden;
-        font-size: 20px;
-        left: 50%;
-        margin-bottom: 50px;
-      }
-      
-      .icon {
-        width: 24px;
-        height: 24px;
-        transition: all 0.3s ease-in-out;
-      }
-      
-      .button:hover {
-        transform: scale(1.05);
-        border-color: #fff9;
-      }
-      
-      .button:hover .icon {
-        transform: translate(4px);
-      }
-      
-      .button:hover::before {
-        animation: shine 1.5s ease-out infinite;
-      }
-      
-      .button::before {
-        content: "";
-        position: absolute;
-        width: 100px;
-        height: 100%;
-        background-image: linear-gradient(
-          120deg,
-          rgba(255, 255, 255, 0) 30%,
-          rgba(255, 255, 255, 0.8),
-          rgba(255, 255, 255, 0) 70%
-        );
-        top: 0;
-        left: -100px;
-        opacity: 0.6;
-      }
-      
-      @keyframes shine {
-        0% {
-          left: -100px;
-        }
-      
-        60% {
-          left: 100%;
-        }
-      
-        to {
-          left: 100%;
-        }
-      }
-      
+  .contenedor-cartas {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+
+  }
+}
+
+.button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: #F6990E;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 20px;
+  left: 50%;
+  margin-bottom: 50px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.button:hover .icon {
+  transform: translate(4px);
+}
+
+.button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+/*CHECKBOX*/
+.checkbox {
+  --light: #E5E8F6;
+  --primary-color: #0492D0;
+  --duration: 0.3s;
+  --ease: ease-in-out;
+}
+
+/* hide checkbox */
+.checkbox input[type="checkbox"] {
+  display: none;
+
+}
+
+.checkbox label {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+  color: #424242;
+}
+
+.checkbox label span {
+  margin-left: 8px;
+  font-size: 17px;
+}
+
+.checkbox svg {
+  height: 36x;
+  width: 36px;
+}
+
+/* svg rectangle property */
+.checkbox svg>rect {
+  fill: var(--light);
+  stroke: #0492D0;
+  /* responsive values */
+  stroke-dasharray: 400%;
+  stroke-dashoffset: 400%;
+  transition: var(--duration) stroke-dashoffset var(--ease);
+}
+
+/* svg check property */
+.checkbox svg path {
+  stroke: var(--primary-color);
+  /* responsive values */
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  transition: var(--duration) stroke-dashoffset var(--ease);
+}
+
+.checkbox input[type="checkbox"]:checked+label svg>rect,
+.checkbox input[type="checkbox"]:checked+label svg path {
+  stroke-dashoffset: 0;
+}
+
+.div-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
