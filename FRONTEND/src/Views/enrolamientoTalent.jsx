@@ -10,13 +10,16 @@ const EnrolamientoTalent = () => {
     return (
         <>
             <Navbar />
-            <ProtoBanner imageUrl="images/bannerTalent111.png" 
-            headingText="¡Enrólate como talento!" />
-            <Avatar />
-            <Form />
-            <Cards />
+            <ProtoBanner imageUrl="images/bannerTalent111.png"
+                headingText="¡Enrólate como talento!" />
+            <div className="container-fluid">
+                <Avatar />
+                <Form />
+                <Cards />
+            </div>
             <Footer />
         </>
+
     );
 };
 

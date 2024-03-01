@@ -11,7 +11,7 @@ function Cards() {
 }
     return (
         <>
-            <div className="container-fluid contenedor-cartas">
+            <div className="container contenedor-cartas">
                 <div className="row row-cols-1 row-cols-md-3 g-4" id="cardsPancho">
                     <div className="col">
                         <div className="card h-100 shadow" id="borderCards">
