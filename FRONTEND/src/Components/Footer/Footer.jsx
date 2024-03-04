@@ -14,21 +14,20 @@ function Footer() {
       <div className="row">
         {/* Logo isignia */}
         <div className="col-lg-4 mt-4" style={{ display: 'flex', flexDirection: 'row' }}>
+        <a className="footer-brand" href="https://renca.cl/">
           <a className="footer-brand"><img src="public/images/isignia-renca.png" height="250" alt="MDB Logo" loading="lazy" /></a>
+          </a>
           {/* Links de interés */}
           <div style={{ width: '100%', marginLeft: '15%' }}>
             <h5 style={{ color: 'white', marginBottom: '8%' }}>Links de interés</h5>
             <p style={{ color: 'white', width: '100%', textDecoration: 'underline' }}>
-              <a href="https://www.instagram.com/muni_renca/" style={{ color: 'white' }}>Certificados de interés</a>
+              <a href="https://rencaparticipa.cl/lugares/131438" style={{ color: 'white' }}>Rencaparticipa.cl</a>
             </p>
             <p style={{ color: 'white', width: '100%', textDecoration: 'underline' }}>
-              <a href="https://www.instagram.com/muni_renca/" style={{ color: 'white' }}>Capacitaciones</a>
-            </p>
-            <p style={{ color: 'white', width: '100%', textDecoration: 'underline' }}>
-              <a href="https://www.instagram.com/muni_renca/" style={{ color: 'white' }}>Renca.cl</a>
+              <a href="https://renca.cl/contacta-a-omil/" style={{ color: 'white' }}>Capacitaciones</a>
             </p>
             <p style={{ color: 'white', textDecoration: 'underline' }}>
-              <a href="https://www.instagram.com/muni_renca/" style={{ color: 'white' }}>Políticas de privacidad</a>
+              <a href=" " style={{ color: 'white' }}>Políticas de privacidad</a>
             </p>
           </div>
         </div>
@@ -45,7 +44,7 @@ function Footer() {
 </p>
 
             <p style={{ color: 'white', paddingRight: '5%' }}><a href="https://www.instagram.com/muni_renca/" style={{ color: 'inherit', fontSize: '2em' }}><i className="fab fa-instagram"></i></a></p>
-            <p style={{ color: 'white', paddingRight: '5%' }}><a href="https://www.instagram.com/muni_renca/" style={{ color: 'inherit', fontSize: '2em' }}><i className="fab fa-facebook"></i></a></p>
+            <p style={{ color: 'white', paddingRight: '5%' }}><a href="https://www.facebook.com/MuniRenca" style={{ color: 'inherit', fontSize: '2em' }}><i className="fab fa-facebook"></i></a></p>
             <p style={{ color: 'white', paddingRight: '5%' }}><a href="https://twitter.com/Muni_Renca" style={{ color: 'inherit', fontSize: '2em' }}><i className="fa-brands fa-twitter"></i></a></p>
             <p style={{ color: 'white', paddingRight: '5%' }}><a href="https://www.flickr.com/photos/153772620@N02" style={{ color: 'inherit', fontSize: '2em' }}><i className="fa-brands fa-flickr"></i></a></p>
             <p style={{ color: 'white' }}><a href="https://www.youtube.com/channel/UCosdtBKfRSxhhi4x9247Nbw" style={{ color: 'inherit', fontSize: '2em' }}><i className="fa-brands fa-youtube"></i></a></p>
