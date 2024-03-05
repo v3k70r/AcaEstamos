@@ -124,7 +124,7 @@ function FormInicio() {
                             {/* Resto del formulario (checkbox, link, etc.) */}
 
                             {/* Submit button */}
-                            <button type="button" className="btn btn-block mb-4 just text-white" style={{ backgroundColor: '#F6990E', width: '60%', marginLeft: 'auto', marginRight: 'auto' }} onClick={handleSubmit}>Ingresa</button>
+                            <button type="button" className="boton-inicio btn btn-block mb-4" style={{ backgroundColor: '#F6990E', width: '60%', marginLeft: 'auto', marginRight: 'auto' }} onClick={handleSubmit}>Ingresa</button>
 
                             {/* Register buttons */}
                             <div className="text-center">
