@@ -7,5 +7,13 @@
     background-color: #E5ECF6;
     border-radius: 20px;
     padding: 30px;
+    margin-top: 1%;
 }
 
+
+@media screen and (max-width: 767px) { 
+    
+#contenedor-buencv {
+margin-top: 5%;
+    }   
+}
