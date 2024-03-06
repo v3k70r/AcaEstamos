@@ -1,29 +1,85 @@
 
-.izquierda {
+.texto-principal {
     display: flex;
-    margin: 0;
     word-wrap: break-word;
     text-align: left;
-    font-size: 6rem;
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -180px;
 }
 
 
-.izquierda1 {
-    margin-bottom: 30%;
-    font-size: 6rem;
+.texto-secundario {
     display: flex;
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: -165px;
     text-align: left;
+    
+
 }
 
 
 
-.text-light.contenedor{
-display: flex;
-text-align: left;
-margin-bottom: 30%;
-font-size: 2rem;
-width: 70%;
+.img-fluid-carrusel {
+height: 550px;
+width: 100%;
 }
+
+
+
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Ajusta el ancho si es necesario */
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+
+
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 50%; /* Centra los botones verticalmente */
+    transform: translateY(-50%); /* Asegura que estén perfectamente centrados */
+    width: 50px; /* Ajusta el tamaño para que sea un cuadrado */
+    height: 60px; /* Ajusta el tamaño para que sea un cuadrado */
+    justify-content: center; /* Centra el icono dentro del botón */
+    align-items: center; /* Centra el icono dentro del botón */
+    background-color: #000; /* Color de fondo del cuadrado */
+    border: none; /* Remueve el borde si existe alguno */
+    border-radius: 0; /* Asegura que los bordes sean cuadrados */
+    padding-bottom: 1%;
+  }
+
+
+
+
+  .boton-transparente {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff; /* Borde blanco de 1px */
+    color: #fff; /* Color del texto */
+    padding: 5px 10px; /* Espaciado interno del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    outline: none; /* Elimina el contorno predeterminado del botón al enfocarlo */
+    font-size: 22px;
+    position: relative;
+    top: -100px
+
+}
+
+.boton-transparente:hover {
+    background-color: none;
+    color: none; 
+}
+  
+
 
 
 /*dani css.contenedor h3 {
