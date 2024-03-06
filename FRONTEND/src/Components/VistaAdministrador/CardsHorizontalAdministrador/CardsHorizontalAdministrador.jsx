@@ -5,9 +5,9 @@ function CardsHorizontalAdministrador() {
     <>
        <div className="col-md-12">
       {/* Contenido del contenedor principal */}
-      <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
+      <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px', padding: '1%' }}>
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12 espacioCard" >
             <div className="card cardRes mb-3" style={{ width: '100%' }}>
               <div className="row no-gutters">
                 <div className="col-md-4">
@@ -25,7 +25,7 @@ function CardsHorizontalAdministrador() {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12 espacioCard">
             <div className="card mb-3" style={{ width: '100%' }}>
               <div className="row no-gutters">
                 <div className="col-md-4">
@@ -43,7 +43,7 @@ function CardsHorizontalAdministrador() {
           </div>
         </div>
         <div className="row">
-          <div className="col-md-12">
+          <div className="col-md-12 espacioCard">
             <div className="card mb-3" style={{ width: '100%' }}>
               <div className="row no-gutters">
                 <div className="col-md-4">

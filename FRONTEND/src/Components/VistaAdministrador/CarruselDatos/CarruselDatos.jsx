@@ -31,9 +31,9 @@ function CarruselDatos() {
           <div className="carousel-item">
             <img src="images/Usuario-admin.jpg" className="card-imgEmpresa d-block w-10" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h1>123</h1>
-              <h5>Usuarios Inactivos</h5>
-              <p>Aqui puedes ver la cantidad de usuarios inactivos.</p>
+              <h1 className="PCA1">123</h1>
+              <h5 className="PCA2">Usuarios Inactivos</h5>
+              <p className="PCA3">Aqui puedes ver la cantidad de usuarios inactivos.</p>
               <button className="boton-tarjeta" style={{ backgroundColor: '#e7892c', color: "white", borderRadius: "8px", border: "none", padding: "1%" }}>Ver más</button>
             </div>
           </div>
