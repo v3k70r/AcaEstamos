@@ -61,10 +61,6 @@ function FormInicio() {
         });
     };
 
-    // Recuerda: JSON.parse es una función en JavaScript que se utiliza para convertir una cadena JSON en un objeto JavaScript
-    // Recuerda: JSON.stringify es un método en JavaScript que se utiliza para convertir un objeto JavaScript en una cadena JSON
-    
-    //Almacena la información del usuario en el almacenamiento local si el estado userLogueado tiene un status de 200.
     useEffect(() => {
         if (userLogueado.status === 200) { // Es necesario convertir a una cadena de texto JSON con stringify para ser almacenado en el local
         localStorage.setItem("user", JSON.stringify(userLogueado.data));
@@ -99,10 +95,10 @@ function FormInicio() {
     };
 
     return (
-        <main className="container m-5">
+        <main className="container">
             <form id="LoginForm">
-                <div className="container col-8 shadow" style={{ borderRadius: '20px' }}>
-                    <div className="row justify-content-center">
+                <div className="container col-md-8 shadow" style={{ borderRadius: '20px' }}>
+                <div className="row justify-content-center">
                         <h4 className="text-center mb-4" style={{ backgroundColor: '#E5ECF6', margin: '0', padding: '20px', borderTopLeftRadius: '20px', borderTopRightRadius: '20px' }}>
                             Ingresa tus datos para iniciar sesión
                         </h4>
@@ -111,7 +107,7 @@ function FormInicio() {
                             <div id="ContenedorEmail" className="form-floating" htmlFor="email">
                                 <input className="form-control" type="email" id="email" placeholder="a" style={{ backgroundColor: 'white', border: '1px solid grey' }} 
                                 value={email} onChange={handleEmail} />
-                                <label className="form-label" htmlFor="email"><p>Correo electrónico</p></label>
+                                <label className="form-label" htmlFor="email"><p>Correo</p></label>
                             </div>
 
                             {/* Password input */}
