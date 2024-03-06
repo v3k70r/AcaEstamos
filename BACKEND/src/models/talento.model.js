@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 
 const talentoSchema = new Schema({
     user: { type: Schema.Types.ObjectId, ref: 'userSchema' },
-    nombre: String,
+    nombres: String,
     apellidos: String,
     run: String,
     estado_civil: String,
