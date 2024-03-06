@@ -128,7 +128,7 @@ function FormEnrolEmpresa() {
             </div>
             <div className="col-12 mb-3">
                 <div className="form-floating">
-                    <input className="form-control" type="text" id="mensaje" placeholder="o" name="mensaje"/>
+                    <input className="form-control" type="password" id="mensaje" placeholder="o" name="mensaje"/>
                     <label className="form-label" htmlFor="mensaje">
                         <p>Contraseña</p>
                     </label>
