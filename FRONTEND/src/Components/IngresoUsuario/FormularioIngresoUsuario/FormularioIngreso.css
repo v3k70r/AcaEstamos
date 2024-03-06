@@ -10,3 +10,31 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.botonTalento {
+    background-color: #769E33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+  }
+  
+  .botonTalento i {
+    margin-bottom: 15px;
+    font-size: 60px;
+    color: #E5ECF6;
+  }
+  .textoBotonTalento {
+    color: #E5ECF6;
+  }
+  .botonEmpresa {
+    background-color: #F6990E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+  }
+  .botonEmpresa i {
+    margin-bottom: 15px;
+    font-size: 60px;
+    color: #E5ECF6;
+  }
