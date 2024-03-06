@@ -90,7 +90,7 @@ function FormEnrolEmpresa() {
                 <div className="form-floating">
                     <input className="form-control" type="email" id="email" placeholder="a" name="email"/>
                     <label className="form-label" htmlFor="email">
-                        <p>Correo electrónico</p>
+                        <p>Acerca de</p>
                     </label>
                 </div>
             </div>
@@ -119,13 +119,19 @@ function FormEnrolEmpresa() {
                 </div>
             </div>
             <div className="col-12 mb-3">
-                <div className="mb-3">
-                    <div className="form-floating">
-                        <textarea className="form-control" id="acercaDe" rows="6" name='acercaDe'></textarea>
-                        <label className="form-label" htmlFor="acercaDe">
-                            <p>Acerca de</p>
-                        </label>
-                    </div>
+                <div className="form-floating">
+                    <input className="form-control" type="text" id="mensaje" placeholder="o" name="mensaje"/>
+                    <label className="form-label" htmlFor="mensaje">
+                        <p>Correo electrócnico</p>
+                    </label>
+                </div>
+            </div>
+            <div className="col-12 mb-3">
+                <div className="form-floating">
+                    <input className="form-control" type="text" id="mensaje" placeholder="o" name="mensaje"/>
+                    <label className="form-label" htmlFor="mensaje">
+                        <p>Contraseña</p>
+                    </label>
                 </div>
             </div>
         </div>
