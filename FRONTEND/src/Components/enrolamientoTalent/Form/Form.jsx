@@ -4,12 +4,12 @@ function Form() {
     return (
         <>
             <div id="ContenedorForma" className="container-fluid row">
-                <div className="col-10">
+                <div className="col-lg-10 mx-10">
                 <div className="row shadow contenedor-formulario-talento">
                     <div className="col-12">
                         <h3 className="text-center" id="infoPersonal">Información personal</h3>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-lg-6 mb-3">
                         <div className="form-floating">
                             <input className="form-control" type="text" id="nombres" placeholder="a" name="nombres" />
                             <label className="form-label" htmlFor="nombres">
@@ -17,7 +17,7 @@ function Form() {
                             </label>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-lg-6 mb-3">
                         <div className="form-floating">
                             <input className="form-control" type="text" id="apellidos" placeholder="a" name="apellidos" />
                             <label className="form-label" htmlFor="apellidos">
@@ -25,7 +25,7 @@ function Form() {
                             </label>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-lg-6 mb-3">
                         <div className="form-floating">
                             <input className="form-control" type="text" pattern="\d{1,2}\.\d{3}\.\d{3}-[\dkK]" id="rut"
                                 placeholder="a" name="rut" />
@@ -34,7 +34,7 @@ function Form() {
                             </label>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-lg-6 mb-3">
                         <div className="form-floating">
                             <select className="form-select" aria-label="Default select example" id="estadoCivil" name="estadoCivil">
                                 <option value="soltero/a" selected>Soltero/a</option>
@@ -48,7 +48,7 @@ function Form() {
                             </label>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-lg-6 mb-3">
                         <div className="form-floating">
                             <input className="form-control" type="date" id="fechaNacimiento" placeholder="a" name="fechaNacimiento" />
                             <label className="form-label" htmlFor="fechaNacimiento">
@@ -56,7 +56,7 @@ function Form() {
                             </label>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-lg-6 mb-3">
                         <div className="form-floating">
                             <input className="form-control" type="number" id="edad" placeholder="4" name="edad" min="1" max="100" />
                             <label className="form-label" htmlFor="edad">
@@ -64,7 +64,7 @@ function Form() {
                             </label>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-lg-6 mb-3">
                         <div className="form-floating">
                             <input className="form-control" type="tel" id="numeroContacto" placeholder="4" name="numeroContacto" />
                             <label className="form-label" htmlFor="numeroContacto">
@@ -72,7 +72,7 @@ function Form() {
                             </label>
                         </div>
                     </div>
-                    <div className="col-md-6 mb-3">
+                    <div className="col-lg-6 mb-3">
                         <div className="form-floating">
                             <input className="form-control" type="email" id="email" placeholder="a" name="email" />
                             <label className="form-label" htmlFor="email">
