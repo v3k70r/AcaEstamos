@@ -1,12 +1,13 @@
+
 .contenedor-formulario-talento {
     background-color: #e5ecf6;
     margin-bottom: 50px;
     margin-top: 25px;
-    margin-left: 20px;
+    margin-left: 60px;
     margin-right: 0px;
     border-radius: 20px;
     padding: 40px;
-    width: 100%;
+    max-width: 90%;
 }
 
 #infoPersonal {
@@ -22,11 +23,10 @@
 
 @media screen and (max-width: 600px) {
     .contenedor-formulario-talento {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      
-    }  
+        margin: 25px, auto; /* Cambiado para ajustar los márgenes en pantallas pequeñas */
+        width: auto; /* Cambiado para permitir que el contenedor se ajuste al contenido */
+        padding: 1px; /* Ajuste de padding en pantallas pequeñas */
+   }  
     }
 #ContenedorForma {
     display: flex;
@@ -38,3 +38,15 @@
     color: #424242;
     margin-bottom: 30px;
 }
+    /* Estilos para los elementos de entrada en pantallas pequeñas */
+    input.form-control {
+        font-size: 12px; /* Tamaño de fuente ajustado para casillas de entrada en pantallas pequeñas */
+    }
+
+    /* Estilos para los elementos de selección en pantallas pequeñas */
+    select.form-select {
+        font-size: 12px; /* Tamaño de fuente ajustado para casillas de selección en pantallas pequeñas */
+    }
+    html {
+        touch-action: manipulation;
+    }
