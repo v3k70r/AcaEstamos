@@ -1,14 +1,14 @@
 import './Boton.css'
 import { useState } from 'react';
 
-function Boton() {
-    const [redireccionarA, setRedireccionarA] = useState('');
+function Boton({ autorizado }) {
     const handleEnrolButtonClick = () => {
-        setRedireccionarA('/PerfilEmpresa');
-  };
-  if (redireccionarA) {
-    window.location.href = redireccionarA;
-}
+        if (autorizado) {
+          window.location.href = '/PerfilEmpresa';
+        } else {
+          alert('Debes autorizar el uso de los datos para enrolarte.');
+        }
+      };
   return (
     
 <div className="row col-6 text-center">
