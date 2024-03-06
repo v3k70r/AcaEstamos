@@ -11,7 +11,7 @@ const listarUsuarios = async (req, res) => {
         msg: "Lista de usuarios",
         data: usuarios
   })
-   
+    
 }
 
 // gestionar la creacion de un usuario
