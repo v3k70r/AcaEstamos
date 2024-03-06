@@ -19,7 +19,8 @@ const userSchema = new Schema({
         enum: ['admin', 'user', 'talento', 'empresa'],
         require: true,
         default: 'user'
-    }
+    },
+    profile: { type: Schema.Types.ObjectId, ref: '' }    
 })
 //creacion del modelo
 const User = mongoose.model('User', userSchema);
