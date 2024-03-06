@@ -1,12 +1,51 @@
-#containerEmail {
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-#containerContraseña {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-#containerRepetir {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+#LoginFormIngreso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+.botonTalento {
+    background-color: #F6990E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    margin: 10%;
+  }
+  
+  .botonTalento i {
+    margin-bottom: 15px;
+    font-size: 70px;
+    color: #E5ECF6;
+  }
+  .textoBotonTalento {
+    color: #E5ECF6;
+  }
+  .botonEmpresa {
+    background-color: #769E33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+    margin: 10%;
+  }
+  .botonEmpresa i {
+    margin-bottom: 15px;
+    font-size: 70px;
+    color: #E5ECF6;
+  }
+  @media screen and (max-width: 767px) {
+    .botonTalento,
+    .botonEmpresa {
+      padding: 3%;
+      margin: 3%;
+    }
+  
+    .botonTalento i,
+    .botonEmpresa i {
+      font-size: 40px;
+    }
+  }
