@@ -78,7 +78,41 @@ width: 100%;
     background-color: none;
     color: none; 
 }
-  
+
+
+/*responsive*/
+
+
+@media only screen and (max-width: 767px) {
+   
+    .img-fluid-carrusel {
+        height: 350px;
+        width: 100%;
+        }
+
+        
+.carousel-control-prev, .carousel-control-next {
+    width: 12%; 
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 60%; 
+    transform: translateY(-50%); 
+    width: 40px;
+    height: 40px; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #000; 
+    padding-bottom: 3%;
+  }
+
+.carousel-indicators{
+display: flex;
+top: 90%;
+  }
+
+    }
 
 
 

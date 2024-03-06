@@ -10,7 +10,7 @@ function BannerBienvenidos() {
 
   <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
 
-    <div id="carouselExampleDark" className="carousel carousel-dark slide  w-100" style={{ height: '550px'  }}>
+    <div id="carouselExampleDark" className="carousel carousel-dark slide">
       <div className="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -21,7 +21,7 @@ function BannerBienvenidos() {
           <img src="public/images/cerro-renca1.jpeg" className="img-fluid-carrusel" alt="banner 1" />
           <div className="carousel-caption d-none d-md-block">
           <h1 className="texto-principal">¡Bienvenidos </h1>
-            <h1 className="texto-secundario">"Acá estamos"! </h1>
+            <h1 className="texto-secundario">Acá estamos! </h1>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="3000">

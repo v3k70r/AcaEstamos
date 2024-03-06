@@ -1,0 +1,27 @@
+
+@media only screen and (max-width: 767px) {
+   
+    .card-body-job {
+        width: 80%; 
+        padding-bottom: 0;
+        margin-bottom: -30%;
+        }
+
+        .card-busquedahome{
+            width: 100%;
+            
+        }
+
+        .fa-magnifying-glass{
+            font-size: 11px;
+      
+            
+        }
+
+        .btn-outline-success {
+            padding: 9%;
+            padding-bottom: 0%;
+            padding-top: 0%;
+        }
+        
+    }
