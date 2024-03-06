@@ -6,10 +6,10 @@ const bcrypt = require("bcrypt");
 // gestionar la creacion de un usuario
 
 const crearTalento = async (req, res) => {
-  const { nombres, apellidos, run, estadoCivil, fechaNacimiento, edad, numeroContacto, email, pass, profesion, areaPrincipal, areaSecundaria, areaTerciaria } = req.body;
+    const { nombres, apellidos, run, estadoCivil, fechaNacimiento, edad, numeroContacto, email, pass, profesion, areaPrincipal, areaSecundaria, areaTerciaria } = req.body;
     const salt = bcrypt.genSaltSync();
     const password = bcrypt.hashSync(pass, salt),
-      nuevoUsuario = new User({email, password})
+    nuevoUsuario = new User({email, password})
     const usuarioGuardado = await nuevoUsuario.save()
 
   if (!nombres || !apellidos || !run || !estadoCivil || !fechaNacimiento || !edad || !numeroContacto || !email || !password || !profesion || !areaPrincipal || !areaSecundaria || !areaTerciaria ) {
@@ -54,3 +54,4 @@ const crearTalento = async (req, res) => {
 module.exports = {
   crearTalento,
 };
+
