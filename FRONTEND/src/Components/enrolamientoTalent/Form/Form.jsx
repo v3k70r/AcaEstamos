@@ -88,6 +88,22 @@ function Form() {
                             </label>
                         </div>
                     </div>
+                    <div className="col-12 mb-3">
+                <div className="form-floating">
+                    <input className="form-control" type="text" id="correoTalento" placeholder="o" name="mensaje"/>
+                    <label className="form-label" htmlFor="mensaje">
+                        <p>Correo electrócnico</p>
+                    </label>
+                </div>
+            </div>
+            <div className="col-12 mb-3">
+                <div className="form-floating">
+                    <input className="form-control" type="password" id="contraseñaTalento" placeholder="o" name="mensaje"/>
+                    <label className="form-label" htmlFor="mensaje">
+                        <p>Contraseña</p>
+                    </label>
+                </div>
+            </div>
                     <div className="row">
                         <div className="col-12">
                             <h3 className="text-center" id="textInteres">Elige tu área de interés</h3>
@@ -128,6 +144,7 @@ function Form() {
                                 <label className="form-label" htmlFor="areaTerciaria">
                                     <p>Área de interés opcional</p>
                                 </label>
+                                
                             </div>
                         </div>
                     </div>
