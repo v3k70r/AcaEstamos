@@ -1,29 +1,42 @@
-h1 {
-    font-family: "Heavitas", sans-serif;
-    font-weight: normal;
-    font-style: normal;
-    color: white;
+/* Estilos para el contenedor principal del formulario */
+.container.col-md-8 {
+  max-width: 600px;
+  margin: auto;
 }
-h4 {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-    color: #424242;
+
+#ContenedorEmail,
+#ContenedorContraseña {
+  margin-bottom: 20px;
+}
+.form-floating {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.boton-inicio {
+  width: 100%;
+  color: white;
+  font-size: medium;
+}
+
+/* Estilos para el enlace de registro */
+.text-center a {
+  color: #007bff;
 }
 #LoginForm {
   margin: 20px;
 }
-#ContenedorEmail {
-  margin-top: 20px;
-  margin-bottom: 20px;
 
-}
-#ContenedorContraseña {
-  margin-bottom: 20px;
+@media screen and (max-width: 767px) {
+  .container.col-md-8 {
+      max-width: 100%;
+  }
 
-}
-.boton-inicio {
-  color: white;
-  font-size: medium;
-
+  .form-control,
+  .boton-inicio {
+      width: 100%;
+  }
 }

@@ -11,13 +11,13 @@ const listarUsuarios = async (req, res) => {
         msg: "Lista de usuarios",
         data: usuarios
   })
-   
+    
 }
 
 // gestionar la creacion de un usuario
 
 const crearUser = async (req, res) => {
-  const { name, lastName, email, password } = req.body;
+  const { email, password } = req.body;
 
   if (!email || !password) {
     return res.status(404).json({
@@ -29,10 +29,8 @@ const crearUser = async (req, res) => {
     const salt = bcrypt.genSaltSync();
 
     await User.create({
-      name: name,
-      lastName: lastName,
       email: email,
-      password: bcrypt.hashSync(password, salt),
+      pass: bcrypt.hashSync(password, salt),
     });
 
     res.status(201).json({
@@ -87,7 +85,7 @@ const loginUser = async (req, res) => {
       });
     }
 
-    const token = await generarJWT(findUser._id, findUser.name, findUser.lastName, findUser.email);
+    const token = await generarJWT(findUser._id, findUser.email);
 
     res.status(200).json({
       msg: `Usuario con email ${email} logueado correctamente`,

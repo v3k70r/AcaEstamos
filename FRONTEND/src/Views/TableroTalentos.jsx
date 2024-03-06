@@ -13,7 +13,7 @@ function TableroTalentos() {
     <div>
       <Navbar />
       <ProtoBanner imageUrl="images/BannerTablero.png" 
-            headingText="Búsqueda de talentos" />
+            headingText="Búsqueda talentos" />
       <div className="container-fluid filtroTalento shadow" style={{ backgroundColor: '#E5ECF6' }}>
       <div className="row">
         <FormularioFiltro 

@@ -10,7 +10,6 @@ body {
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
-    
 }
 
 .banner-content img {
@@ -42,7 +41,7 @@ body {
 
 @media screen and (max-width: 2600px) {
     .banner-container {
-        height: 100vh;
+        height: 550px;
         justify-content: flex-start;
     }
 
@@ -55,8 +54,8 @@ body {
     }
 
     .banner-content .large-heading {
-        font-size: 6rem;
-        line-height: 100px;
+        font-size: 4.5rem;
+        line-height: 80px;
         max-width: 50%;
     }
 
@@ -74,10 +73,11 @@ body {
     .banner-container {
         height: 45vh;
         justify-content: center;
+        margin-bottom: 30px;
     }
 
     .banner-content {
-        padding-left: 7px;
+        padding-left: 20px;
     }
 
     .banner-content img {
@@ -85,7 +85,7 @@ body {
     }
 
     .banner-content .large-heading {
-        font-size: 3.8rem;
+        font-size: 3rem;
         line-height: 55px;
         max-width: 100%;
     }
