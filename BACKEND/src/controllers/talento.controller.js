@@ -25,15 +25,14 @@ const crearTalento = async (req, res) => {
     nuevoUsuario = new User({email, password, status, rol})
     const usuarioGuardado = await nuevoUsuario.save()
 
-  if (!nombres || !apellidos || !run || !estadoCivil || !fechaNacimiento || !edad || !numeroContacto || !email || !password || !profesion || !areaPrincipal || !areaSecundaria || !areaTerciaria ) {
+
+  if (!nombres || !apellidos || !run || !estadoCivil || !fechaNacimiento || !edad || !numeroContacto || !email || !password || !profesion || !areaPrincipal || !areaSecundaria || !areaTerciaria) {
     return res.status(404).json({
       msg: "Todos los campos son requeridos",
       status: 404,
     });
   }
   try {
-    const salt = bcrypt.genSaltSync();
-
     await Talento.create({
       user: usuarioGuardado._id,
       nombres: nombres,

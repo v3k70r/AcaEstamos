@@ -1,18 +1,26 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import './MenuAdministrador.css';
 
 const MenuAdministrador = () => {
-  const [listar, setListar] = useState([])
+  const [listar, setListar] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 5; // Número de usuarios por página
 
   useEffect(() => {
     fetch('http://localhost:8080/api/v1/listar')
       .then(response => response.json())
-      .then(data => {
-        console.log(data)
-        //debugger
-        setListar(data.data)})
-  }, [listar])
+      .then(data => setListar(data.data));
+  }, []);
+
+  // Calcula el índice del último y primer usuario en la página actual
+  const indexOfLastUser = currentPage * itemsPerPage;
+  const indexOfFirstUser = indexOfLastUser - itemsPerPage;
+
+  // Crea una nueva lista de usuarios basada en la página actual
+  const currentUsers = listar.slice(indexOfFirstUser, indexOfLastUser);
+
+  // Función para cambiar de página
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div>
@@ -30,26 +38,42 @@ const MenuAdministrador = () => {
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Enumeración</th>
+                    <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>ID</th>
                     <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Email</th>
                     <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Rol</th>
                     <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Estado</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {listar.map((usuario) => (
+                  {currentUsers.map((usuario) => (
                     <tr key={usuario._id}>
                       <th scope="row">{usuario._id}</th>
                       <td>{usuario.email}</td>
-                      <td>{usuario.status}</td>
                       <td>{usuario.rol}</td>
                       <td>
-                        <button className={`boton-tarjeta boton-admin ${usuario.status === 'Activo' ? 'boton-activo' : 'boton-inactivo'}`}>
+                        <button className={`btn ${usuario.status === 'Activo' ? 'btn-danger' : 'btn-success'}`}>
                           {usuario.status}
                         </button>
                       </td>
                     </tr>
                   ))}
+                  <tr>
+                    <td colSpan="5">
+                      <div className="d-flex justify-content-between">
+                        <button onClick={() => paginate(currentPage - 1)} 
+                        disabled={currentPage === 1} style={{ backgroundColor: '#F6990E'}} 
+                        className="btn">
+                          Anterior
+                        </button>
+                        <span>Página {currentPage}</span>
+                        <button onClick={() => paginate(currentPage + 1)} 
+                        disabled={currentPage === Math.ceil(listar.length / itemsPerPage)} 
+                        style={{ backgroundColor: '#F6990E'}} className="btn">
+                          Siguiente
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -61,4 +85,5 @@ const MenuAdministrador = () => {
 }
 
 export default MenuAdministrador;
+
 

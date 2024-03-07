@@ -1,9 +1,13 @@
-.boton-admin{
-    color: white;
+.boton-activo {
+    background-color: #F6990E;
     border-radius: 8px;
     border: none;
     padding: 5%;
 }
+
+
+.btn-primary {
+color:white ;
 
 .contenedorTalentos {
 margin-bottom: 2%;
@@ -13,6 +17,5 @@ margin-bottom: 2%;
     .contenedorTalentos {
         margin-bottom: 10%;
     }  
-
 
 }
