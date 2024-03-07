@@ -25,13 +25,17 @@ const TablaEmpresas = () => {
     return (
         <div>
             <div className="col-md-12">
-                <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
-                    <select className="form-select form-select-lg mb-3" aria-label="Large select example">
-                        <option selected>Menu de opciones</option>
-                        <option value="1">Perfiles activos</option>
-                        <option value="2">Perfiles inactivos</option>
-                        <option value="3">Todos</option>
-                    </select>
+            <div className="container-info">
+      <h5 className="textoInfoAdd">
+      Tabla empresas
+      </h5> 
+        <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
+            <select className="form-select form-select-lg mb-3" aria-label="Large select example">
+                <option selected>Menu de opciones</option>
+                <option value="1">Empresas activos</option>
+                <option value="2">Empresas inactivos</option>
+                <option value="3">Todos</option>
+            </select>
 
                     <div className="col-md-12">
                         <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
@@ -61,16 +65,16 @@ const TablaEmpresas = () => {
                                         <td colSpan="5">
                                             <div className="d-flex justify-content-between">
                                                 <button onClick={() => paginate(currentPage - 1)}
-                                                    disabled={currentPage === 1} style={{ backgroundColor: '#F6990E' }}
+                                                    disabled={currentPage === 1} style={{ backgroundColor: '#F6990E', color: 'white'  }}
                                                     className="btn">
                                                     Anterior
                                                 </button>
                                                 <span>Página {currentPage}</span>
                                                 <button onClick={() => paginate(currentPage + 1)}
-                                                    disabled={currentPage === Math.ceil(listar.length / itemsPerPage)}
-                                                    style={{ backgroundColor: '#F6990E' }} className="btn">
-                                                    Siguiente
-                                                </button>
+    disabled={currentPage === Math.ceil(listar.length / itemsPerPage)}
+    style={{ backgroundColor: '#F6990E', color: 'white' }} className="btn">
+    Siguiente
+</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -80,6 +84,7 @@ const TablaEmpresas = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }
