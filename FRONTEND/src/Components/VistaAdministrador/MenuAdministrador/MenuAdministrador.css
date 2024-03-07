@@ -13,9 +13,8 @@ color:white ;
 margin-bottom: 2%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {}
     .contenedorTalentos {
         margin-bottom: 10%;
     }  
-
 }

@@ -33,7 +33,7 @@ const TablaEmpresas = () => {
         <div>
             <div className="col-md-12">
                 <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
-                <h5>TABLA DE EMPRESAS</h5>
+                    <h5>TABLA DE EMPRESAS</h5>
                     <select className="form-select form-select-lg mb-3" aria-label="Large select example">
                         <option selected>Menu de opciones</option>
                         <option value="1">Perfiles activos</option>
@@ -76,16 +76,16 @@ const TablaEmpresas = () => {
                                         <td colSpan="5">
                                             <div className="d-flex justify-content-between">
                                                 <button onClick={() => paginate(currentPage - 1)}
-                                                    disabled={currentPage === 1} style={{ backgroundColor: '#F6990E', color: 'white'  }}
+                                                    disabled={currentPage === 1} style={{ backgroundColor: '#F6990E', color: 'white' }}
                                                     className="btn">
                                                     Anterior
                                                 </button>
                                                 <span>Página {currentPage}</span>
                                                 <button onClick={() => paginate(currentPage + 1)}
-    disabled={currentPage === Math.ceil(listar.length / itemsPerPage)}
-    style={{ backgroundColor: '#F6990E', color: 'white' }} className="btn">
-    Siguiente
-</button>
+                                                    disabled={currentPage === Math.ceil(listar.length / itemsPerPage)}
+                                                    style={{ backgroundColor: '#F6990E', color: 'white' }} className="btn">
+                                                    Siguiente
+                                                </button>
                                             </div>
                                         </td>
                                     </tr>
@@ -95,7 +95,6 @@ const TablaEmpresas = () => {
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     );
 }
