@@ -32,8 +32,8 @@ const TablaEmpresas = () => {
         <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
             <select className="form-select form-select-lg mb-3" aria-label="Large select example">
                 <option selected>Menu de opciones</option>
-                <option value="1">Empresas activos</option>
-                <option value="2">Empresas inactivos</option>
+                <option value="1">Empresas activas</option>
+                <option value="2">Empresas inactivas</option>
                 <option value="3">Todos</option>
             </select>
 
