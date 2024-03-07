@@ -4,28 +4,36 @@ import './MenuAdministrador.css';
 const MenuAdministrador = () => {
   const [listar, setListar] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [activeStatus, setActiveStatus] = useState([]);
   const itemsPerPage = 5; // Número de usuarios por página
 
   useEffect(() => {
-    fetch('http://localhost:8080/api/v1/listar')
+    fetch('http://localhost:8080/api/v1/listar-talentos')
       .then(response => response.json())
-      .then(data => setListar(data.data));
+      .then(data => {
+        setListar(data.data);
+        setActiveStatus(new Array(data.data.length).fill(false));
+      });
   }, []);
 
-  // Calcula el índice del último y primer usuario en la página actual
+  const toggleActive = (index) => {
+    const newActiveStatus = [...activeStatus];
+    newActiveStatus[index] = !newActiveStatus[index];
+    setActiveStatus(newActiveStatus);
+  };
+
   const indexOfLastUser = currentPage * itemsPerPage;
   const indexOfFirstUser = indexOfLastUser - itemsPerPage;
 
-  // Crea una nueva lista de usuarios basada en la página actual
   const currentUsers = listar.slice(indexOfFirstUser, indexOfLastUser);
 
-  // Función para cambiar de página
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <div>
       <div className="col-md-12">
         <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
+        <h5>TABLA DE EMPRESAS</h5>
           <select className="form-select form-select-lg mb-3" aria-label="Large select example">
             <option selected>Menu de opciones</option>
             <option value="1">Perfiles activos</option>
@@ -38,37 +46,44 @@ const MenuAdministrador = () => {
               <table className="table">
                 <thead>
                   <tr>
-                    <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>ID</th>
-                    <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Email</th>
-                    <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Rol</th>
+                    <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Nombre de empresa</th>
+                    <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Apellidos</th>
+                    <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Rut</th>
                     <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Estado</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {currentUsers.map((usuario) => (
-                    <tr key={usuario._id}>
-                      <th scope="row">{usuario._id}</th>
-                      <td>{usuario.email}</td>
-                      <td>{usuario.rol}</td>
-                      <td>
-                        <button className={`btn ${usuario.status === 'Activo' ? 'btn-danger' : 'btn-success'}`}>
-                          {usuario.status}
-                        </button>
-                      </td>
-                    </tr>
-                  ))}
+                  {currentUsers.map((talento, index) => {
+                    const isActive = activeStatus[index];
+
+                    return (
+                      <tr key={talento._id}>
+                        <td>{talento.nombres}</td>
+                        <td>{talento.apellidos}</td>
+                        <td>{talento.run}</td>
+                        <td style={{ display: 'flex', justifyContent: 'space-between' }}>
+                          <button onClick={() => toggleActive(index)} className={`btn btn-sm ${isActive ? 'btn-success' : 'btn-danger'}`}>
+                            {isActive ? 'Activo' : 'Inactivo'}
+                          </button>
+                          <button className="btn btn-sm btn-primary">Actualizar</button>
+                          <button className="btn btn-sm btn-danger">Eliminar</button>
+                          <button className="btn btn-sm btn-warning">Ver Empresa</button>
+                        </td>
+                      </tr>
+                    );
+                  })}
                   <tr>
                     <td colSpan="5">
                       <div className="d-flex justify-content-between">
-                        <button onClick={() => paginate(currentPage - 1)} 
-                        disabled={currentPage === 1} style={{ backgroundColor: '#F6990E'}} 
-                        className="btn">
+                        <button onClick={() => paginate(currentPage - 1)}
+                          disabled={currentPage === 1} style={{ backgroundColor: '#F6990E' }}
+                          className="btn">
                           Anterior
                         </button>
                         <span>Página {currentPage}</span>
-                        <button onClick={() => paginate(currentPage + 1)} 
-                        disabled={currentPage === Math.ceil(listar.length / itemsPerPage)} 
-                        style={{ backgroundColor: '#F6990E'}} className="btn">
+                        <button onClick={() => paginate(currentPage + 1)}
+                          disabled={currentPage === Math.ceil(listar.length / itemsPerPage)}
+                          style={{ backgroundColor: '#F6990E' }} className="btn">
                           Siguiente
                         </button>
                       </div>
@@ -85,5 +100,4 @@ const MenuAdministrador = () => {
 }
 
 export default MenuAdministrador;
-
 
