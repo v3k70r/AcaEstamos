@@ -11,7 +11,7 @@ router.get('/listar-talentos', listarTalentos);
 router.get('/listar-empresas', listarEmpresas);
 
 //crear en colecciones
-router.post('/crear', crearUser);
+router.post('/crear-usuario', crearUser);
 router.post('/crear-talento', crearTalento);
 router.post('/crear-empresa', crearEmpresa);
 

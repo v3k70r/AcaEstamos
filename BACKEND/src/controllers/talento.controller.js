@@ -17,15 +17,15 @@ const listarTalentos = async (req, res) => {
 }
 
 const crearTalento = async (req, res) => {
-    var { nombres, apellidos, run, estadoCivil, fechaNacimiento, edad, numeroContacto, email, pass, profesion, areaPrincipal, areaSecundaria, areaTerciaria } = req.body;
+    var { nombres, apellidos, run, estadoCivil, fechaNacimiento, edad, contacto, email, password, profesion, areaPrincipal, areaSecundaria, areaTerciaria } = req.body;
     const status = "active"
     const rol = "talento"
     const salt = bcrypt.genSaltSync();
-    password = bcrypt.hashSync(pass, salt)
+    password = bcrypt.hashSync(password, salt)
     nuevoUsuario = new User({email, password, status, rol})
     const usuarioGuardado = await nuevoUsuario.save()
 
-  if (!nombres || !apellidos || !run || !estadoCivil || !fechaNacimiento || !edad || !numeroContacto || !email || !password || !profesion || !areaPrincipal || !areaSecundaria || !areaTerciaria ) {
+  if (!nombres || !apellidos || !run || !estadoCivil || !fechaNacimiento || !edad || !contacto || !email || !password || !profesion || !areaPrincipal || !areaSecundaria || !areaTerciaria ) {
     return res.status(404).json({
       msg: "Todos los campos son requeridos",
       status: 404,
@@ -42,7 +42,7 @@ const crearTalento = async (req, res) => {
       estado_civil: estadoCivil,
       fecha_nacimiento: fechaNacimiento,
       edad: edad,
-      numero_contacto: numeroContacto,
+      numero_contacto: contacto,
       profesion_oficio: profesion,
       area1: areaPrincipal,
       area2: areaSecundaria,
