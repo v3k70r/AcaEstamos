@@ -11,15 +11,15 @@ const TarjetaInfoEmpresa = () => {
                                     <ul className="list-group list-group-flush">
                                         <li className="list-group-item"><strong>Rut:</strong> 98764537-k</li>
                                         <li className="list-group-item"><strong>Giro o rubro:</strong> Alimentación</li>
-                                        <li className="list-group-item"><strong>Cantidad de empleados:</strong> 1919</li>
+                                        <li className="list-group-item"><strong>Cantidad de empleados:</strong> 10.000</li>
                                     </ul>
                                 </div>
                                 <div className="col-6">
                                     <ul className="list-group list-group-flush">
                                         <li className="list-group-item"><strong>Teléfono:</strong> 223641798</li>
-                                        <li className="list-group-item"><strong>Correo:</strong> ejemplo@gmail.com</li>
+                                        <li className="list-group-item"><strong>Correo:</strong> coca@gmail.com</li>
                                         <li className="list-group-item"><strong>Sitio web:</strong> <a href="#"
-                                            target="_blank">www.example.com</a></li>
+                                            target="_blank">www.koandina.com</a></li>
                                     </ul>
                                 </div>
                             </div>

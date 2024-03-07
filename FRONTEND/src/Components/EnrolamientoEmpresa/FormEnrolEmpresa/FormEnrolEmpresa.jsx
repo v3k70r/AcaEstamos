@@ -137,7 +137,7 @@ function FormEnrolEmpresa() {
             console.error('Error:', error);
         });
         if (autorizado) {
-            window.location.href = '/PerfilEmpresa';
+            window.location.href = '/InicioDeSesion';
           } else {
             alert('Debes autorizar el uso de los datos para enrolarte.');
           }

@@ -8,9 +8,7 @@ const MasInfo = () => {
                     backgroundColor: '#E5ECF6', margin: '0', padding: '20px',
                     borderTopLeftRadius: '20px', borderTopRightRadius: '20px'
                 }}>Acerca de...</h5>
-                <p style={{ margin: '0', padding: '20px' }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero numquam
-                    optio quos, in quasi assumenda obcaecati necessitatibus! Harum facere asperiores reprehenderit dignissimos
-                    ea! Alias suscipit fuga labore sequi velit totam?</p>
+                <p style={{ margin: '0', padding: '20px' }}>Producción y distribución de bebidas gaseosas</p>
             </div>
             <div className="col-lg-3 mb-3 mx-auto">
                 <div className="card h-100" style={{ borderRadius: '20px' }}>
