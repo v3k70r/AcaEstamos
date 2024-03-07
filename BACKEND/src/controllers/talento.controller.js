@@ -1,16 +1,30 @@
 const Talento = require("../models/talento.model");
 const User = require("../models/user.model");
-
 const bcrypt = require("bcrypt");
 
 // gestionar la creacion de un usuario
 
+const listarTalentos = async (req, res) => {
+
+  const talentos = await Talento.find({});
+
+  res.status(200).json({
+        code: 200,
+        msg: "Lista de talentos",
+        data: talentos
+  })
+    
+}
+
 const crearTalento = async (req, res) => {
-  const { nombres, apellidos, run, estadoCivil, fechaNacimiento, edad, numeroContacto, email, pass, profesion, areaPrincipal, areaSecundaria, areaTerciaria } = req.body;
-  const salt = bcrypt.genSaltSync();
-  const password = bcrypt.hashSync(pass, salt),
-    nuevoUsuario = new User({ email, password })
-  const usuarioGuardado = await nuevoUsuario.save()
+    var { nombres, apellidos, run, estadoCivil, fechaNacimiento, edad, numeroContacto, email, pass, profesion, areaPrincipal, areaSecundaria, areaTerciaria } = req.body;
+    const status = "active"
+    const rol = "talento"
+    const salt = bcrypt.genSaltSync();
+    password = bcrypt.hashSync(pass, salt)
+    nuevoUsuario = new User({email, password, status, rol})
+    const usuarioGuardado = await nuevoUsuario.save()
+
 
   if (!nombres || !apellidos || !run || !estadoCivil || !fechaNacimiento || !edad || !numeroContacto || !email || !password || !profesion || !areaPrincipal || !areaSecundaria || !areaTerciaria) {
     return res.status(404).json({
@@ -51,5 +65,6 @@ const crearTalento = async (req, res) => {
 
 module.exports = {
   crearTalento,
+  listarTalentos
 };
 

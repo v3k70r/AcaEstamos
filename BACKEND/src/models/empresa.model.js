@@ -11,7 +11,6 @@ const empresaSchema = new Schema({
     comuna: String,
     region: String,
     numero_contacto: String,
-    correo: String,
     pagina_web: String,
     mensaje_talentos: String,
     acerca_de: String

@@ -1,4 +1,5 @@
 
+
 .texto-principal {
     display: flex;
     word-wrap: break-word;
@@ -17,10 +18,7 @@
     position: relative;
     top: -165px;
     text-align: left;
-    
-
 }
-
 
 
 .img-fluid-carrusel {
@@ -28,12 +26,9 @@ height: 550px;
 width: 100%;
 }
 
-
-
-
 .carousel-control-prev, .carousel-control-next {
-    width: 5%; /* Ajusta el ancho si es necesario */
-  }
+    width: 5%;
+}
   
   .carousel-control-prev {
     left: 0;
@@ -59,8 +54,6 @@ width: 100%;
   }
 
 
-
-
   .boton-transparente {
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid #fff; /* Borde blanco de 1px */
@@ -71,14 +64,47 @@ width: 100%;
     font-size: 22px;
     position: relative;
     top: -100px
-
 }
 
 .boton-transparente:hover {
     background-color: none;
     color: none; 
 }
-  
+
+
+/*responsive*/
+@media only screen and (max-width: 767px) {
+   
+    .img-fluid-carrusel {
+        height: 350px;
+        width: 100%;
+        }
+
+        
+.carousel-control-prev, .carousel-control-next {
+    width: 12%; 
+  }
+
+  .carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    top: 60%; 
+    transform: translateY(-50%); 
+    width: 40px;
+    height: 40px; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #000; 
+    padding-bottom: 3%;
+  }
+
+.carousel-indicators{
+display: flex;
+top: 90%;
+  }
+
+
+
+    }
 
 
 

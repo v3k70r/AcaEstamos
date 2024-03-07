@@ -10,7 +10,17 @@
       background-color: #f3963b; 
    
     }
-    
+    @media screen and (max-width: 600px) {
+      .contenedorEmpresas {
+       background-color: #c8d300;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        
+      }  
+      }
+
+    .contenedorTalentos
 
 
   /*Responsivo VISTA EMPRESA */
@@ -29,8 +39,10 @@
       .card-body{
         display: flex;
         flex-direction: column;
-       
-        
+      }
+
+      .espacioCard {
+        margin-top: 5%;
       }
         
       }

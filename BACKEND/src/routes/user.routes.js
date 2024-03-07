@@ -1,16 +1,21 @@
 const { crearUser, loginUser, getUserById, updateUserById, updateStatusUserById, listarUsuarios } = require('../controllers/user.controller');
-const {crearTalento} = require('../controllers/talento.controller')
+const {crearTalento, listarTalentos} = require('../controllers/talento.controller')
+const {crearEmpresa, listarEmpresas} = require('../controllers/empresa.controller')
+
 
 const router = require('express').Router();
 
-router.get('/listar', listarUsuarios);
+//listar colecciones
+router.get('/listar-usuarios', listarUsuarios);
+router.get('/listar-talentos', listarTalentos);
+router.get('/listar-empresas', listarEmpresas);
 
-// crear un usuario
+//crear en colecciones
 router.post('/crear', crearUser);
-
 router.post('/crear-talento', crearTalento);
+router.post('/crear-empresa', crearEmpresa);
 
-// hacer login
+//login
 router.post('/login', loginUser)
 
 // obtener un usuario por su id

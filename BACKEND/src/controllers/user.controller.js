@@ -17,7 +17,7 @@ const listarUsuarios = async (req, res) => {
 // gestionar la creacion de un usuario
 
 const crearUser = async (req, res) => {
-  const { email, password } = req.body;
+  const { email, password, status, rol } = req.body;
 
   if (!email || !password) {
     return res.status(404).json({
@@ -31,6 +31,8 @@ const crearUser = async (req, res) => {
     await User.create({
       email: email,
       pass: bcrypt.hashSync(password, salt),
+      status: status,
+      rol: rol
     });
 
     res.status(201).json({

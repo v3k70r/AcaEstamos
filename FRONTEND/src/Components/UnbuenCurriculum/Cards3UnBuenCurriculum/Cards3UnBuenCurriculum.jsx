@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 function Cards3UnBuenCurriculum() {
   return (
