@@ -1,4 +1,4 @@
-
+/* Contenedor del formulario de talento */
 .contenedor-formulario-talento {
     background-color: #e5ecf6;
     margin-bottom: 50px;
@@ -10,43 +10,181 @@
     max-width: 90%;
 }
 
+/* Estilos específicos para el elemento con id 'infoPersonal' */
 #infoPersonal {
     color: #424242;
     margin-bottom: 30px;
 }
 
+/* Estilos específicos para el elemento con id 'textInteres' */
 #textInteres {
     margin-bottom: 30px;
     margin-top: 15px;
     color: #424242;
 }
 
+/* Estilos para pantallas pequeñas usando media queries */
 @media screen and (max-width: 600px) {
     .contenedor-formulario-talento {
-        margin: 25px, auto; /* Cambiado para ajustar los márgenes en pantallas pequeñas */
+        margin: 25px auto; /* Cambiado para ajustar los márgenes en pantallas pequeñas */
         width: auto; /* Cambiado para permitir que el contenedor se ajuste al contenido */
         padding: 1px; /* Ajuste de padding en pantallas pequeñas */
-   }  
     }
+}
+
+/* Contenedor general para el formulario */
 #ContenedorForma {
     display: flex;
     justify-content: center; 
     align-items: center;
-
 }
-#infoPersonal {
-    color: #424242;
-    margin-bottom: 30px;
-}
-    /* Estilos para los elementos de entrada en pantallas pequeñas */
-    input.form-control {
-        font-size: 12px; /* Tamaño de fuente ajustado para casillas de entrada en pantallas pequeñas */
-    }
 
-    /* Estilos para los elementos de selección en pantallas pequeñas */
-    select.form-select {
-        font-size: 12px; /* Tamaño de fuente ajustado para casillas de selección en pantallas pequeñas */
+/* Estilos para elementos de entrada en pantallas pequeñas */
+input.form-control {
+    font-size: 12px; /* Tamaño de fuente ajustado para casillas de entrada en pantallas pequeñas */
+}
+
+/* Estilos para elementos de selección en pantallas pequeñas */
+select.form-select {
+    font-size: 12px; /* Tamaño de fuente ajustado para casillas de selección en pantallas pequeñas */
+}
+
+/* Estilos generales para HTML */
+html {
+    touch-action: manipulation;
+}
+
+/* Estilos para la checkbox */
+.checkbox {
+    --light: #E5E8F6;
+    --primary-color: #0492D0;
+    --duration: 0.3s;
+    --ease: ease-in-out;/* ... (tus estilos existentes) */
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    align-content: center;
+    color: #424242;/* ... (tus estilos existentes) */
+}
+
+.checkbox label span {
+    margin-left: 8px;
+    font-size: 17px;/* ... (tus estilos existentes) */
+}
+
+.checkbox svg {
+    height: 36x;
+    width: 36px;  /* ... (tus estilos existentes) */
+}
+
+.checkbox svg>rect {
+    fill: var(--light);
+    stroke: #0492D0;
+    /* responsive values */
+    stroke-dasharray: 400%;
+    stroke-dashoffset: 400%;
+    transition: var(--duration) stroke-dashoffset var(--ease);/* ... (tus estilos existentes) */
+}
+
+.checkbox svg path {
+    stroke: var(--primary-color);
+    /* responsive values */
+    stroke-dasharray: 100%;
+    stroke-dashoffset: 100%;
+    transition: var(--duration) stroke-dashoffset var(--ease);   /* ... (tus estilos existentes) */
+}
+
+.checkbox input[type="checkbox"]:checked+label svg>rect,
+.checkbox input[type="checkbox"]:checked+label svg path {
+    stroke-dashoffset: 0;
+}
+
+.div-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+}
+.buttonTalent {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #F6990E;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .buttonTalent:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .buttonTalent:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .buttonTalent:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .buttonTalent::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
     }
-    html {
-        touch-action: manipulation;
+  
+    60% {
+      left: 100%;
     }
+  
+    to {
+      left: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .buttonTalent {
+      width: 100%;      /* Ocupa el 100% del ancho disponible */
+      margin-right: 0;  /* Elimina el margen derecho */
+      margin-bottom: 10px; /* Agrega un margen inferior para separarlo de otros elementos si es necesario */
+    }
+  }
