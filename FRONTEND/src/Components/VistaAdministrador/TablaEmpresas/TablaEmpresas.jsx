@@ -49,7 +49,7 @@ const TablaEmpresas = () => {
                                         <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Nombre de empresa</th>
                                         <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Giro</th>
                                         <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Rut</th>
-                                        <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Estado</th>
+                                        <th scope="col" style={{ backgroundColor: '#E5ECF6' }}>Modificar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
