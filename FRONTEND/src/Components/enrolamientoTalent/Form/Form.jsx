@@ -11,15 +11,14 @@ function Form() {
 
     const handleEnrolButtonClick = () => {
         if (autorizado) {
-            window.location.href = '/PerfilEmpresa';
+            window.location.href = '/PerfilTalentos';
         } else {
             alert('Debes autorizar el uso de los datos para enrolarte.');
         }
     };
     return (
         <>
-            <div id="ContenedorForma" className="container-fluid row">
-                <div className="col-lg-10 mx-10">
+            <div id="ContenedorForma" className="container-fluid">
                     <div className="row shadow contenedor-formulario-talento">
                         <div className="col-md-12">
                             <h3 className="text-center" id="infoPersonal">Información personal</h3>
@@ -120,10 +119,10 @@ function Form() {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-12">
+                            <div className="col-md-12">
                                 <h3 className="text-center" id="textInteres">Elige tu área de interés</h3>
                             </div>
-                            <div className="col-12">
+                            <div className="col-md-12">
                                 <div className="form-floating">
                                     <select className="form-select form-select-lg mb-3" aria-label="Large select example" id="areaPrincipal" name="areaPrincipal">
                                         <option value="Educación" selected>Educación</option>
@@ -135,7 +134,7 @@ function Form() {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-12">
+                            <div className="col-md-12">
                                 <div className="form-floating">
                                     <select className="form-select form-select-lg mb-3" aria-label="Large select example" id="areaSecundaria" name="areaSecundaria">
                                         <option value="sinSeleccion" selected>Sin seleccionar</option>
@@ -148,7 +147,7 @@ function Form() {
                                     </label>
                                 </div>
                             </div>
-                            <div className="col-12">
+                            <div className="col-md-12">
                                 <div className="form-floating">
                                     <select className="form-select form-select-lg mb-3" aria-label="Large select example" id="areaTerciaria" name="areaTerciaria">
                                         <option value="sinSeleccion" selected>Sin seleccionar</option>
@@ -181,8 +180,8 @@ function Form() {
                     </div>
                 </div>
                 {/* BOTON*/}
-                <div className="row col-md-6">
-                    <button className="button" onClick={handleEnrolButtonClick}>
+                <div className="row col-md-12">
+                    <button className="buttonTalent" onClick={handleEnrolButtonClick}>
                         Enrólate
                         <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
                             <path
@@ -193,7 +192,6 @@ function Form() {
                         </svg>
                     </button>
                 </div>
-            </div>
         </>
 
     );

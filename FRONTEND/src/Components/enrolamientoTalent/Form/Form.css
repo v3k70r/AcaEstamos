@@ -54,63 +54,6 @@ html {
     touch-action: manipulation;
 }
 
-/* Estilos para el botón */
-.button {
-    position: relative;
-        transition: all 0.3s ease-in-out;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-        padding-block: 0.5rem;
-        padding-inline: 1.25rem;
-        background-color: #F6990E;
-        border-radius: 20px;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        color: #ffff;
-        gap: 10px;
-        font-weight: bold;
-        border: 3px solid #ffffff4d;
-        outline: none;
-        overflow: hidden;
-        font-size: 20px;
-        margin-bottom: 50px;
-}
-
-/* Efectos de hover para el botón */
-.button:hover {
-    transform: scale(1.05);
-    border-color: #fff9;
-}
-
-.button:hover .icon {
-    transform: translate(4px);
-}
-
-.button:hover::before {
-    animation: shine 1.5s ease-out infinite;
-}
-
-.button::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 100%;
-    background-image: linear-gradient(120deg,
-        rgba(255, 255, 255, 0) 30%,
-        rgba(255, 255, 255, 0.8),
-        rgba(255, 255, 255, 0) 70%);
-    top: 0;
-    left: -100px;
-    opacity: 0.6;/* ... (tus estilos existentes) */
-}
-
-@keyframes shine {
-    0% {
-      left: -100px;
-    }
-}
 /* Estilos para la checkbox */
 .checkbox {
     --light: #E5E8F6;
@@ -169,3 +112,79 @@ html {
     align-items: center;
     height: 12vh;
 }
+.buttonTalent {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding-block: 0.5rem;
+    padding-inline: 1.25rem;
+    background-color: #F6990E;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #ffff;
+    gap: 10px;
+    font-weight: bold;
+    border: 3px solid #ffffff4d;
+    outline: none;
+    overflow: hidden;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .buttonTalent:hover {
+    transform: scale(1.05);
+    border-color: #fff9;
+  }
+  
+  .buttonTalent:hover .icon {
+    transform: translate(4px);
+  }
+  
+  .buttonTalent:hover::before {
+    animation: shine 1.5s ease-out infinite;
+  }
+  
+  .buttonTalent::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    opacity: 0.6;
+  }
+  
+  @keyframes shine {
+    0% {
+      left: -100px;
+    }
+  
+    60% {
+      left: 100%;
+    }
+  
+    to {
+      left: 100%;
+    }
+  }
+  @media (max-width: 768px) {
+    .buttonTalent {
+      width: 100%;      /* Ocupa el 100% del ancho disponible */
+      margin-right: 0;  /* Elimina el margen derecho */
+      margin-bottom: 10px; /* Agrega un margen inferior para separarlo de otros elementos si es necesario */
+    }
+  }
