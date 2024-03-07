@@ -76,16 +76,16 @@ const TablaEmpresas = () => {
                                         <td colSpan="5">
                                             <div className="d-flex justify-content-between">
                                                 <button onClick={() => paginate(currentPage - 1)}
-                                                    disabled={currentPage === 1} style={{ backgroundColor: '#F6990E' }}
+                                                    disabled={currentPage === 1} style={{ backgroundColor: '#F6990E', color: 'white'  }}
                                                     className="btn">
                                                     Anterior
                                                 </button>
                                                 <span>Página {currentPage}</span>
                                                 <button onClick={() => paginate(currentPage + 1)}
-                                                    disabled={currentPage === Math.ceil(listar.length / itemsPerPage)}
-                                                    style={{ backgroundColor: '#F6990E' }} className="btn">
-                                                    Siguiente
-                                                </button>
+    disabled={currentPage === Math.ceil(listar.length / itemsPerPage)}
+    style={{ backgroundColor: '#F6990E', color: 'white' }} className="btn">
+    Siguiente
+</button>
                                             </div>
                                         </td>
                                     </tr>
@@ -95,6 +95,7 @@ const TablaEmpresas = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     );
 }

@@ -32,6 +32,10 @@ const MenuAdministrador = () => {
   return (
     <div>
       <div className="col-md-12">
+      <div className="container-info">
+      <h5 className="textoInfoAdd">
+      Tabla talentos
+      </h5> 
         <div className="container contenedorTalentos shadow" style={{ backgroundColor: '#E5ECF6', borderRadius: '20px' }}>
         <h5>TABLA DE EMPRESAS</h5>
           <select className="form-select form-select-lg mb-3" aria-label="Large select example">
@@ -75,15 +79,15 @@ const MenuAdministrador = () => {
                   <tr>
                     <td colSpan="5">
                       <div className="d-flex justify-content-between">
-                        <button onClick={() => paginate(currentPage - 1)}
-                          disabled={currentPage === 1} style={{ backgroundColor: '#F6990E' }}
-                          className="btn">
+                        <button onClick={() => paginate(currentPage - 1)} 
+                        disabled={currentPage === 1} style={{ backgroundColor: '#F6990E', color: 'white' }} 
+                        className="btn">
                           Anterior
                         </button>
                         <span>Página {currentPage}</span>
-                        <button onClick={() => paginate(currentPage + 1)}
-                          disabled={currentPage === Math.ceil(listar.length / itemsPerPage)}
-                          style={{ backgroundColor: '#F6990E' }} className="btn">
+                        <button onClick={() => paginate(currentPage + 1)} 
+                        disabled={currentPage === Math.ceil(listar.length / itemsPerPage)} 
+                        style={{ backgroundColor: '#F6990E', color: 'white' }} className="btn">
                           Siguiente
                         </button>
                       </div>
@@ -96,6 +100,7 @@ const MenuAdministrador = () => {
         </div>
       </div>
     </div>
+    </div>  
   );
 }
 
