@@ -14,12 +14,12 @@ const listarEmpresas = async (req, res) => {
       
 }
 const crearEmpresa = async (req, res) => {
-    const { email, password, nombre_empresa,rut, giro, cantidad_empleados, calle, numeracion, comuna, region, numero_contacto, pagina_web, mensaje_talentos, acerca_de } = req.body;
+    var { email, password, nombre_empresa,rut, giro, cantidad_empleados, calle, numeracion, comuna, region, numero_contacto, pagina_web, mensaje_talentos, acerca_de } = req.body;
     const status = "active"
     const rol = "empresa"
     const salt = bcrypt.genSaltSync();
-    const password_encriptada = bcrypt.hashSync(password, salt)
-    const nuevoUsuario = new User({email, password_encriptada, status, rol})
+    password = bcrypt.hashSync(password, salt) 
+    const nuevoUsuario = new User({email, password, status, rol})
     const usuarioGuardado = await nuevoUsuario.save()
 
   if (!email || !password || !nombre_empresa || !rut || !giro || !cantidad_empleados || !calle || !numeracion || !comuna || !region || !numero_contacto || !pagina_web || !mensaje_talentos || !acerca_de ) {

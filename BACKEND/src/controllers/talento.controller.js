@@ -17,11 +17,11 @@ const listarTalentos = async (req, res) => {
 }
 
 const crearTalento = async (req, res) => {
-    const { nombres, apellidos, run, estadoCivil, fechaNacimiento, edad, numeroContacto, email, pass, profesion, areaPrincipal, areaSecundaria, areaTerciaria } = req.body;
+    var { nombres, apellidos, run, estadoCivil, fechaNacimiento, edad, numeroContacto, email, pass, profesion, areaPrincipal, areaSecundaria, areaTerciaria } = req.body;
     const status = "active"
     const rol = "talento"
     const salt = bcrypt.genSaltSync();
-    const password = bcrypt.hashSync(pass, salt)
+    password = bcrypt.hashSync(pass, salt)
     nuevoUsuario = new User({email, password, status, rol})
     const usuarioGuardado = await nuevoUsuario.save()
 
