@@ -25,6 +25,7 @@ const crearTalento = async (req, res) => {
     nuevoUsuario = new User({email, password, status, rol})
     const usuarioGuardado = await nuevoUsuario.save()
 
+
   if (!nombres || !apellidos || !run || !estadoCivil || !fechaNacimiento || !edad || !contacto || !email || !password || !profesion || !areaPrincipal || !areaSecundaria || !areaTerciaria ) {
     return res.status(404).json({
       msg: "Todos los campos son requeridos",
@@ -32,8 +33,6 @@ const crearTalento = async (req, res) => {
     });
   }
   try {
-    const salt = bcrypt.genSaltSync();
-
     await Talento.create({
       user: usuarioGuardado._id,
       nombres: nombres,

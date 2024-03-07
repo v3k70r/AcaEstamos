@@ -260,7 +260,7 @@ function FormEnrolEmpresa() {
                     </label>
                 </div>
             </div>
-            <div className="col-md-12 mb-3">
+            <div className="col-6 mb-3">
                 <div className="form-floating">
                     <input className="form-control" type="email" id="email" placeholder="o" name="email" onChange={handleEmail}/>
                     <label className="form-label" htmlFor="email">
@@ -268,7 +268,7 @@ function FormEnrolEmpresa() {
                     </label>
                 </div>
             </div>
-            <div className="col-md-12 mb-3">
+            <div className="col-6 mb-3">
                 <div className="form-floating">
                     <input className="form-control" type="password" id="password" placeholder="o" name="password" onChange={handlePassword}/>
                     <label className="form-label" htmlFor="password">
