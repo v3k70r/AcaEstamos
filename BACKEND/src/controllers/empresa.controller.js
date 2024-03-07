@@ -1,15 +1,28 @@
 const Empresa = require("../models/empresa.model");
 const User = require("../models/user.model");
+const bcrypt = require("bcrypt");
 
+const listarEmpresas = async (req, res) => {
 
-// gestionar la creacion de un usuario
-
+    const empresas = await Empresa.find({});
+  
+    res.status(200).json({
+          code: 200,
+          msg: "Lista de empresas",
+          data: empresas
+    })
+      
+}
 const crearEmpresa = async (req, res) => {
-  const { email, password, nombre_empresa,rut, giro, cantidad_empleados, calle, numeracion, comuna, region, numero_contacto, correo, pagina_web, mensaje_talentos, acerca_de } = req.body;
-    const nuevoUsuario = new User({email, password})
+    const { email, password, nombre_empresa,rut, giro, cantidad_empleados, calle, numeracion, comuna, region, numero_contacto, pagina_web, mensaje_talentos, acerca_de } = req.body;
+    const status = "active"
+    const rol = "empresa"
+    const salt = bcrypt.genSaltSync();
+    const password_encriptada = bcrypt.hashSync(password, salt)
+    const nuevoUsuario = new User({email, password_encriptada, status, rol})
     const usuarioGuardado = await nuevoUsuario.save()
 
-  if (!email || !password || !nombre_empresa || !rut || !giro || !cantidad_empleados || !calle || !numeracion || !comuna || !region || !numero_contacto || !correo || !pagina_web || !mensaje_talentos || !acerca_de ) {
+  if (!email || !password || !nombre_empresa || !rut || !giro || !cantidad_empleados || !calle || !numeracion || !comuna || !region || !numero_contacto || !pagina_web || !mensaje_talentos || !acerca_de ) {
     return res.status(404).json({
       msg: "Todos los campos son requeridos",
       status: 404,
@@ -27,9 +40,8 @@ const crearEmpresa = async (req, res) => {
       comuna: comuna,
       region: region,
       numero_contacto: numero_contacto,
-      correo: correo,
       pagina_web: pagina_web,
-      mensaje_talento: mensaje_talento,
+      mensaje_talentos: mensaje_talentos,
       acerca_de: acerca_de
     });
 
@@ -50,4 +62,5 @@ const crearEmpresa = async (req, res) => {
 
 module.exports = {
   crearEmpresa,
+  listarEmpresas
 };
