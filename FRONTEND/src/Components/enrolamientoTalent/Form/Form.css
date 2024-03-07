@@ -119,6 +119,7 @@ html {
     padding-block: 0.5rem;
     padding-inline: 1.25rem;
     background-color: #F6990E;
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -130,8 +131,8 @@ html {
     border: 3px solid #ffffff4d;
     outline: none;
     overflow: hidden;
-    padding: 10px 20px;
-    font-size: 16px;
+    font-size: 20px;
+    left: 50%;
     margin-bottom: 50px;
   }
   

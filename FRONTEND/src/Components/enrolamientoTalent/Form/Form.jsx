@@ -180,7 +180,7 @@ function Form() {
                     </div>
                 </div>
                 {/* BOTON*/}
-                <div className="row col-md-12">
+                <div className="row col-6 text-center">
                     <button className="buttonTalent" onClick={handleEnrolButtonClick}>
                         Enrólate
                         <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
