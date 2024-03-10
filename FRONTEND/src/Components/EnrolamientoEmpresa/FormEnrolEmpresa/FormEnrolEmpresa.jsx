@@ -138,7 +138,7 @@ function FormEnrolEmpresa() {
         });
         if (autorizado) {
             window.location.href = '/InicioDeSesion';
-          } else {
+n          } else {
             alert('Debes autorizar el uso de los datos para enrolarte.');
           }
     }

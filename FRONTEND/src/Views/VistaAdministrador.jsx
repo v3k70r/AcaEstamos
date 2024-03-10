@@ -1,5 +1,4 @@
 import Navbar from '../Components/Navbar/Navbar'
-import BannerAdministrador from '../Components/VistaAdministrador/BannerAdministrador/BannerAdministrador'
 import TextoIntroAdministrador from '../Components/VistaAdministrador/TextoIntroAdministrador/TextoIntroAdministrador'
 import MenuAdministrador from '../Components/VistaAdministrador/MenuAdministrador/MenuAdministrador'
 import TablaEmpresas from '../Components/VistaAdministrador/TablaEmpresas/TablaEmpresas'
